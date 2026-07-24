@@ -11,7 +11,9 @@
 document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('img[src*="simpleicons"]').forEach(function(i){if(!i.hasAttribute('loading'))i.setAttribute('loading','lazy');var a=i.getAttribute('alt');i.onerror=function(){var fs=i.closest('.stat-card')||i.closest('td')?'18px':(i.closest('.feature-grid')||i.closest('h4')?'14px':'32px');this.outerHTML='<span style="font-size:'+fs+';font-weight:700;display:inline-block;line-height:1.3;opacity:.7">'+(a||'LOGO')+'</span>'}})})</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;background:linear-gradient(135deg,#f0f2f5 0,#e8ecf3 30%,#f5f0eb 70%,#eef1f8 100%);color:#1a1a2e;line-height:1.7;min-height:100vh}
+html{color-scheme:light}
+[data-theme=dark]{color-scheme:dark}
+body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;background:linear-gradient(135deg,#f0f2f5 0,#e8ecf3 30%,#f5f0eb 70%,#eef1f8 100%)!important;color:#1a1a2e;line-height:1.7;min-height:100vh}
 body::before{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 20% 10%,rgba(26,26,78,.04) 0,transparent 50%),radial-gradient(ellipse at 80% 90%,rgba(204,0,0,.03) 0,transparent 50%);pointer-events:none;z-index:0}
 .header{position:relative;background:linear-gradient(135deg,#0a0a23 0,#1a1a4e 50%,#0d3b66 100%);color:#fff;padding:80px 20px 60px;text-align:center;overflow:hidden}
 .header::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(26,26,78,.4),rgba(13,59,102,.3));opacity:.6}

@@ -1,0 +1,2860 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>document.documentElement.className='js';</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
+<meta name="color-scheme" content="light only">
+<title>六大手机厂商系统定位与AI趋势分析</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="image" href="img/simpleicons.org/huawei/cc0000.svg">
+<link rel="preload" as="image" href="img/simpleicons.org/xiaomi/ff6900.svg">
+<link rel="preload" as="image" href="img/simpleicons.org/oppo/009e54.svg">
+<link rel="preload" as="image" href="img/simpleicons.org/vivo/415fff.svg">
+<link rel="preload" as="image" href="img/simpleicons.org/apple/555555.svg">
+<link rel="preload" as="image" href="img/simpleicons.org/honor/8b5cf6.svg">
+<link rel="preload" as="font" type="font/woff2" href="fonts/Inter-latin.woff2" crossorigin>
+<script defer>window.__chartFallback=function(){if(window.__chartFallbackDone)return;window.__chartFallbackDone=1;var urls=['chart.umd.min.js?v=1','https://unpkg.com/chart.js@4.4.0/dist/chart.umd.min.js'];var load=function(i){if(i>=urls.length){window.__chartFailed();return}var s=document.createElement('script');s.src=urls[i];s.async=true;s.onload=function(){if(typeof Chart==='undefined'&&i<urls.length-1){load(i+1)}};s.onerror=function(){load(i+1)};document.head.appendChild(s)};load(0)};
+window.__chartFailed=function(){if(window.__chartFailShown)return;window.__chartFailShown=1;window.__chartLoading(false);document.querySelectorAll('.chart-box').forEach(function(b){if(b.querySelector('.chart-empty'))return;var e=document.createElement('div');e.className='chart-empty';e.textContent='图表加载失败，请检查网络';b.appendChild(e)})};
+window.__chartLoading=function(show){document.querySelectorAll('.chart-box').forEach(function(b){var el=b.querySelector('.chart-loading');if(show){if(el)return;var d=document.createElement('div');d.className='chart-loading';var s=document.createElement('div');s.className='spinner';var p=document.createElement('p');p.textContent='图表加载中…';d.appendChild(s);d.appendChild(p);b.appendChild(d)}else if(el){el.remove()}})};</script>
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js">
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" onerror="window.__chartCdnFailed=1;if(window.__chartFallback)window.__chartFallback()">
+</script>
+<script>window.__lsOK=true;
+window.lsGet=function(k,d){try{var v=localStorage.getItem(k);return v===null?d:v}catch(e){window.__lsOK=false;return d}};
+window.lsSet=function(k,v){try{localStorage.setItem(k,v);return true}catch(e){window.__lsOK=false;return false}};
+(function(){var p=lsGet('theme');if(p){document.documentElement.setAttribute('data-theme',p)}else{document.documentElement.setAttribute('data-theme','light')}})();
+(function(){if(window.__lsOK)return;var t=setInterval(function(){if(window.toast){clearInterval(t);window.toast('本地存储不可用，设置将不保存')}},300);setTimeout(function(){clearInterval(t)},5000)})()
+window.__degradeImg=function(i){if(!i||i.tagName!=='IMG'||i.__degraded)return;i.__degraded=1;var a=i.getAttribute('alt')||'';var h=parseInt(i.getAttribute('height'))||parseInt(i.style.height)||0;if(!h&&i.parentNode&&i.parentNode.offsetHeight)h=i.parentNode.offsetHeight;var s=document.createElement('span');s.textContent=a.slice(0,2);s.style.cssText='font-weight:700;display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;font-size:'+Math.max(h*.5,14)+'px;line-height:1;width:'+(h||44)+'px;height:'+(h||44)+'px;border-radius:6px;background:rgba(67,97,238,.08);color:'+(i.closest('.stat-card')?'#fff':'#1a1a2e');if(i.style.margin)s.style.margin=i.style.margin;i.parentNode.replaceChild(s,i)};
+document.addEventListener('error',function(e){var t=e.target;if(t&&t.tagName==='IMG'&&(t.getAttribute('src')||'').indexOf('simpleicons')>-1){window.__degradeImg(t)}},true);
+document.addEventListener('toggle',function(e){if(e.target&&e.target.matches&&e.target.matches('details.fold,details.fold-card')&&e.target.open){e.target.querySelectorAll('img[src*="simpleicons"]:not([__degraded])').forEach(function(i){if(!i.complete||i.naturalWidth===0){window.__degradeImg(i)}})}},true);
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('img[src*="simpleicons"]').forEach(function(i){if(i.complete&&i.naturalWidth>0)return;i.onerror=function(){window.__degradeImg(this)}})});document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.stat-card .num').forEach(function(n){var t=n.textContent;if(t&&/[\d.]+(亿|万)/.test(t)){n.textContent=t.replace(/([\d.]+)\s*(亿|万)/,function(m,d,u){return d+' '+u})}})});</script>
+<style>
+:root{--primary:#4361ee;--primary-deep:#1a1a4e;--primary-soft:rgba(67,97,238,.1);--ink:#2c3e50;--card:#fff;--card-soft:#f8f9fc;--line:#eef1f8;--line-strong:#e0e6ee;--text-mid:#666;--text-weak:#888;--radius-lg:16px;--radius-md:12px;--radius-sm:8px;--dark-card:#1a1a30;--dark-line:#2a2a45;--scan-dur:9s;--cw:1120px;--ease-silk:cubic-bezier(.22,.61,.36,1);--ease-pop:cubic-bezier(.34,1.56,.64,1);--tbl-hover-bg:rgba(67,97,238,.04);--tbl-hover-bg-f:rgba(67,97,238,.06);--tbl-hover-shadow:0 2px 12px rgba(0,0,0,.03);--tip-bg:#1a1a2e;--tip-text:#e8ecf4;--glass:rgba(255,255,255,.62);--glass-strong:rgba(255,255,255,.74);--glass-blur:16px;--glass-blur-sm:10px;--glass-hi:rgba(255,255,255,.55);--glass-line:rgba(255,255,255,.6);--bf-lg:blur(var(--glass-blur)) saturate(1.15);--bf-sm:blur(var(--glass-blur-sm)) saturate(1.1);--brand-huawei:#cc0000;--brand-xiaomi:#ff6900;--brand-oppo:#009e54;--brand-vivo:#415fff;--brand-apple:#555;--brand-honor:#8b5cf6;--brand-iqoo:#2962ff;--brand-oneplus:#eb0028;--brand-realme:#ffc107;--brand-redmi:#e53935;--primary-hi:#60a5fa;--primary-hi-soft:rgba(96,165,250,.15);--danger:#e63946;--danger-hi:#f87171;--radius-card:10px;--shadow-card:0 1px 6px rgba(0,0,0,.04);--t-fast:.25s;--t-norm:.35s;--t-slow:.5s}
+[data-theme=dark]{--primary:#60a5fa;--primary-deep:#e0e0f0;--card:#1a1a30;--card-soft:#20203e;--line:#2a2a45;--ink:#d8dce8;--text-mid:#bbb;--text-weak:#999;--glass:rgba(24,24,48,.6);--glass-strong:rgba(24,24,48,.72);--glass-blur:18px;--glass-blur-sm:12px;--glass-hi:rgba(255,255,255,.08);--glass-line:rgba(255,255,255,.07);--bf-lg:blur(var(--glass-blur)) saturate(1.15);--bf-sm:blur(var(--glass-blur-sm)) saturate(1.1)}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent} 
+html{color-scheme:light;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%}
+[data-theme=dark]{color-scheme:dark}
+
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/Inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+body{font-family:'Inter','Microsoft YaHei','PingFang SC',sans-serif;background:radial-gradient(ellipse 900px 600px at 10% 15%,rgba(67,97,238,.09) 0,transparent 55%),radial-gradient(ellipse 700px 900px at 90% 85%,rgba(26,26,78,.07) 0,transparent 55%),radial-gradient(ellipse 500px 500px at 50% 50%,rgba(67,97,238,.03) 0,transparent 50%),linear-gradient(180deg,#eef0f8 0%,#f5f6fa 50%,#e8ecf4 100%)!important;color:#2c3e50;line-height:1.85;font-size:15px;min-height:100vh;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overscroll-behavior:none;-webkit-overflow-scrolling:touch;transition:background .35s ease,color .35s ease}
+body,.section,.brand-card,.brand-card .os-name,.brand-card p,.eco-card,.eco-card h3,.eco-card p,.eco-card p strong,.chart-box,.chart-box h3,.chart-box canvas,.feature-card,.feature-card p,.ai-item,.ai-item p,.ai-item .src-ref,h2,th,td,table,.footer,.footer a,.sub-brand-divider{transition:background .45s ease,color .45s ease,border-color .45s ease,box-shadow .45s ease,opacity .45s ease,filter .45s ease}
+html.theme-switching,html.theme-switching *,html.theme-switching *::before,html.theme-switching *::after{transition:none!important;animation:none!important}
+body::before{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background-image:linear-gradient(rgba(26,26,78,.04) 0.5px,transparent 0.5px),linear-gradient(90deg,rgba(26,26,78,.04) 0.5px,transparent 0.5px);background-size:60px 60px;pointer-events:none;z-index:0;transition:opacity .35s ease}
+[data-theme=dark] body::before{background-image:linear-gradient(rgba(138,43,226,.05) 0.5px,transparent 0.5px),linear-gradient(90deg,rgba(138,43,226,.05) 0.5px,transparent 0.5px),radial-gradient(ellipse 500px 380px at 30% 25%,rgba(67,97,238,.12) 0,transparent 60%),radial-gradient(ellipse 420px 320px at 75% 65%,rgba(138,43,226,.1) 0,transparent 60%),radial-gradient(ellipse 360px 300px at 50% 90%,rgba(67,97,238,.08) 0,transparent 60%)}
+.header{position:relative;background:linear-gradient(135deg,rgba(232,238,252,.6) 0,rgba(223,232,251,.55) 40%,rgba(214,228,250,.5) 70%,rgba(232,238,252,.6) 100%);backdrop-filter:blur(18px) saturate(1.1);-webkit-backdrop-filter:blur(18px) saturate(1.1);color:var(--primary-deep);padding:40px 20px 36px;text-align:center;overflow:hidden;border-bottom:3px solid rgba(67,97,238,.3);transition:background .45s ease,border-color .45s ease,color .45s ease}
+.header::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 600px 300px at 50% 0%,rgba(67,97,238,.12) 0,transparent 70%);opacity:.6;transition:background .45s ease,opacity .45s ease}
+.header::after{content:'';position:absolute;top:0;left:-100%;width:200%;height:2px;background:linear-gradient(90deg,transparent,rgba(67,97,238,.5),rgba(138,43,226,.35),transparent);animation:headerScan 4s ease-in-out infinite;z-index:2;pointer-events:none}
+.header h1{font-size:clamp(28px, 2.4vw + 5px, 40px);position:relative;z-index:1;text-shadow:0 1px 3px rgba(255,255,255,.6),0 0 30px rgba(67,97,238,.12);font-weight:700;letter-spacing:1px;transition:text-shadow .45s ease}
+.header p{font-size:16px;opacity:.85;margin-top:8px;position:relative;z-index:1}
+.header .sub{font-size:13px;opacity:.55;margin-top:20px;position:relative;z-index:1}
+.abstract{max-width:720px;margin:clamp(18px, 2vw, 28px) auto 0;padding:14px 22px;background:rgba(255,255,255,.5);backdrop-filter:blur(10px) saturate(1.15);-webkit-backdrop-filter:blur(10px) saturate(1.15);border:1px solid rgba(67,97,238,.18);border-radius:12px;font-size:13.5px;line-height:1.85;color:#3a3f5c;position:relative;z-index:1;box-shadow:0 2px 14px rgba(67,97,238,.06);text-align:left}
+.abstract b{color:var(--primary-deep)}
+.container{max-width:var(--cw,1120px);margin:0 auto;padding:clamp(16px, 2vw, 28px);margin-top:-28px;position:relative;z-index:2}
+body[data-cw="1300"]{--cw:1300px}
+body[data-cw="1500"]{--cw:1500px}
+body[data-cw="1500"] .container{padding-left:40px;padding-right:40px}
+.filter-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;background:rgba(255,255,255,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:26px;box-shadow:0 1px 6px rgba(0,0,0,.04);position:sticky;top:8px;z-index:80}
+.filter-bar .filter-title{font-weight:700;color:var(--primary-deep);font-size:13px;letter-spacing:.5px}
+.filter-bar label{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#555;cursor:pointer;user-select:none}
+.filter-bar input{accent-color:var(--primary);width:15px;height:15px;cursor:pointer}
+.filter-bar .f-dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto}
+.filter-bar .f-copy{background:linear-gradient(135deg,var(--primary),var(--primary-deep));color:#fff;border:none;border-radius:8px;padding:7px 14px;font-size:12.5px;cursor:pointer;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}
+.filter-bar .f-copy:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(67,97,238,.35)}
+.filter-bar .f-copy:active{transform:scale(.96)}
+.filter-bar .f-copy-sec{background:rgba(67,97,238,.12);color:var(--primary);border:1px solid rgba(67,97,238,.25)}
+.filter-bar .f-copy-sec:hover{transform:translateY(-1px);background:rgba(67,97,238,.2);box-shadow:0 4px 14px rgba(67,97,238,.18)}
+.filter-bar .f-copy-sec:active{transform:scale(.96)}
+.filter-bar .f-act{background:#f0f2f8;border:1px solid #e0e6ee;border-radius:8px;padding:6px 12px;font-size:12px;color:#555;cursor:pointer;font-weight:600;transition:background .2s ease,color .2s ease,transform .2s ease}
+.filter-bar .f-act:hover{transform:translateY(-1px);background:rgba(67,97,238,.12);color:var(--primary)}
+.filter-bar .f-act:active{transform:scale(.96)}
+.width-switch button:active{transform:scale(.94)}
+.filter-drawer-close:active{transform:scale(.9)}
+.filter-bar .f-left{display:flex;align-items:center;gap:8px 14px;flex-wrap:wrap;min-width:0}
+.filter-bar .f-right{margin-left:auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0}
+.filter-fab,.filter-mask,.filter-drawer-close{display:none}
+.filter-bar .year-wrap{display:inline-flex;align-items:center;gap:4px;font-weight:600;color:var(--primary-deep)}
+.filter-bar .year-wrap select{border:1px solid rgba(67,97,238,.35);border-radius:8px;padding:5px 8px;font-size:12px;color:var(--primary-deep);background:#fff;cursor:pointer;outline:none;font-weight:700;transition:border-color .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease}
+.filter-bar .year-wrap select:hover{border-color:var(--primary);box-shadow:0 0 0 3px rgba(67,97,238,.12)}
+.filter-bar .year-wrap select:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(67,97,238,.2)}
+.width-switch{display:inline-flex;border:1px solid #e0e6ee;border-radius:8px;overflow:hidden;background:#f0f2f8}
+.width-switch button{border:none;background:transparent;padding:6px 9px;font-size:11px;color:#777;cursor:pointer;font-weight:600;transition:background .2s ease,color .2s ease}
+.width-switch button+button{border-left:1px solid #e0e6ee}
+.width-switch button.w-active{background:linear-gradient(135deg,var(--primary),#5a73f6);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);font-weight:800}
+.width-switch button:hover:not(.w-active){background:rgba(67,97,238,.12);color:var(--primary)}
+[data-theme=dark] .filter-bar .f-act{background:#1a1a30!important;border-color:#2a2a45!important;color:#bbb!important}
+[data-theme=dark] .filter-bar .f-act:hover{background:rgba(67,97,238,.2)!important;color:#60a5fa!important}
+[data-theme=dark] .filter-bar .f-copy-sec{background:rgba(96,165,250,.14)!important;color:#60a5fa!important;border-color:rgba(96,165,250,.3)!important}
+[data-theme=dark] .filter-bar .year-wrap select{background:#1a1a30!important;border-color:rgba(96,165,250,.35)!important;color:#e8ecf4!important}
+[data-theme=dark] .filter-bar .year-wrap select:hover{border-color:#60a5fa!important;box-shadow:0 0 0 3px rgba(96,165,250,.15)!important}
+[data-theme=dark] .filter-bar .year-wrap select:focus{border-color:#60a5fa!important;box-shadow:0 0 0 3px rgba(96,165,250,.22)!important}
+[data-theme=dark] .width-switch{border-color:#2a2a45!important;background:#1a1a30!important}
+[data-theme=dark] .width-switch button{color:#888!important}
+[data-theme=dark] .width-switch button+button{border-left-color:#2a2a45!important}
+@media(max-width:768px){
+  .filter-bar{position:fixed;left:0;right:0;bottom:0;z-index:990;margin-bottom:0;border-radius:16px 16px 0 0;border-bottom:none;transform:translateY(105%);transition:transform .35s var(--ease-silk),opacity .3s ease,visibility 0s linear .35s;opacity:0;visibility:hidden;max-height:min(72vh,540px);overflow-y:auto;overscroll-behavior:contain;padding:12px 14px calc(16px + env(safe-area-inset-bottom))}.filter-bar.open{transform:translateY(0);opacity:1;visibility:visible;transition:transform .35s var(--ease-silk),opacity .3s ease,visibility 0s linear 0s}.filter-bar .f-right{margin-left:0;width:100%}
+  .filter-fab{display:flex;align-items:center;justify-content:center;position:fixed;left:calc(16px + env(safe-area-inset-left));bottom:calc(24px + env(safe-area-inset-bottom));z-index:945;width:46px;height:46px;border-radius:50%;background:#fff;color:var(--primary);border:1px solid rgba(67,97,238,.35);font-size:19px;line-height:1;box-shadow:0 4px 18px rgba(67,97,238,.35);cursor:pointer;padding:0;outline:none;-webkit-tap-highlight-color:transparent;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease}
+  .filter-fab:active{transform:scale(.92)}
+  .filter-mask{position:fixed;top:0;left:0;right:0;bottom:0;z-index:988;background:rgba(10,12,25,.45);opacity:0;pointer-events:none;transition:opacity .3s ease}
+  .filter-mask.show{opacity:1;pointer-events:auto}
+  .filter-drawer-close{display:inline-flex;align-items:center;justify-content:center;position:absolute;top:10px;right:10px;width:28px;height:28px;border-radius:50%;border:none;background:rgba(67,97,238,.12);color:var(--primary);font-size:14px;line-height:1;cursor:pointer;padding:0;z-index:2}
+  .filter-bar .f-copy-sec,.filter-bar .f-act{flex:1 1 auto}
+  .width-switch{display:none}
+  .toc-fab span{display:none}
+  .toc-drawer h4{padding:13px 14px;font-size:14px}
+  .toc-drawer a{padding:11px 10px;font-size:12px;line-height:1.55}
+  .toc-drawer .toc-sub{padding:8px 10px 8px 24px;font-size:11px;line-height:1.5}
+  .toc-close{padding:13px;font-size:14px}
+  .header::before,.header::after{display:none}
+  #particles{display:none}
+  details.fold>summary,.ai-item>summary,.eco-card>summary{padding:15px 14px}
+  .ai-item p{margin:4px 0 8px}
+  [data-theme=dark] .brand-card,[data-theme=dark] .stat-card,[data-theme=dark] .eco-card,[data-theme=dark] .ai-item,[data-theme=dark] .chart-box{box-shadow:0 1px 4px rgba(0,0,0,.15)!important}
+}
+@media(hover:none){
+  .brand-card::after,.chart-box::after,.stat-card::after,.eco-card::after,.ai-item::before,.feature-card::after{animation:none!important}
+  .brand-card:hover,.stat-card:hover,.feature-card:hover,.eco-card:hover,.ai-item:hover{transform:none!important;box-shadow:0 1px 6px rgba(0,0,0,.04)!important}
+  .brand-card:hover img,.stat-card:hover .logo-wrap img{transform:none!important}
+} 
+[data-theme=dark] .filter-bar{background:rgba(15,15,35,.75)!important;border-color:#2a2a45!important}
+[data-theme=dark] .filter-bar .filter-title{color:#e0e0f0!important}
+[data-theme=dark] .filter-bar label{color:#bbb!important}
+[data-theme=dark] .filter-fab{background:rgba(67,97,238,.85);color:#fff;border-color:rgba(96,165,250,.5)}
+[data-theme=dark] .filter-drawer-close{background:rgba(96,165,250,.2);color:#60a5fa}
+@media print{
+  body{background:#fff!important;font-size:12px}
+  body::before,#particles,.toc-side,.toc-fab,.toc-mask,.toc-drawer,.theme-toggle,.filter-bar,.back-top,.chart-dl,.toast,.brand-cmp,.cmp-panel,.cmp-tab,.toc-side-tools,.toc-reopen,.ctx-menu,.ctx-box-select,.fold-btn,.filter-fab,.filter-mask,.info-rail{display:none!important}
+  .brand-card,.eco-card,.ai-item,.stat-card,.chart-box,.feature-card,.stat-card::after,.brand-card::after,.eco-card::after,.ai-item::before,.chart-box::after,.feature-card::after{animation:none!important}
+  .term::after,.term::before,.brand-term::after,.brand-term::before{display:none!important}
+  canvas{filter:grayscale(1) contrast(1.15) brightness(1.05)!important}
+  details.fold>summary~*,details.fold-card>summary~*{opacity:1!important;transform:none!important;transition:none!important}
+  .ai-item .src-ref{color:#555!important}
+  .section,.brand-card,.eco-card,.ai-item,.stat-card,.chart-box,.feature-card,.tbl-wrap,.header{box-shadow:none!important;border-radius:0!important;break-inside:avoid}
+  .section{background:#fff!important;border-color:#ccc!important;border-left-width:2px;contain:none!important;transform:none!important}
+  .header{background:#fff!important;color:#000!important;border-bottom:2px solid #000}
+  .header::before,.header::after{display:none!important}
+  body,.section,.header,h1,h2,h3,h4,th,td,tr,.abstract,.filter-title{color:#000!important}
+  a{color:#000!important;text-decoration:none}
+  .abstract{border:1px solid #ccc!important;box-shadow:none!important;background:#fff!important}
+  table,th,td{border-color:#bbb!important}
+  tr:nth-child(even) td{background:#f3f3f3!important}
+  details.fold>summary,details.fold-card>summary,th{background:#eee!important;color:#000!important}
+  th,td{position:static!important;padding:4px 6px!important}
+  table{font-size:10.5px!important}
+  .tbl-wrap{overflow:visible!important}
+  .eco-icon,img{filter:grayscale(1)!important}
+  .chart-note{color:#555!important}
+}
+.section{background:rgba(255,255,255,.6);backdrop-filter:blur(14px) saturate(1.15);-webkit-backdrop-filter:blur(14px) saturate(1.15);border-radius:0 16px 16px 0;padding:clamp(24px, 2.6vw, 36px);margin-bottom:clamp(20px, 2vw, 30px);box-shadow:0 1px 12px rgba(0,0,0,.04);border:1px solid var(--line);border-left:3px solid var(--primary-deep);contain:layout style paint;transform:translateZ(0);scroll-margin-top:112px}
+.section h2{font-size:clamp(22px, 4px + 1.6vw, 26px);margin-bottom:20px;padding-bottom:0;border-bottom:none;display:block;font-weight:800;letter-spacing:.3px}
+.section h2::before{content:'';display:inline-block;width:5px;height:24px;background:linear-gradient(180deg,var(--primary-deep),var(--primary));margin-right:12px;vertical-align:-4px;border-radius:3px}
+.brand-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px, 2vw, 26px);margin-top:clamp(16px, 1.6vw, 24px)}
+.brand-grid.sub-grid{grid-template-columns:repeat(2,1fr)}
+.brand-card{background:var(--glass);backdrop-filter:var(--bf-lg);-webkit-backdrop-filter:var(--bf-lg);border-radius:12px;padding:28px 20px 22px;text-align:center;box-shadow:0 1px 6px rgba(0,0,0,.04);border-top:4px solid;border-image:linear-gradient(90deg,var(--bc,var(--primary)),var(--bc,var(--primary)) 55%,transparent) 1;transition:transform .5s var(--ease-pop),box-shadow .5s var(--ease-pop),border-color .45s ease;will-change:transform;-webkit-transform:translateZ(0);display:flex;flex-direction:column;height:100%;position:relative;overflow:hidden;z-index:1}.brand-card::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,var(--scan-color,rgba(67,97,238,.1)),transparent);animation:statScan var(--scan-dur,9s) ease-in-out infinite;pointer-events:none}
+.brand-card p{margin-top:auto}
+.brand-card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 0 30px var(--glow-color,rgba(67,97,238,.25)),0 16px 40px rgba(0,0,0,.14)}
+.brand-card img,.stat-card .logo-wrap img{transition:transform .5s var(--ease-pop)}
+.brand-card:hover img{transform:scale(1.12)}
+.stat-card:hover .logo-wrap img{transform:scale(1.12)}
+.stat-card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 0 30px rgba(255,255,255,.15),0 16px 40px rgba(0,0,0,.25)}
+.feature-card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 0 24px var(--glow-color,rgba(67,97,238,.2)),0 16px 40px rgba(0,0,0,.14)}
+.brand-card h3{font-size:17px;font-weight:700}
+.brand-card .os-name{font-size:13px;color:#888;margin:2px 0 8px;min-height:1.4em;display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.brand-card p{font-size:13px;color:#666;line-height:1.6;min-height:2.8em}
+table{width:100%;border-collapse:separate;border-spacing:0;margin-top:15px;font-size:13.5px;border:1px solid #e0e6ee;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;border-radius:12px;border:1px solid var(--line);background:var(--glass);backdrop-filter:var(--bf-sm);-webkit-backdrop-filter:var(--bf-sm);box-shadow:0 1px 4px rgba(0,0,0,.02)}
+.tbl-wrap table{border:none;margin-top:0;border-radius:0;box-shadow:none}
+th,td{padding:12px 18px;text-align:left;border-bottom:1px solid var(--line);border-right:1px solid #f0f2f7;white-space:nowrap;word-break:keep-all;line-height:1.6}
+@media(min-width:769px){th,td{white-space:normal}}
+th:last-child,td:last-child{border-right:none}
+table td:first-child, table th:first-child{text-align:center}
+table td:first-child{font-weight:600;color:var(--primary-deep);background:rgba(67,97,238,.03);border-right:2px solid #e0e6ee;position:sticky;left:0;z-index:2}
+img{object-fit:contain}
+table td:first-child img{display:block;margin:0 auto 2px}.tbl-wrap table img[src*="simpleicons"]{height:22px!important;width:auto;object-fit:contain;vertical-align:middle}th{background:linear-gradient(180deg,#f6f8fc,#edf0f7);font-weight:700;color:var(--primary-deep);position:sticky;top:0;border-bottom:2px solid #d0d8e8;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);letter-spacing:.4px;font-size:12.5px;text-transform:uppercase}
+thead tr:first-child th:first-child{border-radius:11px 0 0 0}
+thead tr:first-child th:last-child{border-radius:0 11px 0 0}
+.matrix-table th,.matrix-table td{text-align:center!important;padding:14px 10px}
+.matrix-table td{font-size:15px;font-weight:600}
+.matrix-table td:first-child{font-size:13px;text-align:center!important;white-space:normal;min-width:100px;background:#f8f9fc}
+tbody tr:last-child td:first-child{border-radius:0 0 0 11px}
+tbody tr:last-child td:last-child{border-radius:0 0 11px 0}
+tbody tr:last-child td{border-bottom:none}
+tr td{position:relative;isolation:isolate;transition:background-color .3s ease,box-shadow .3s ease,color .3s ease}
+tr td::after{content:'';position:absolute;left:0;top:0;width:100%;height:100%;background:linear-gradient(90deg,var(--tbl-hover-bg,rgba(67,97,238,.04)),rgba(67,97,238,.01) 62%,rgba(67,97,238,.035)),linear-gradient(90deg,transparent,rgba(67,97,238,.02),transparent);opacity:0;transition:opacity .25s ease;pointer-events:none;z-index:-1}
+tr:hover td::after{opacity:1}
+tr:hover td{box-shadow:var(--tbl-hover-shadow,rgba(0,0,0,.03))}
+tr td:first-child::after{background:linear-gradient(90deg,var(--tbl-hover-bg-f,rgba(67,97,238,.06)),rgba(67,97,238,.02) 62%,rgba(67,97,238,.04)),linear-gradient(90deg,transparent,rgba(67,97,238,.025),transparent)}
+tr:nth-child(even) td{background:#f1f4fa}
+tr:nth-child(even) td:first-child{background:rgba(67,97,238,.08)}
+.tbl-wrap::-webkit-scrollbar{height:6px}
+.tbl-wrap::-webkit-scrollbar-track{background:transparent}
+.tbl-wrap::-webkit-scrollbar-thumb{background:#d0d4e0;border-radius:4px}
+.tbl-wrap::-webkit-scrollbar-thumb:hover{background:#b0b8c8}
+.chart-note{margin-top:12px;font-size:11.5px;color:var(--text-weak);line-height:1.75;text-align:center}
+.chart-note b{color:#555}
+.matrix-table td .tag{display:inline-block;padding:1px 10px;border-radius:6px;font-size:11px;font-weight:600;margin:0 2px}
+.matrix-table td .tag-yes{background:rgba(0,160,80,.1);color:#00934a}
+.matrix-table td .tag-part{background:rgba(255,160,0,.1);color:#cc7a00}
+.matrix-table td .brand-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 4px;vertical-align:middle}
+.matrix-table tr:first-child td,.matrix-table tr:first-child th{border-top:none}
+.matrix-table td[rowspan]{vertical-align:middle}
+.chart-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:20px}
+.chart-dl{position:absolute;top:12px;right:12px;z-index:3;width:28px;height:28px;border-radius:8px;border:1px solid #e0e6ee;background:rgba(255,255,255,.85);color:#555;font-size:13px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease;padding:0;outline:none;-webkit-tap-highlight-color:transparent}
+.chart-dl:hover{transform:translateY(-1px);background:var(--primary);color:#fff;box-shadow:0 3px 10px rgba(67,97,238,.35)}
+.chart-dl:active{transform:scale(.9)}
+[data-theme=dark] .chart-dl{background:rgba(30,30,55,.85)!important;border-color:#2a2a45!important;color:#aaa!important}
+[data-theme=dark] .chart-dl:hover{background:var(--primary)!important;color:#fff!important}
+.term,.brand-term{position:relative;cursor:help;border-bottom:1px dashed rgba(67,97,238,.5)}
+.term::after,.brand-term::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px);background:var(--tip-bg,#1a1a2e);color:var(--tip-text,#e8ecf4);font-size:12px;line-height:1.5;font-weight:400;padding:7px 11px;border-radius:8px;white-space:nowrap;max-width:280px;opacity:0;pointer-events:none;transition:opacity .18s ease,transform .18s ease;z-index:100;box-shadow:0 4px 16px rgba(0,0,0,.25);text-align:left}
+.term::before,.brand-term::before{content:'';position:absolute;left:50%;bottom:calc(100% + 3px);transform:translateX(-50%);border:5px solid transparent;border-top-color:var(--tip-bg,#1a1a2e);opacity:0;transition:opacity .18s ease;z-index:101;pointer-events:none}
+.term:hover::after,.term:hover::before,.brand-term:hover::after,.brand-term:hover::before{opacity:1}
+.term:hover::after,.brand-term:hover::after{transform:translateX(-50%) translateY(0)}
+.brand-term{border-bottom-style:solid;font-weight:700}
+.brand-term::after{white-space:normal;width:240px}
+.toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%) translateY(16px);background:#1a1a2e;color:#e8ecf4;font-size:13px;padding:10px 18px;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .3s ease,transform .3s ease;z-index:1200;white-space:nowrap;max-width:90vw;overflow:hidden;text-overflow:ellipsis}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+[data-theme=dark] .toast{background:#0d0d22!important;color:#e8ecf4!important}
+.chart-box{background:var(--glass);backdrop-filter:var(--bf-lg);-webkit-backdrop-filter:var(--bf-lg);border-radius:12px;padding:18px;border:1px solid #e8ecf2;display:flex;flex-direction:column;position:relative;overflow:hidden}.chart-box::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(67,97,238,.1),transparent);animation:statScan var(--scan-dur,9s) ease-in-out infinite;pointer-events:none}
+.chart-box h3{text-align:center;font-size:14px;margin-bottom:8px;color:#555;font-weight:600}
+.chart-box canvas{max-width:100%;width:100%!important;height:auto!important;aspect-ratio:16/10}
+.chart-empty{position:absolute;left:0;top:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;background:rgba(250,251,255,.72);color:#999;font-size:13px;letter-spacing:.5px;z-index:5;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+[data-theme=dark] .chart-empty{background:rgba(26,26,48,.7);color:#888}
+.chart-loading{position:absolute;left:0;top:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:rgba(250,251,255,.62);color:#888;font-size:12.5px;letter-spacing:.5px;z-index:4;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);pointer-events:none}
+.chart-loading .spinner{width:26px;height:26px;border-radius:50%;border:3px solid rgba(67,97,238,.18);border-top-color:var(--primary);animation:chartSpin .8s linear infinite}
+.chart-loading .spinner+p{font-size:12px;color:#999}
+@keyframes chartSpin{to{transform:rotate(360deg)}}
+[data-theme=dark] .chart-loading{background:rgba(24,24,48,.58);color:#aaa}
+[data-theme=dark] .chart-loading .spinner{border-color:rgba(96,165,250,.2);border-top-color:#60a5fa}
+[data-theme=dark] .chart-loading .spinner+p{color:#888}
+.stat-row{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:20px 0}
+.stat-row-brands{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(16px, 1.6vw, 22px);margin:clamp(20px, 1.8vw, 28px) 0 8px}
+.stat-row-brands .stat-card{display:flex;flex-direction:column;height:100%}
+.stat-row-brands .stat-card .label{margin-top:auto}
+.stat-card{border-radius:12px;padding:26px 18px 22px;text-align:center;color:#fff;position:relative;overflow:hidden;transition:transform .5s var(--ease-pop),box-shadow .5s var(--ease-pop);will-change:transform;-webkit-transform:translateZ(0)}.stat-card::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);animation:statScan var(--scan-dur,9s) ease-in-out infinite;pointer-events:none}
+.stat-card::before{content:'';position:absolute;top:-60%;right:-50%;width:110%;height:110%;background:rgba(255,255,255,.06);border-radius:50%;pointer-events:none}
+.stat-card .logo-wrap{height:34px;margin-bottom:10px;display:flex;align-items:center;justify-content:center}
+.stat-card .logo-wrap img{height:28px;opacity:.92;filter:brightness(0) invert(1)}
+.stat-card .num{font-size:36px;font-weight:800;line-height:1.1;position:relative;z-index:1}
+.stat-card .label{font-size:12.5px;opacity:.9;margin-top:6px;line-height:1.4;position:relative;z-index:1}
+.stat-card .src{font-size:10.5px;opacity:.55;margin-top:10px;display:block;position:relative;z-index:1}
+.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px, 1.8vw, 24px);margin-top:20px;align-items:start}
+.eco-card{background:var(--glass);backdrop-filter:var(--bf-lg);-webkit-backdrop-filter:var(--bf-lg);border-radius:12px;padding:24px 20px;border-top:4px solid;box-shadow:0 1px 6px rgba(0,0,0,.04);transition:transform .5s var(--ease-pop),box-shadow .5s var(--ease-pop);position:relative;overflow:hidden}.eco-card::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(67,97,238,.1),transparent);animation:statScan var(--scan-dur,9s) ease-in-out infinite;pointer-events:none}.eco-card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 0 30px var(--glow-color,rgba(67,97,238,.25)),0 16px 40px rgba(0,0,0,.14)}
+.eco-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.eco-card h3{font-size:15px;font-weight:700;margin-bottom:8px}
+.eco-card p{font-size:12.5px;color:#555;line-height:1.7;margin-bottom:4px}.eco-card p strong{color:#333}
+@media(max-width:768px){.eco-grid{grid-template-columns:1fr;gap:14px}.eco-card{padding:18px 16px}}
+@media(min-width:769px)and(max-width:1024px){.eco-grid{grid-template-columns:repeat(2,1fr)}}
+.section-divider{display:flex;align-items:center;gap:14px;margin:10px 0 6px;font-size:14px;color:#555;font-weight:700;letter-spacing:.5px}
+.section-divider::before{content:'';width:3px;height:15px;background:linear-gradient(180deg,var(--primary),var(--primary-deep));border-radius:2px;flex:0 0 auto}
+.section-divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#ddd,transparent)}
+.sub-brand-divider{display:flex;align-items:center;gap:16px;margin:32px 0 16px;font-size:16px;font-weight:700;color:var(--primary-deep);letter-spacing:1px}
+.sub-brand-divider::before,.sub-brand-divider::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,transparent,var(--primary-deep) 20%,var(--primary-deep) 80%,transparent);border-radius:2px}
+.ai-item{background:var(--glass);backdrop-filter:var(--bf-lg);-webkit-backdrop-filter:var(--bf-lg);border-radius:12px;padding:22px;margin-bottom:16px;border-left:5px solid;transition:transform .5s var(--ease-pop),box-shadow .5s var(--ease-pop);will-change:transform;position:relative;overflow:hidden}.ai-item::before{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,var(--scan-color,rgba(67,97,238,.1)),transparent);animation:statScan var(--scan-dur,9s) ease-in-out infinite;pointer-events:none}.ai-item::after{content:'';position:absolute;top:0;left:-5px;width:5px;height:100%;border-radius:10px 0 0 10px;box-shadow:0 0 12px var(--glow-color,transparent);pointer-events:none;transition:box-shadow .45s ease}.ai-item:hover::after{box-shadow:0 0 30px var(--glow-color,rgba(67,97,238,.25))}
+.ai-item:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 0 30px var(--glow-color,rgba(67,97,238,.25)),0 16px 40px rgba(0,0,0,.14)}
+.ai-item h4{font-size:16px;margin-bottom:6px}
+.ai-item p{font-size:13.5px;color:#555;line-height:1.7}
+.ai-item .src-ref{font-size:11.5px;color:var(--text-weak);margin-top:6px;display:block;text-align:right}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:20px 0}
+.feature-card{border-radius:12px;padding:20px;border:1px solid #e8ecf2;background:var(--glass);backdrop-filter:var(--bf-lg);-webkit-backdrop-filter:var(--bf-lg);transition:transform .5s var(--ease-pop),box-shadow .5s var(--ease-pop),border-color .5s var(--ease-pop);will-change:transform;display:flex;flex-direction:column;height:100%;position:relative;overflow:hidden}.feature-card::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(67,97,238,.1),transparent);animation:statScan var(--scan-dur,9s) ease-in-out infinite;pointer-events:none}
+.feature-card h4{font-size:15px;margin-bottom:4px}
+.feature-card p{font-size:13px;color:#666;min-height:3em}
+.sub-four{grid-template-columns:repeat(2,1fr)}
+@media(max-width:1024px){.sub-four{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:768px) and (max-width:1024px){
+  .eco-grid{grid-template-columns:repeat(2,1fr);gap:22px}
+  .brand-grid{grid-template-columns:repeat(2,1fr);gap:22px}
+  .chart-row{grid-template-columns:1fr;gap:22px}
+  .chart-box{max-width:640px;margin:0 auto}
+} 
+.fade-up{opacity:1;transform:translateY(0) scale(1);transition:opacity .45s var(--ease-silk),transform .45s var(--ease-silk);transition-delay:clamp(0ms,var(--fd,0ms),300ms);will-change:transform,opacity}.js .fade-up{opacity:0;transform:translateY(24px) scale(.98)}.js .fade-up.show{opacity:1;transform:translateY(0) scale(1)}
+.section h2{position:relative;cursor:pointer}
+.section h2:hover::after{content:'#';position:absolute;left:-1.4em;color:var(--primary-deep);opacity:.4;font-weight:400;font-size:18px}
+.brand-grid > a,.sub-four > a,a[href],button,.theme-toggle{touch-action:manipulation}
+.section h2:target{animation:hl 2s ease-out}@keyframes hl{0%{background:rgba(67,97,238,.12)}100%{background:transparent}}
+.theme-toggle{position:fixed;top:calc(20px + env(safe-area-inset-top));right:24px;z-index:999;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.55);border:1px solid rgba(67,97,238,.25);color:var(--primary-deep);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background-color .3s ease,color .3s ease,transform .3s ease,box-shadow .3s ease,border-color .3s ease;padding:0;line-height:1;outline:none;-webkit-tap-highlight-color:transparent;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 2px 12px rgba(0,0,0,.12)}.theme-toggle:hover,.theme-toggle:active{background:rgba(255,255,255,.85);transform:rotate(15deg);box-shadow:0 0 20px rgba(67,97,238,.3)}
+[data-theme=dark] .theme-toggle{background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.35);color:#fff;box-shadow:0 2px 12px rgba(0,0,0,.2)}
+[data-theme=dark] .theme-toggle:hover,[data-theme=dark] .theme-toggle:active{background:rgba(0,0,0,.5)}
+@media(max-width:768px){.theme-toggle{top:max(12px,env(safe-area-inset-top));right:12px;width:42px;height:42px;font-size:19px}}
+.footer{text-align:center;padding:30px 20px calc(30px + env(safe-area-inset-bottom));color:#aaa;font-size:12px;line-height:1.8}
+.footer a{color:#666;text-decoration:none}
+.tag{display:inline-block;padding:2px 14px;border-radius:8px;font-size:11px;color:#fff;margin:6px 0 10px;letter-spacing:.5px;min-width:72px;text-align:center;font-weight:500}
+@media(max-width:1024px){.stat-row-brands{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){
+  body{--glass-blur:8px;--glass-blur-sm:6px;--glass-strong:rgba(255,255,255,.72)}
+  [data-theme=dark] body{--glass-blur:8px;--glass-blur-sm:6px;--glass-strong:rgba(22,22,44,.72)}
+  [data-theme=dark] .section{backdrop-filter:blur(8px) saturate(1.08)!important;-webkit-backdrop-filter:blur(8px) saturate(1.08)!important}
+  body{font-size:14px;line-height:1.78}
+  .header h1{font-size:20px;padding:0 44px}.header{padding:36px 14px 28px}.header p{font-size:13px;padding:0 8px}.header .sub{font-size:12px}
+  .abstract{padding:12px 14px;font-size:12.5px;margin-top:18px}
+  .section{padding:20px;border-radius:0 12px 12px 0;scroll-margin-top:20px}.section h2{font-size:18px;font-weight:800}.section h2::before{height:20px;width:5px;margin-right:10px;vertical-align:-3px}
+  .section h2:hover::after{display:none}
+  .container{padding:12px;margin-top:-18px;padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+  .brand-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .brand-card{padding:18px 12px 16px;overflow:hidden}.brand-card h3{font-size:14px}.brand-card,.fade-up{will-change:auto}
+  .brand-card .os-name{font-size:12px}
+  .stat-row-brands{grid-template-columns:repeat(3,1fr);gap:12px}
+  .stat-row{grid-template-columns:1fr;gap:12px}
+  .stat-card{padding:20px 14px 18px;border-radius:12px}
+  .sub-four{grid-template-columns:repeat(2,1fr)!important}
+  .stat-card .num{font-size:26px}.stat-card .logo-wrap img{height:22px}
+  .stat-card .logo-wrap span{font-size:22px!important}
+  .chart-row{grid-template-columns:1fr;gap:16px}
+  .chart-box{padding:10px}
+  .chart-box h3{font-size:13px;margin-bottom:6px}
+  .chart-box-radar{padding:18px 12px}
+  .feature-grid{grid-template-columns:1fr;gap:12px}
+  th{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}.section{backdrop-filter:blur(6px) saturate(1.08);-webkit-backdrop-filter:blur(6px) saturate(1.08);transform:none}  table{font-size:12px}th,td{padding:8px 10px}
+  .header::after{display:none!important}
+  .section,.brand-card,.brand-card .os-name,.brand-card p,.eco-card,.eco-card h3,.eco-card p,.eco-card p strong,.chart-box,.chart-box h3,.chart-box canvas,.feature-card,.feature-card p,.ai-item,.ai-item p,.ai-item .src-ref,th,td,table,.footer,.footer a,.sub-brand-divider{transition-duration:.2s!important}
+  .fade-up{transition-duration:.25s!important}
+  .js .fade-up{transform:translateY(12px)}
+  .glow-paused::after,.glow-paused::before{animation-play-state:paused!important}
+  [data-theme=dark] body{background:radial-gradient(ellipse 700px 500px at 25% 20%,rgba(67,97,238,.18) 0,transparent 60%),linear-gradient(135deg,#080818 0,#0d0d2a 30%,#0a0a12 70%,#101028 100%)!important}
+  .stat-card::before{display:none}
+  body{background:radial-gradient(ellipse 600px 400px at 20% 15%,rgba(67,97,238,.07) 0,transparent 55%),linear-gradient(180deg,#eef0f8 0%,#f5f6fa 50%,#e8ecf4 100%)!important}
+  .footer{font-size:11px;padding:20px 12px;padding-bottom:max(20px,env(safe-area-inset-bottom))}
+  .section-divider{font-size:12px;margin:6px 0 4px}
+  .sub-brand-divider{font-size:14px;gap:12px;margin:24px 0 12px}
+  .brand-grid > a:active .brand-card,.stat-card:active,.eco-card:active,.ai-item:active,.feature-card:active,.brand-card:active{transform:scale(.98)}
+  .tbl-wrap{max-width:100%;-webkit-overflow-scrolling:touch}
+}
+@media(max-width:480px){
+  body{font-size:13px;line-height:1.72}
+  .header h1{font-size:17px;letter-spacing:0;padding:0 42px}.header .sub{font-size:11px}
+  .brand-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .brand-card{padding:12px 8px 10px;overflow:hidden}
+  .brand-card img[alt]{height:32px!important}
+  .brand-card .os-name{font-size:11px;white-space:normal;min-height:2.6em}
+  .brand-card p{font-size:11px;min-height:0}
+  .brand-card .tag{margin:4px 0 6px}
+  .stat-row-brands{grid-template-columns:repeat(2,1fr);gap:8px}
+  .stat-card .num{font-size:22px}
+  .stat-card .label{font-size:11px}
+  .stat-row-brands .stat-card{padding:14px 8px 12px}
+  .stat-card .logo-wrap img{height:18px!important}
+  .stat-card .logo-wrap span{font-size:20px!important}
+  table{font-size:11px}th,td{padding:6px 8px}
+  .ai-item{padding:14px}.ai-item h4{font-size:14px}
+  .ai-item p{font-size:12px}
+  .sub-brand-divider{font-size:13px;gap:8px;margin:20px 0 10px}
+  .chart-box{padding:8px}
+  .chart-box h3{font-size:12px}
+  .tag{padding:1px 8px;font-size:10px;white-space:normal;word-break:break-word}
+  .section{padding:18px 14px;margin-bottom:16px;border-radius:0 10px 10px 0}
+}
+[data-theme=dark], [data-theme=dark] body{background:radial-gradient(ellipse 1000px 700px at 25% 20%,rgba(67,97,238,.22) 0,transparent 60%),radial-gradient(ellipse 700px 900px at 75% 80%,rgba(138,43,226,.12) 0,transparent 60%),radial-gradient(ellipse 500px 500px at 50% 50%,rgba(67,97,238,.08) 0,transparent 50%),radial-gradient(ellipse 400px 300px at 85% 30%,rgba(96,165,250,.1) 0,transparent 60%),linear-gradient(135deg,#080818 0,#0d0d2a 30%,#0a0a12 70%,#101028 100%)!important}
+[data-theme=dark] body::before{opacity:.2!important;background-image:linear-gradient(rgba(67,97,238,.1) 0.5px,transparent 0.5px),linear-gradient(90deg,rgba(67,97,238,.1) 0.5px,transparent 0.5px)!important;background-size:40px 40px!important}
+[data-theme=dark] .section{background:rgba(20,20,35,.55)!important;border-color:rgba(67,97,238,.15)!important;border-left-color:#555!important;backdrop-filter:blur(16px) saturate(1.1)!important;-webkit-backdrop-filter:blur(16px) saturate(1.1)!important}
+[data-theme=dark] .header{background:linear-gradient(135deg,rgba(5,5,16,.6) 0,rgba(15,15,40,.58) 40%,rgba(8,20,40,.55) 70%,rgba(5,5,16,.6) 100%)!important;backdrop-filter:blur(18px) saturate(1.1)!important;-webkit-backdrop-filter:blur(18px) saturate(1.1)!important;border-bottom-color:rgba(138,43,226,.5)!important;color:#fff!important}
+[data-theme=dark] .header::before{background:linear-gradient(135deg,rgba(67,97,238,.15),rgba(138,43,226,.1));opacity:.7!important}
+[data-theme=dark] .header h1{text-shadow:0 2px 10px rgba(0,0,0,.7),0 0 40px rgba(96,165,250,.25)!important}
+[data-theme=dark] .header p{opacity:.75!important}
+[data-theme=dark] .header .sub{opacity:.5!important}
+[data-theme=dark] .abstract{background:var(--glass)!important;backdrop-filter:blur(12px) saturate(1.1)!important;-webkit-backdrop-filter:blur(12px) saturate(1.1)!important;border-color:rgba(96,165,250,.22)!important;color:#b8c0d8!important;box-shadow:0 2px 16px rgba(0,0,0,.3)!important}
+[data-theme=dark] .abstract b{color:#e0e0f0!important}
+[data-theme=dark] .section h2{color:#e0e0f0!important}
+[data-theme=dark] .section h2::before{background:linear-gradient(180deg,#888,var(--primary))!important}
+[data-theme=dark] .section h2:hover::after{color:#888!important}
+[data-theme=dark] .brand-card{background:var(--glass)!important;backdrop-filter:var(--bf-lg)!important;-webkit-backdrop-filter:var(--bf-lg)!important;color:#ccc!important;box-shadow:0 1px 6px rgba(0,0,0,.2)!important}
+[data-theme=dark] .brand-card .os-name{color:#aaa!important}
+[data-theme=dark] .brand-card p{color:#999!important}
+[data-theme=dark] .brand-card:hover{box-shadow:0 0 40px var(--glow-color,rgba(67,97,238,.2)),0 16px 48px rgba(0,0,0,.3)!important}
+[data-theme=dark] .eco-card{background:var(--glass)!important;backdrop-filter:var(--bf-lg)!important;-webkit-backdrop-filter:var(--bf-lg)!important;color:#ccc!important;box-shadow:0 1px 6px rgba(0,0,0,.2)!important}
+[data-theme=dark] .eco-card p{color:#999!important}[data-theme=dark] .eco-card p strong{color:#ddd!important}
+[data-theme=dark] .eco-card:hover{box-shadow:0 0 40px var(--glow-color,rgba(67,97,238,.2)),0 16px 48px rgba(0,0,0,.3)!important}
+[data-theme=dark] td,[data-theme=dark] th{color:#ccc!important;border-bottom-color:#2a2a45!important;border-right-color:#2a2a45!important}
+[data-theme=dark] table{border-color:#2a2a45!important;box-shadow:0 2px 12px rgba(0,0,0,.25)!important}
+[data-theme=dark] .tbl-wrap{border-color:#2a2a45!important;background:var(--glass)!important;backdrop-filter:var(--bf-sm)!important;-webkit-backdrop-filter:var(--bf-sm)!important;box-shadow:none!important}
+[data-theme=dark] .tbl-wrap::-webkit-scrollbar-thumb{background:#3a3a55!important}
+[data-theme=dark] .tbl-wrap::-webkit-scrollbar-thumb:hover{background:#4a4a66!important}
+[data-theme=dark] th{background:linear-gradient(180deg,#20203e,#1a1a38)!important;color:#e0e0f0!important;border-bottom-color:#4361ee55!important}
+[data-theme=dark] td:first-child{background:rgba(67,97,238,.08)!important;border-right-color:#2a2a45!important;color:#ddd!important}
+[data-theme=dark] tr:nth-child(even) td{background:rgba(67,97,238,.08)!important}
+[data-theme=dark] tr:nth-child(even) td:first-child{background:rgba(67,97,238,.14)!important}
+[data-theme=dark] tr td::after{background:linear-gradient(90deg,rgba(67,97,238,.07),rgba(67,97,238,.03) 62%,rgba(67,97,238,.05)),linear-gradient(90deg,transparent,rgba(67,97,238,.02),transparent)}
+[data-theme=dark] tr td:first-child::after{background:linear-gradient(90deg,rgba(67,97,238,.1),rgba(67,97,238,.04) 62%,rgba(67,97,238,.06)),linear-gradient(90deg,transparent,rgba(67,97,238,.03),transparent)}
+[data-theme=dark] tr:hover td{box-shadow:0 2px 12px rgba(0,0,0,.3)!important}
+[data-theme=dark] .matrix-table td:first-child{background:rgba(67,97,238,.06)!important}
+[data-theme=dark] .matrix-table td .tag-yes{background:rgba(0,200,100,.15)!important;color:#33dd88!important}
+[data-theme=dark] .matrix-table td .tag-part{background:rgba(255,180,0,.15)!important;color:#ffbb33!important}
+[data-theme=dark] .feature-card:hover{box-shadow:0 0 40px rgba(67,97,238,.2),0 16px 48px rgba(0,0,0,.3)!important}
+[data-theme=dark] .ai-item:hover{box-shadow:0 0 40px var(--glow-color,rgba(67,97,238,.2)),0 16px 48px rgba(0,0,0,.3)!important}
+[data-theme=dark] .chart-box{background:var(--glass)!important;backdrop-filter:var(--bf-lg)!important;-webkit-backdrop-filter:var(--bf-lg)!important;border-color:#2a2a45!important}
+[data-theme=dark] .chart-box h3{color:#aaa!important}
+[data-theme=dark] .chart-box canvas{filter:brightness(1.12)!important}
+/* pie-center was removed, dark theme handled by canvas plugin */
+[data-theme=dark] .feature-card{background:var(--glass)!important;backdrop-filter:var(--bf-lg)!important;-webkit-backdrop-filter:var(--bf-lg)!important;border-color:#2a2a45!important;color:#ccc!important}
+[data-theme=dark] .feature-card p{color:#999!important}
+[data-theme=dark] .ai-item{background:var(--glass)!important;backdrop-filter:var(--bf-lg)!important;-webkit-backdrop-filter:var(--bf-lg)!important;color:#ccc!important}
+[data-theme=dark] .ai-item p{color:#999!important}
+[data-theme=dark] .ai-item .src-ref{color:var(--text-weak)!important}
+[data-theme=dark] .footer{color:#555!important}
+[data-theme=dark] .footer a{color:#777!important}
+[data-theme=dark] .eco-card h3{color:#e0e0f0!important}
+[data-theme=dark] .sub-brand-divider{color:#ddd!important}
+[data-theme=dark] .section-divider{color:#c8c8dc!important}
+[data-theme=dark] .section-divider::after{background:linear-gradient(90deg,#2a2a45,transparent)!important}
+[data-theme=dark] .sub-brand-divider::before,[data-theme=dark] .sub-brand-divider::after{background:linear-gradient(90deg,transparent,#4361ee66 20%,#4361ee66 80%,transparent)!important}
+[data-theme=dark] .stat-row-brands .stat-card::after{opacity:.6!important}
+[data-theme=dark] .eco-card::after,[data-theme=dark] .feature-card::after,[data-theme=dark] .chart-box::after{opacity:.6!important;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent)!important}
+[data-theme=dark] .brand-card::after,[data-theme=dark] .ai-item::before{opacity:.6}
+[data-theme=dark] .particle-dot{background:rgba(67,97,238,.4)!important}
+.brand-grid > a,.sub-four > a{text-decoration:none;color:inherit;display:block;height:100%}
+/* Animations */
+/* View Transition API 丝滑过渡 */
+::view-transition-old(root),::view-transition-new(root),::view-transition-group(root){animation-duration:1s}
+.particles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.particles.particles-paused .particle-dot{animation-play-state:paused!important}
+.particle-dot{position:absolute;border-radius:50%;opacity:0;animation:particleDrift linear infinite;will-change:transform,opacity}
+@keyframes particleDrift{0%{transform:translateY(100vh) translateX(0);opacity:0}10%{opacity:.6}90%{opacity:.6}100%{transform:translateY(-10vh) translateX(30px);opacity:0}}
+@keyframes headerScan{0%{left:-100%}100%{left:100%}}
+@keyframes statScan{0%{transform:translateX(0)}100%{transform:translateX(333%)}}
+
+/* ====== 折叠面板 ====== */
+details.fold{border-radius:12px;border:1px solid #e8ecf2;background:var(--glass-strong);backdrop-filter:var(--bf-lg);-webkit-backdrop-filter:var(--bf-lg);overflow:hidden;margin-top:15px;box-shadow:0 1px 4px rgba(0,0,0,.02)}
+details.fold>summary{list-style:none;cursor:default;display:flex;align-items:center;gap:8px;padding:13px 16px;font-weight:600;color:var(--primary-deep);font-size:14px;background:linear-gradient(180deg,rgba(246,248,252,.55),rgba(237,240,247,.5));backdrop-filter:var(--bf-sm);-webkit-backdrop-filter:var(--bf-sm);transition:background .3s ease,color .3s ease;user-select:none;-webkit-user-select:none}
+details.fold>summary::-webkit-details-marker{display:none}
+details.fold>summary::after{display:none}
+details.fold>summary:hover{background:linear-gradient(180deg,rgba(238,242,251,.6),rgba(230,235,247,.55))}
+details.fold>summary~*{opacity:0;transform:translateY(6px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1)}
+details.fold[open]>summary~*,details.fold-card[open]>summary~*{opacity:1;transform:translateY(0)}
+details.fold.closing>summary~*,details.fold-card.closing>summary~*{opacity:0;transform:translateY(4px);transition:opacity .3s ease,transform .3s ease}
+details.fold-card>summary~*{opacity:0;transform:translateY(6px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1)}
+details.fold>summary .fold-tag{font-weight:400;color:#888;font-size:12px;margin-left:6px}
+/* 卡片折叠（ai-item / eco-card） */
+details.fold-card>summary{list-style:none;cursor:default;display:flex;align-items:center;gap:10px;position:relative;outline:none;user-select:none;-webkit-user-select:none}
+details.fold-card>summary::-webkit-details-marker{display:none}
+details.fold-card>summary::after{display:none}
+details.fold-card>summary h4,details.fold-card>summary h3{margin:0;flex:1 1 auto;min-width:0}
+details.fold-card>summary .eco-icon{flex:0 0 auto;margin-right:2px}
+details.fold-card>summary img{flex:0 0 auto}
+/* 通用独立折叠按钮（fold表格 / ai-item / eco-card，仅按钮触发展开/收起） */
+details.fold>summary .fold-btn,details.fold-card>summary .fold-btn{flex:0 0 auto;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-left:auto;color:#fff;background:var(--primary);font-size:13px;line-height:1;cursor:pointer;user-select:none;-webkit-user-select:none;transition:transform .3s ease,background .3s ease,opacity .3s ease;opacity:.9}
+details.fold>summary .fold-btn:hover,details.fold-card>summary .fold-btn:hover{background:#5a73f6;opacity:1}
+details.fold>summary .fold-btn:focus-visible,details.fold-card>summary .fold-btn:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+details.fold>summary .fold-btn:active,details.fold-card>summary .fold-btn:active{transform:scale(.88);opacity:.75}
+details.fold[open]>summary .fold-btn:active,details.fold-card[open]>summary .fold-btn:active{transform:rotate(180deg) scale(.88)}
+details.fold[open]>summary .fold-btn,details.fold-card[open]>summary .fold-btn{transform:rotate(180deg)}
+details.fold.closing>summary .fold-btn,details.fold-card.closing>summary .fold-btn{transform:rotate(0)}
+@media(max-width:768px){details.fold>summary .fold-btn,details.fold-card>summary .fold-btn{width:34px;height:34px;font-size:14px}}
+@media(hover:none){details.fold>summary .fold-btn:hover,details.fold-card>summary .fold-btn:hover{background:var(--primary);opacity:.9}}
+/* ====== 桌面端右键菜单（表格排序/导出，桌面≥1024仅mouse） ====== */
+.ctx-menu{position:fixed;z-index:1200;min-width:190px;background:var(--glass-strong);backdrop-filter:blur(var(--glass-blur-sm)) saturate(1.1);-webkit-backdrop-filter:blur(var(--glass-blur-sm)) saturate(1.1);border:1px solid rgba(67,97,238,.2);border-radius:10px;box-shadow:0 10px 34px rgba(20,25,60,.22);padding:5px;display:none;font-size:13px;user-select:none;-webkit-user-select:none}
+.ctx-menu.show{display:block}
+.ctx-menu .ctx-item{display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:6px;color:#3a3f5c;cursor:pointer;white-space:nowrap;transition:background .15s ease,color .15s ease}
+.ctx-menu .ctx-item:hover{background:rgba(67,97,238,.1);color:var(--primary)}
+.ctx-menu .ctx-item:active{background:rgba(67,97,238,.18);color:var(--primary);transform:scale(.98)}
+.ctx-menu .ctx-item.ctx-dis{opacity:.4;pointer-events:none}
+.ctx-menu .ctx-sep{height:1px;background:rgba(67,97,238,.12);margin:4px 8px}
+.ctx-menu .ctx-item .ctx-k{font-size:10px;color:#999;margin-left:auto;border:1px solid rgba(0,0,0,.1);border-radius:4px;padding:1px 5px;letter-spacing:.4px}
+[data-theme=dark] .ctx-menu{background:rgba(26,26,52,.9);border-color:rgba(96,165,250,.25);box-shadow:0 10px 34px rgba(0,0,0,.5)}
+[data-theme=dark] .ctx-menu .ctx-item{color:#c8c8dc}
+[data-theme=dark] .ctx-menu .ctx-item:hover{background:rgba(96,165,250,.18);color:#fff}
+[data-theme=dark] .ctx-menu .ctx-item .ctx-k{color:#777;border-color:rgba(255,255,255,.12)}
+/* 表格列排序指示器 + 选中高亮 */
+th.sortable{cursor:pointer;user-select:none;position:relative;padding-right:20px}
+th.sortable::after{content:'⇅';position:absolute;right:7px;top:50%;transform:translateY(-50%);font-size:10px;color:#b0b8cc;opacity:.8}
+th.sort-asc::after{content:'▲';color:var(--primary)}
+th.sort-desc::after{content:'▼';color:var(--primary)}
+.ctx-box-select{position:absolute;z-index:1190;background:rgba(67,97,238,.12);border:1px solid rgba(67,97,238,.5);pointer-events:none;display:none}
+.ctx-cell-sel{background:rgba(67,97,238,.14)!important;box-shadow:inset 0 0 0 1px rgba(67,97,238,.35)}
+[data-theme=dark] th.sort-asc::after,[data-theme=dark] th.sort-desc::after{color:#60a5fa}
+@media(max-width:1023px){.ctx-menu{display:none!important}}
+@media print{.ctx-menu,.ctx-box-select{display:none!important}}
+/* ====== 品牌悬浮对比栏（默认折叠，不占布局） ====== */
+.brand-cmp{position:fixed;left:calc(16px + env(safe-area-inset-left));top:16px;z-index:920;display:flex;align-items:stretch}
+.brand-cmp .cmp-tab{writing-mode:vertical-lr;text-orientation:mixed;background:linear-gradient(135deg,var(--primary),var(--primary-deep));color:#fff;border:none;border-radius:10px;padding:12px 7px;font-size:12px;font-weight:700;letter-spacing:2px;cursor:pointer;box-shadow:0 4px 18px rgba(67,97,238,.35);transition:transform .2s ease,box-shadow .2s ease;display:flex;align-items:center;justify-content:center;user-select:none}
+.brand-cmp .cmp-tab:hover{transform:translateX(2px);box-shadow:0 6px 22px rgba(67,97,238,.5)}
+.brand-cmp .cmp-tab:active{transform:translateX(2px) scale(.94);box-shadow:0 2px 10px rgba(67,97,238,.3)}
+.brand-cmp .cmp-panel{display:none;margin-left:8px;background:var(--glass-strong);backdrop-filter:blur(var(--glass-blur)) saturate(1.15);-webkit-backdrop-filter:blur(var(--glass-blur)) saturate(1.15);border:1px solid rgba(67,97,238,.2);border-radius:12px;box-shadow:0 10px 34px rgba(20,25,60,.2);padding:12px;max-height:82vh;overflow:auto;width:460px}
+.brand-cmp.open .cmp-panel{display:block}
+.brand-cmp .cmp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;font-weight:700;color:var(--primary-deep);font-size:13.5px}
+.brand-cmp .cmp-close{border:none;background:rgba(67,97,238,.1);color:var(--primary);border-radius:6px;width:22px;height:22px;line-height:1;cursor:pointer;font-size:12px}
+.brand-cmp .cmp-close:hover{background:rgba(67,97,238,.2)}
+.brand-cmp .cmp-close:active{transform:scale(.85)}
+.brand-cmp table{width:100%;border-collapse:collapse;font-size:11.5px}
+.brand-cmp th{background:linear-gradient(180deg,#f4f6fc,#e9edf7);color:var(--primary-deep);font-weight:700;padding:5px 6px;border:1px solid #e4e8f2;white-space:nowrap}
+.brand-cmp td{padding:5px 6px;border:1px solid var(--line);text-align:center;color:#333;white-space:nowrap}
+.brand-cmp td:first-child{text-align:left;font-weight:600}
+.brand-cmp tr:nth-child(even) td{background:rgba(247,249,252,.7)}
+.brand-cmp .cmp-brand-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
+[data-theme=dark] .brand-cmp .cmp-panel{background:rgba(24,24,48,.86);border-color:rgba(96,165,250,.25)}
+[data-theme=dark] .brand-cmp .cmp-head{color:#e0e0f0}
+[data-theme=dark] .brand-cmp th{background:linear-gradient(180deg,#232348,#1c1c3c);color:#d8dce8;border-color:#2a2a45}
+[data-theme=dark] .brand-cmp td{color:#c8c8dc;border-color:#26264a}
+[data-theme=dark] .brand-cmp tr:nth-child(even) td{background:rgba(40,40,80,.4)}
+@media(max-width:1439px){.brand-cmp{left:auto;right:calc(16px + env(safe-area-inset-right));top:auto;bottom:calc(144px + env(safe-area-inset-bottom))}
+.brand-cmp .cmp-tab{writing-mode:horizontal-tb;padding:8px 14px;letter-spacing:1px}
+.brand-cmp .cmp-panel{position:absolute;right:0;bottom:50px;margin-left:0;width:min(420px,calc(100vw - 40px))}}
+@media(min-width:1440px){.brand-cmp{left:auto;right:calc(16px + env(safe-area-inset-right));top:calc(68px + env(safe-area-inset-top));transform:none}
+.brand-cmp .cmp-panel{position:static;max-height:calc(100vh - 280px)}}
+@media(max-width:768px){.brand-cmp{display:none}}
+@media print{.brand-cmp{display:none!important}}
+/* 折叠展开动画（原生 details 平滑过渡，Chrome/Edge 126+） */
+html{interpolate-size:allow-keywords}
+details.fold::details-content,details.fold-card::details-content{block-size:0;overflow:hidden;opacity:0;transform:translateY(6px);transition:block-size .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease,transform .45s cubic-bezier(.22,.61,.36,1)}
+details.fold[open]::details-content,details.fold-card[open]::details-content{block-size:auto;opacity:1;transform:translateY(0)}
+details.fold.closing::details-content,details.fold-card.closing::details-content{block-size:var(--fold-h,auto);opacity:0;transition:block-size .35s cubic-bezier(.22,.61,.36,1),opacity .3s ease}
+details.fold.closing>summary::after,details.fold-card.closing>summary::after{transform:rotate(0)}
+  @media(max-width:768px){details.fold::details-content,details.fold-card::details-content{transition-duration:.3s,.3s,.3s}details.fold.closing::details-content,details.fold-card.closing::details-content{transition-duration:.28s,.25s}}
+  .f-out{opacity:0!important;scale:.95!important;translate:0 6px!important;pointer-events:none;transition:opacity .32s cubic-bezier(.4,0,.2,1),scale .32s cubic-bezier(.4,0,.2,1),translate .32s cubic-bezier(.4,0,.2,1)!important}
+  .section.f-out{transform:none!important}
+  .f-in{animation:fIn .38s cubic-bezier(.22,.61,.36,1)}
+  @keyframes fIn{from{opacity:0;translate:0 12px}to{opacity:1;translate:0 0}}
+  .brand-grid > a,.stat-card{transform-origin:50% 0}
+  .brand-grid > a.f-out,.stat-card.f-out{scale:1 0!important;translate:0 4px!important}
+  .brand-grid > a.f-in,.stat-card.f-in{animation:fFoldIn .4s cubic-bezier(.22,.61,.36,1)!important}
+  @keyframes fFoldIn{from{opacity:0;scale:1 0}to{opacity:1;scale:1 1}}
+/* ====== 目录 TOC ====== */
+.toc-side{position:fixed;left:16px;top:50%;transform:translateY(-50%) translateZ(0);z-index:900;display:none;flex-direction:column;gap:2px;background:rgba(255,255,255,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:12px;padding:10px 8px;box-shadow:0 2px 16px rgba(0,0,0,.08);max-height:72vh;overflow-y:auto;width:170px;contain:layout content}
+@media(min-width:1440px){.toc-side{display:flex}}
+.toc-side a{display:block;padding:5px 10px;border-radius:6px;color:#555;font-size:12px;line-height:1.45;text-decoration:none;transition:background .25s ease,color .25s ease,box-shadow .25s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.toc-side a:hover{background:rgba(67,97,238,.08);color:var(--primary-deep);box-shadow:0 2px 10px rgba(67,97,238,.14)}
+.toc-side a.toc-active{background:rgba(67,97,238,.12);color:var(--primary);font-weight:600;box-shadow:0 2px 12px rgba(67,97,238,.2)}
+.toc-side a.toc-sub{white-space:normal;padding:4px 10px 4px 24px;font-size:11.5px;color:#777;position:relative;box-shadow:none;font-weight:400}
+.toc-side a.toc-sub::before{content:'';position:absolute;left:13px;top:50%;width:5px;height:5px;border-radius:50%;background:#b8c2d8;transform:translateY(-50%)}
+.toc-side a.toc-sub:hover{color:var(--primary-deep)}
+.toc-side::-webkit-scrollbar{width:5px}.toc-side::-webkit-scrollbar-thumb{background:#d0d4e0;border-radius:3px}
+.toc-side-tools{display:flex;gap:4px;padding-top:6px;margin-top:6px;border-top:1px solid rgba(67,97,238,.15);flex:0 0 auto;position:sticky;bottom:0;background:inherit}
+.toc-side-tools button{flex:1;min-width:0;border:1px solid rgba(67,97,238,.2);background:rgba(67,97,238,.06);color:var(--primary);border-radius:6px;font-size:11px;line-height:1;padding:5px 4px;cursor:pointer;transition:background .2s ease,color .2s ease,transform .2s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.toc-side-tools button:hover{background:rgba(67,97,238,.14);color:var(--primary-deep);transform:translateY(-1px)}
+.toc-side-tools button:active{transform:translateY(-1px) scale(.94)}
+.toc-side-tools button.toc-locked{background:rgba(67,97,238,.18);color:var(--primary-deep)}
+.toc-side.toc-collapsed{width:34px;padding:8px 4px}
+.toc-side.toc-collapsed a,.toc-side.toc-collapsed .toc-side-tools{display:none}
+.toc-side .toc-reopen{display:none}
+.toc-side.toc-collapsed .toc-reopen{display:flex;align-items:center;justify-content:center;width:26px;height:44px;margin:0 auto;border:none;background:rgba(67,97,238,.1);color:var(--primary);border-radius:8px;font-size:14px;line-height:1;cursor:pointer;padding:0}
+.toc-side.toc-collapsed .toc-reopen:hover{background:rgba(67,97,238,.2)}
+.toc-side.toc-collapsed .toc-reopen:active{transform:scale(.9)}
+[data-theme=dark] .toc-side-tools{border-top-color:rgba(96,165,250,.2)}
+[data-theme=dark] .toc-side-tools button{background:rgba(96,165,250,.1);color:#60a5fa}
+[data-theme=dark] .toc-side-tools button:hover{background:rgba(96,165,250,.2);color:#fff}
+[data-theme=dark] .toc-side-tools button.toc-locked{background:rgba(96,165,250,.28);color:#fff}
+.toc-fab{position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:950;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-deep));color:#fff;border:none;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:20px;line-height:1;box-shadow:0 4px 18px rgba(67,97,238,.4);transition:transform .2s ease,box-shadow .2s ease;padding:0;outline:none;-webkit-tap-highlight-color:transparent}
+.toc-fab:active{transform:scale(.92)}
+.toc-fab:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(67,97,238,.5)}
+.toc-fab span{position:absolute;top:-3px;right:-3px;background:#e63946;color:#fff;font-size:10px;font-weight:700;border-radius:10px;min-width:17px;height:17px;display:flex;align-items:center;justify-content:center;padding:0 4px;box-shadow:0 1px 4px rgba(0,0,0,.25)}
+@media(max-width:1439px){.toc-fab{display:flex}} 
+.back-top{position:fixed;right:calc(24px + env(safe-area-inset-right));bottom:calc(92px + env(safe-area-inset-bottom));z-index:940;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-deep));color:#fff;border:none;font-size:18px;line-height:1;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s ease,transform .2s ease;box-shadow:0 4px 18px rgba(67,97,238,.35);padding:0;outline:none;-webkit-tap-highlight-color:transparent}
+.back-top.show{opacity:1;pointer-events:auto}
+.back-top:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(67,97,238,.45)}
+.back-top:active{transform:scale(.92)}
+.toc-mask{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:960;opacity:0;pointer-events:none;transition:opacity .3s ease;-webkit-tap-highlight-color:transparent}
+.toc-mask.toc-show{opacity:1;pointer-events:auto}
+.toc-drawer{position:fixed;top:0;right:0;bottom:0;width:80vw;max-width:320px;background:rgba(255,255,255,.75);backdrop-filter:blur(20px) saturate(1.2);-webkit-backdrop-filter:blur(20px) saturate(1.2);z-index:970;transform:translateX(102%);transition:transform .32s cubic-bezier(.22,.61,.36,1);box-shadow:-6px 0 30px rgba(0,0,0,.18);display:flex;flex-direction:column;border-radius:16px 0 0 16px;padding-right:env(safe-area-inset-right)}
+@media(min-width:768px) and (max-width:1024px){.toc-drawer{width:70vw;max-width:70vw}}
+.toc-drawer.toc-show{transform:translateX(0)}
+.toc-drawer h4{padding:16px 18px;font-size:15px;color:var(--primary-deep);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;margin:0;flex:0 0 auto}
+.toc-drawer .toc-list{overflow-y:auto;padding:10px 12px;flex:1;-webkit-overflow-scrolling:touch}
+.toc-drawer a{display:block;padding:9px 12px;border-radius:8px;color:#444;font-size:13px;text-decoration:none;transition:background .2s ease,color .2s ease;line-height:1.5}
+.toc-drawer a:hover{background:rgba(67,97,238,.08)}
+.toc-drawer a.toc-active{background:rgba(67,97,238,.12);color:var(--primary);font-weight:600}
+.toc-drawer a.toc-sub{padding-left:26px;font-size:12px;color:#777;font-weight:400}
+.toc-drawer a.toc-sub::before{content:'\00B7';margin-right:5px;color:#aab;font-weight:700}
+.toc-drawer a.toc-sub:hover{color:var(--primary-deep)}
+.toc-drawer .toc-close{margin:10px 12px 12px;padding:10px;border-radius:8px;background:#f0f2f8;color:#555;text-align:center;cursor:pointer;font-size:13px;font-weight:600;border:none;flex:0 0 auto;transition:background .2s ease}
+.toc-drawer .toc-close:hover{background:#e4e8f2}
+.toc-drawer .toc-close:active{transform:scale(.97);background:#d8deea}
+[data-theme=dark] .toc-side{background:rgba(15,15,35,.82)!important;border-color:#2a2a45!important;box-shadow:0 2px 16px rgba(0,0,0,.4)!important}
+[data-theme=dark] .toc-side a{color:#aaa!important}
+[data-theme=dark] .toc-side a:hover{background:rgba(67,97,238,.15)!important;color:#fff!important;box-shadow:0 2px 12px rgba(96,165,250,.2)!important}
+[data-theme=dark] .toc-side a.toc-active{background:rgba(67,97,238,.22)!important;color:#60a5fa!important;box-shadow:0 2px 14px rgba(96,165,250,.28)!important}
+[data-theme=dark] .toc-side a.toc-sub{color:#888!important}
+[data-theme=dark] .toc-side a.toc-sub::before{background:#4a4a6a!important}
+[data-theme=dark] .toc-side::-webkit-scrollbar-thumb{background:#3a3a55}
+[data-theme=dark] details.fold{background:var(--glass-strong)!important;backdrop-filter:var(--bf-lg)!important;-webkit-backdrop-filter:var(--bf-lg)!important;border-color:#2a2a45!important;box-shadow:none!important}
+[data-theme=dark] details.fold>summary{background:linear-gradient(180deg,rgba(32,32,62,.55),rgba(26,26,56,.5))!important;backdrop-filter:var(--bf-sm)!important;-webkit-backdrop-filter:var(--bf-sm)!important;color:#e0e0f0!important}
+[data-theme=dark] details.fold>summary:hover{background:linear-gradient(180deg,rgba(38,38,74,.6),rgba(32,32,62,.55))!important}
+[data-theme=dark] details.fold>summary::after{color:#60a5fa!important}
+[data-theme=dark] details.fold>summary .fold-btn,[data-theme=dark] details.fold-card>summary .fold-btn{background:#60a5fa!important}
+[data-theme=dark] details.fold>summary .fold-btn:hover,[data-theme=dark] details.fold-card>summary .fold-btn:hover{background:#7ab0ff!important}
+@media(hover:none){[data-theme=dark] details.fold>summary .fold-btn:hover,[data-theme=dark] details.fold-card>summary .fold-btn:hover{background:#60a5fa!important}}
+[data-theme=dark] details.fold>summary .fold-tag{color:#777!important}
+[data-theme=dark] .toc-drawer{background:rgba(16,16,38,.78)!important;backdrop-filter:blur(22px) saturate(1.15)!important;-webkit-backdrop-filter:blur(22px) saturate(1.15)!important;box-shadow:-6px 0 30px rgba(0,0,0,.5)!important}
+[data-theme=dark] .toc-drawer h4{color:#e0e0f0!important;border-bottom-color:#2a2a45!important}
+[data-theme=dark] .toc-drawer a{color:#bbb!important}
+[data-theme=dark] .toc-drawer a:hover{background:rgba(67,97,238,.15)!important}
+[data-theme=dark] .toc-drawer a.toc-active{background:rgba(67,97,238,.22)!important;color:#60a5fa!important}
+[data-theme=dark] .toc-drawer a.toc-sub{color:#999!important}
+[data-theme=dark] .toc-drawer .toc-close{background:#1a1a30!important;color:#aaa!important}
+/* ====== 表格小屏转卡片（≤768px） ====== */
+@media(max-width:768px){
+  .tbl-wrap{overflow:visible;border:none;box-shadow:none;background:transparent;max-width:100%}
+  .tbl-wrap table,.tbl-wrap tbody,.tbl-wrap tr,.tbl-wrap td{display:block;width:100%}
+  .tbl-wrap thead{display:none}
+  .tbl-wrap tr{background:#fff;border:1px solid var(--line);border-radius:12px;margin:0 0 14px;padding:4px 0;box-shadow:0 1px 6px rgba(0,0,0,.04);border-left:3px solid var(--primary-deep)}
+  .tbl-wrap tr:hover td{background:transparent!important;box-shadow:none!important}
+  .tbl-wrap tr:hover td::after{display:none}
+  .tbl-wrap tr:nth-child(even){background:#f7f9fc}
+  .tbl-wrap td{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;white-space:normal;word-break:break-word;border:none;border-bottom:1px dashed var(--line);padding:8px 12px;text-align:right;line-height:1.55;background:transparent!important}
+  .tbl-wrap td:last-child{border-bottom:none}
+  .tbl-wrap td:first-child{background:none!important;position:static;border-right:none;text-align:left;font-weight:700;color:var(--primary-deep);font-size:13.5px;justify-content:flex-start;border-bottom:1px solid var(--line);white-space:normal;padding:10px 12px}
+  .tbl-wrap td:first-child img{display:none}
+  .tbl-wrap td::before{content:attr(data-label);font-weight:700;color:var(--primary-deep);text-align:left;flex:0 0 40%;font-size:12px;line-height:1.5;padding-top:1px}
+  .tbl-wrap td:first-child::before{display:none}
+  .matrix-table td,.matrix-table th{padding:8px 12px}
+  .matrix-table td{font-size:13px}
+  .matrix-table td:first-child{font-size:13px;min-width:0}
+  [data-theme=dark] .tbl-wrap tr{background:#1a1a30!important;border-color:#2a2a45!important;box-shadow:0 1px 6px rgba(0,0,0,.2)!important}
+  [data-theme=dark] .tbl-wrap td{border-bottom-color:#2a2a45!important;color:#ccc!important;background:transparent!important}
+  [data-theme=dark] .tbl-wrap td:first-child{background:none!important;color:#ddd!important;border-bottom-color:#2a2a45!important}
+  [data-theme=dark] .tbl-wrap td::before{color:#e0e0f0!important}
+  [data-theme=dark] .tbl-wrap tr:hover td{background:transparent!important;box-shadow:none!important}
+  [data-theme=dark] .tbl-wrap tr:nth-child(even){background:#17172b!important}
+  details.fold .tbl-wrap{margin:0 10px 12px}
+  details.fold .chart-note,details.fold-card .chart-note{margin:0 10px 12px}
+  [data-theme=dark] .section{backdrop-filter:blur(8px) saturate(1.08)!important;-webkit-backdrop-filter:blur(8px) saturate(1.08)!important}
+  .section-divider::after{background:linear-gradient(90deg,#ddd 55%,transparent)}
+  [data-theme=dark] .section-divider::after{background:linear-gradient(90deg,#2a2a45 55%,transparent)!important}
+}
+/* ====== 宽容器排版（data-cw 1300/1500，视口≥1025px 生效） ====== */
+@media(min-width:1025px){
+  body[data-cw="1300"] .brand-grid,body[data-cw="1500"] .brand-grid{grid-template-columns:repeat(4,1fr)}
+  body[data-cw="1300"] .brand-grid.sub-grid,body[data-cw="1500"] .brand-grid.sub-grid{grid-template-columns:repeat(4,1fr)}
+  body[data-cw="1300"] .eco-grid,body[data-cw="1500"] .eco-grid{grid-template-columns:repeat(4,1fr)}
+  .ai-grid{display:grid;grid-template-columns:1fr;gap:16px}
+  body[data-cw="1300"] .ai-grid,body[data-cw="1500"] .ai-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+  .ai-grid .ai-item{margin-bottom:0}
+  body[data-cw="1300"] .stat-row-brands,body[data-cw="1500"] .stat-row-brands{grid-template-columns:repeat(3,1fr)}
+  body[data-cw="1300"] .stat-card .num,body[data-cw="1500"] .stat-card .num{font-size:clamp(28px,2.6vw,40px)}
+  body[data-cw="1300"] .chart-row,body[data-cw="1500"] .chart-row{grid-template-columns:repeat(2,1fr)}
+  body[data-cw="1300"] .chart-row .chart-box-radar,body[data-cw="1500"] .chart-row .chart-box-radar{grid-column:1/-1}
+  body[data-cw="1300"] .chart-box canvas,body[data-cw="1500"] .chart-box canvas{aspect-ratio:14/9}
+  body[data-cw="1300"] .chart-box h3,body[data-cw="1500"] .chart-box h3{text-align:left}
+  body[data-cw="1300"] .chart-box p[style],body[data-cw="1500"] .chart-box p[style]{text-align:left!important}
+  .tbl-wrap th,.tbl-wrap td{padding:14px 20px}
+  .matrix-table th,.matrix-table td{padding:14px 10px}
+  details.fold .tbl-wrap{margin:0 12px 12px}
+  details.fold .chart-note,details.fold-card .chart-note{margin:0 12px 12px}
+}
+/* ====== 1500宽屏侧边辅助信息栏（data-cw=1500 + 视口≥1600px 生效） ====== */
+.info-rail{display:none}
+.info-rail .rail-inner{background:var(--glass-strong);backdrop-filter:var(--bf-lg);-webkit-backdrop-filter:var(--bf-lg);border:1px solid var(--glass-line);border-radius:12px;padding:16px 14px;box-shadow:0 1px 6px rgba(0,0,0,.04);contain:layout style;will-change:top}
+.info-rail h4{font-size:12.5px;font-weight:800;color:var(--primary-deep);margin:0 0 8px;display:flex;align-items:center;gap:6px}
+.info-rail h4:not(:first-child){margin-top:16px}
+.info-rail ul{list-style:none;margin:0;padding:0}
+.info-rail li{font-size:12px;color:#555;line-height:1.55;margin-bottom:6px;word-break:break-word}
+.info-rail li b{color:var(--primary-deep)}
+.info-rail .rail-src li{color:#666}
+.info-rail .rail-update{font-size:11px;color:var(--text-weak);margin:14px 0 0;padding-top:10px;border-top:1px dashed var(--line);line-height:1.7}
+[data-theme=dark] .info-rail .rail-inner{border-color:#2a2a45}
+[data-theme=dark] .info-rail h4{color:#e0e0f0}
+[data-theme=dark] .info-rail li{color:#bbb}
+[data-theme=dark] .info-rail li b{color:#e8ecf4}
+[data-theme=dark] .info-rail .rail-src li{color:#999}
+@media(min-width:1600px){
+  body[data-cw="1500"] .container{padding-right:240px}
+  body[data-cw="1500"] .info-rail{display:block;position:absolute;top:0;right:40px;bottom:0;width:200px}
+  body[data-cw="1500"] .info-rail .rail-inner{position:sticky;top:380px}
+}
+/* 打印兜底：暗色主题黑白打印（置于全部暗色规则之后，确保覆盖暗色!important） */
+@media print{
+  [data-theme=dark] body{background:#fff!important}
+  [data-theme=dark] .section{background:#fff!important;border-color:#ccc!important;border-left-color:#ccc!important;box-shadow:none!important}
+  [data-theme=dark] .header{background:#fff!important;color:#000!important;border-bottom-color:#000!important}
+  [data-theme=dark] .abstract{background:#fff!important;border-color:#ccc!important;box-shadow:none!important;color:#000!important}
+  [data-theme=dark] .section h2,[data-theme=dark] .section-divider,[data-theme=dark] .sub-brand-divider{color:#000!important}
+  [data-theme=dark] .brand-card,[data-theme=dark] .eco-card,[data-theme=dark] .ai-item,[data-theme=dark] .chart-box,[data-theme=dark] .feature-card,[data-theme=dark] .tbl-wrap{background:#fff!important;color:#000!important;box-shadow:none!important}
+  [data-theme=dark] .brand-card .os-name,[data-theme=dark] .brand-card p,[data-theme=dark] .eco-card p,[data-theme=dark] .ai-item p,[data-theme=dark] .feature-card p,[data-theme=dark] .eco-card h3,[data-theme=dark] .ai-item h4,[data-theme=dark] .chart-box h3{color:#000!important}
+  [data-theme=dark] .ai-item .src-ref{color:#555!important}
+  [data-theme=dark] th,[data-theme=dark] td{color:#000!important;background:#fff!important;border-color:#bbb!important}
+  [data-theme=dark] td:first-child,[data-theme=dark] .matrix-table td:first-child{background:#fff!important;color:#000!important}
+  [data-theme=dark] tr:nth-child(even) td,[data-theme=dark] tr:nth-child(even) td:first-child{background:#f3f3f3!important}
+  [data-theme=dark] .chart-box canvas{filter:grayscale(1) contrast(1.15) brightness(1.05)!important}
+}
+
+/* ====== 滚动性能：滚动期间暂停流光/粒子动画（提升上下滚动流畅度） ====== */
+html.scrolling .particle-dot,
+html.scrolling .brand-card::after,
+html.scrolling .stat-card::after,
+html.scrolling .eco-card::after,
+html.scrolling .ai-item::before,
+html.scrolling .feature-card::after,
+html.scrolling .chart-box::after{animation-play-state:paused!important}
+
+</style>
+</head>
+<body><div class="particles" id="particles" aria-hidden="true"></div>
+<nav class="toc-side" id="tocSide" aria-label="章节目录"></nav>
+<button class="toc-fab" id="tocFab" type="button" aria-label="打开目录" title="章节目录">&#9776;</button>
+<div class="toc-mask" id="tocMask"></div>
+<aside class="toc-drawer" id="tocDrawer" aria-hidden="true">
+  <h4>&#128279; 章节目录</h4>
+  <div class="toc-list" id="tocList"></div>
+  <button class="toc-close" id="tocClose" type="button">关闭目录</button>
+</aside>
+
+<button class="theme-toggle" id="themeBtn" title="切换明暗主题" type="button">&#9788;</button>
+<div class="brand-cmp" id="brandCmp" aria-hidden="true">
+  <button class="cmp-tab" id="cmpTab" type="button" title="品牌数据对比">品牌对比</button>
+  <div class="cmp-panel">
+    <div class="cmp-head"><span>六厂商关键指标对比</span><button class="cmp-close" id="cmpClose" type="button" title="关闭">&#10005;</button></div>
+    <div id="cmpBody"></div>
+  </div>
+</div>
+<div class="header">
+  <h1>&#129302; 六大手机厂商系统定位与AI趋势分析</h1>
+  <p>华为 · 小米 · OPPO · vivo · 苹果 · 荣耀 — 操作系统战略与人工智能布局全景解读（2026年7月更新）</p>
+  <div class="sub">数据来源：各厂商官方发布会 · 2025-2026年报 · IDC/Omdia 2026Q2报告</div>
+  <div class="abstract">本页全景对比<b>六大手机厂商</b>（华为 · 小米 · OPPO · vivo · 苹果 · 荣耀）的系统定位、AI大模型与生态策略，数据截至 <b>2026年7月 / IDC 2026Q2</b>。核心看点：华为鸿蒙全栈自研、小米人车家AIoT、OPPO子品牌整合（一加/真我重组）、vivo端侧AI突围、苹果闭环生态、荣耀AI全场景。含 5 张交互图表与 10 余项核心指标，移动端表格自动转为卡片。</div>
+</div>
+
+<div class="container">
+<div class="filter-bar" id="filterBar">
+  <div class="f-left">
+    <span class="filter-title">&#9881; 品牌筛选</span>
+    <label><input type="checkbox" data-brand="huawei" checked><span class="f-dot" style="background:var(--brand-huawei)"></span>华为</label>
+    <label><input type="checkbox" data-brand="xiaomi" checked><span class="f-dot" style="background:var(--brand-xiaomi)"></span>小米</label>
+    <label><input type="checkbox" data-brand="oppo" checked><span class="f-dot" style="background:var(--brand-oppo)"></span>OPPO</label>
+    <label><input type="checkbox" data-brand="vivo" checked><span class="f-dot" style="background:var(--brand-vivo)"></span>vivo</label>
+    <label><input type="checkbox" data-brand="apple" checked><span class="f-dot" style="background:var(--brand-apple)"></span>苹果</label>
+    <label><input type="checkbox" data-brand="honor" checked><span class="f-dot" style="background:var(--brand-honor)"></span>荣耀</label>
+  </div>
+  <div class="f-right">
+    <button class="f-act" id="filterAllBtn" type="button">全选</button>
+    <button class="f-act" id="filterNoneBtn" type="button">清空</button>
+    <button class="f-act" id="collapseAllBtn" type="button">&#9650; 收起全部</button>
+    <label class="year-wrap" title="切换年度数据（2025为约值估算）">数据
+      <select id="yearSel"><option value="2026">2026</option><option value="2025">2025约</option></select>
+    </label>
+    <div class="width-switch" id="widthSwitch" title="容器宽度">
+      <button type="button" data-w="1120" class="w-active">1120</button><button type="button" data-w="1300">1300</button><button type="button" data-w="1500">1500</button>
+    </div>
+    <button class="f-copy f-copy-sec" id="copySelBtn" type="button">&#128203; 复制已选</button>
+    <button class="f-copy f-copy-sec" id="chartDlAllBtn" type="button">&#11015; 全部图表</button>
+    <button class="f-copy" id="copyBtn" type="button">&#128203; 复制全部</button>
+  </div>
+  <button class="filter-drawer-close" id="filterCloseBtn" type="button" aria-label="关闭筛选">&#10005;</button>
+</div>
+<button class="filter-fab" id="filterFab" type="button" aria-label="打开品牌筛选" title="品牌筛选">&#9881;</button>
+<div class="filter-mask" id="filterMask"></div>
+
+
+<!-- ============ 鍝佺墝鎬昏 ============ -->
+<div class="section fade-up">
+  <h2 id="brands">&#128202; 品牌总览</h2>
+  <div class="brand-grid">
+    <a href="https://www.huawei.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-huawei);--bc:var(--brand-huawei);">
+      <img src="img/simpleicons.org/huawei/cc0000.svg" alt="华为" loading="lazy" style="height:52px;margin:6px auto 10px;display:block;object-fit:contain;">
+      <div class="os-name">HarmonyOS 7</div>
+      <div class="tag" style="background:var(--brand-huawei);">鸿蒙生态</div>
+      <p>全场景分布式操作系统<br>鸿蒙原生全面进化</p>
+    </div>
+    </a>
+    <a href="https://www.mi.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-xiaomi);--bc:var(--brand-xiaomi);">
+      <img src="img/simpleicons.org/xiaomi/ff6900.svg" alt="小米" loading="lazy" style="height:52px;margin:6px auto 10px;display:block;object-fit:contain;">
+      <div class="os-name">HyperOS 3</div>
+      <div class="tag" style="background:var(--brand-xiaomi);">人车家全生态</div>
+      <p>万物互联 AIoT 中枢<br>人车家全生态融合</p>
+    </div>
+    </a>
+    <a href="https://www.oppo.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-oppo);--bc:var(--brand-oppo);">
+      <img src="img/simpleicons.org/oppo/009e54.svg" alt="OPPO" loading="lazy" style="height:52px;margin:6px auto 10px;display:block;object-fit:contain;">
+      <div class="os-name">ColorOS 17</div>
+      <div class="tag" style="background:var(--brand-oppo);">一加真我整合</div>
+      <p>三系统统一ColorOS 17<br>一加专注国内·真我出海</p>
+    </div>
+    </a>
+    <a href="https://www.vivo.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-vivo);--bc:var(--brand-vivo);">
+      <img src="img/simpleicons.org/vivo/415fff.svg" alt="vivo" loading="lazy" style="height:52px;margin:6px auto 10px;display:block;object-fit:contain;">
+      <div class="os-name">OriginOS 7</div>
+      <div class="tag" style="background:var(--brand-vivo);">原子设计</div>
+      <p>原子组件+行为壁纸<br>流畅高效·蓝心AI深度融合</p>
+    </div>
+    </a>
+    <a href="https://www.apple.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-apple);--bc:var(--brand-apple);">
+      <img src="img/simpleicons.org/apple/555555.svg" alt="苹果" loading="lazy" style="height:52px;margin:6px auto 10px;display:block;object-fit:contain;">
+      <div class="os-name">iOS 27</div>
+      <div class="tag" style="background:var(--brand-apple);">闭环生态</div>
+      <p>极致安全闭环生态<br>端侧AI隐私优先</p>
+    </div>
+    </a>
+    <a href="https://www.honor.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-honor);--bc:var(--brand-honor);">
+      <img src="img/simpleicons.org/honor/8b5cf6.svg" alt="荣耀" loading="lazy" style="height:52px;margin:6px auto 10px;display:block;object-fit:contain;">
+      <div class="os-name">MagicOS 10.0.0.170</div>
+      <div class="tag" style="background:var(--brand-honor);">AI智能体</div>
+      <p>平台级AI全场景操作系统<br>YOYO智能体·自进化AI</p>
+    </div>
+    </a>
+  </div>
+  <p style="margin-top:16px;font-size:12px;color:#999;">&#128279; 数据来源：各厂商2025-2026年度发布会、官网产品页</p>
+</div>
+
+<!-- ============ 关键数据 ============ -->
+<div class="section fade-up">
+  <h2 id="market-data">&#128200; 市场关键数据</h2>
+
+  <div class="section-divider">行业宏观数据</div>
+  <div class="stat-row">
+    <div class="stat-card" style="background:linear-gradient(135deg,var(--primary-deep),#2d2d7f);">
+      <div class="num">45%</div>
+      <div class="label">2026年全球GenAI手机渗透率</div>
+      <div class="src">来源：Counterpoint 2026.06报告</div>
+    </div>
+    <div class="stat-card" style="background:linear-gradient(135deg,#0d3b66,#1a6baa);">
+      <div class="num">10.8亿</div>
+      <div class="label">2026年全球智能手机出货量</div>
+      <div class="src">来源：Counterpoint/IDC 2026.06预测</div>
+    </div>
+  </div>
+
+  <div class="section-divider">各品牌生态数据</div>
+  <div class="stat-row-brands">
+    <div class="stat-card" style="background:linear-gradient(135deg,var(--brand-huawei),#e63e3e);">
+      <div class="logo-wrap"><img src="img/simpleicons.org/huawei/fff.svg" alt="华为"></div>
+      <div class="num">12亿</div>
+      <div class="label">HarmonyOS<br>生态设备装机量</div>
+      <div class="src">华为HDC 2026</div>
+    </div>
+    <div class="stat-card" style="background:linear-gradient(135deg,var(--brand-xiaomi),#ff9a44);">
+      <div class="logo-wrap"><img src="img/simpleicons.org/xiaomi/fff.svg" alt="小米"></div>
+      <div class="num">7.3亿</div>
+      <div class="label">HyperOS<br>全球月活跃用户</div>
+      <div class="src">小米官网 2025.06</div>
+    </div>
+    <div class="stat-card" style="background:linear-gradient(135deg,var(--brand-oppo),#33cc77);">
+      <div class="logo-wrap"><img src="img/simpleicons.org/oppo/fff.svg" alt="OPPO"></div>
+      <div class="num">6亿</div>
+      <div class="label">ColorOS<br>全球月活跃用户</div>
+      <div class="src">OPPO ODC 2025</div>
+    </div>
+    <div class="stat-card" style="background:linear-gradient(135deg,var(--brand-vivo),#6b85ff);">
+      <div class="logo-wrap"><img src="img/simpleicons.org/vivo/fff.svg" alt="vivo"></div>
+      <div class="num">5亿</div>
+      <div class="label">OriginOS<br>全球月活跃用户</div>
+      <div class="src">vivo 2025开发者大会</div>
+    </div>
+    <div class="stat-card" style="background:linear-gradient(135deg,var(--brand-apple),#888);">
+      <div class="logo-wrap"><img src="img/simpleicons.org/apple/fff.svg" alt="苹果"></div>
+      <div class="num">22亿</div>
+      <div class="label">Apple<br>全球活跃设备数</div>
+      <div class="src">苹果2026Q2财报</div>
+    </div>
+    <div class="stat-card" style="background:linear-gradient(135deg,var(--brand-honor),#a78bfa);">
+      <div class="logo-wrap"><img src="img/simpleicons.org/honor/fff.svg" alt="荣耀"></div>
+      <div class="num">3亿</div>
+      <div class="label">MagicOS<br>全球月活跃用户</div>
+      <div class="src">荣耀2026发布会</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ 系统定位对比 ============ -->
+<div class="section fade-up">
+  <h2 id="system-compare">&#128196; 系统定位与特色功能对比</h2>
+  <div class="chart-row">
+    <div class="chart-box">
+      <h3>&#128202; 中国智能手机市场份额 (2026Q2)</h3>
+      <div style="position:relative">
+      <canvas id="pieChart"></canvas>
+      </div>
+      <p style="text-align:center;font-size:11.5px;color:#999;margin-top:6px;">来源：IDC/Omdia 中国手机季度跟踪报告 2026Q2</p>
+    </div>
+    <div class="chart-box">
+      <h3>&#128202; AI研发投入占营收比</h3>
+      <canvas id="barChart"></canvas>
+      <p style="text-align:center;font-size:11.5px;color:#999;margin-top:6px;">来源：华为2025年报/小米2025年报/各厂商业绩会 2025-2026</p>
+    </div>
+  </div>
+  <div class="chart-row" style="margin-top:28px">
+    <div class="chart-box chart-box-radar">
+      <h3>&#128202; AI功能用户关注度分布</h3>
+      <canvas id="radarChart"></canvas>
+      <p style="text-align:center;font-size:11.5px;color:#999;margin-top:6px;">来源：Counterpoint Consumer Survey 2026.07</p>
+    </div>
+  </div>
+  <div class="chart-note"><b>指标释义：</b>市场份额＝IDC/Omdia 2026Q2 中国智能手机出货占比；AI研发投入占营收比＝各厂商2025年报研发费用÷营收；关注度/投入度＝2026年6月全网讨论热度指数（0-100，基于Counterpoint调查）。</div>
+</div>
+
+<!-- ============ AI大模型对比 ============ -->
+<div class="section fade-up">
+  <h2 id="ai-models">&#129302; 各厂商AI大模型与系统融合策略</h2>
+  <details class="fold" id="fold-ai-models">
+  <summary>展开：六厂商AI大模型与系统融合策略对比表<span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+  <div class="tbl-wrap">
+  <table>
+    <tr><th>厂商</th><th>AI大模型</th><th>端侧/云侧参数量</th><th>发布时间</th><th>核心AI能力</th><th>关键落地场景</th></tr>
+    <tr>
+      <td style="text-align:center"><img src="img/simpleicons.org/huawei/cc0000.svg" alt="" style="height:22px;display:block;margin:0 auto 4px;"><b>华为</b></td>
+      <td>盘古大模型 6.0<br>openPangu 2.0</td>
+      <td>端侧30B(麒麟NPU) / 云侧505B(Pro)/92B(Flash)</td>
+      <td>2026.06 (HDC)</td>
+      <td>多模态理解、Agent架构、端云协同、图像/视频生成、AI反诈六大能力</td>
+      <td>小艺AI助手(1.8亿日活)、AI修图/视频、鸿蒙智能体框架2.0、AI反诈、空间计算</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img src="img/simpleicons.org/xiaomi/ff6900.svg" alt="" style="height:22px;display:block;margin:0 auto 4px;"><b>小米</b></td>
+      <td>MiLM 小米大模型<br>MiMo V2.5 Pro</td>
+      <td>端侧13亿(1.3B) / 云侧1T总参数/42B激活</td>
+      <td>2026.04 (MiMo V2.5)</td>
+      <td>语音交互、IoT智能决策、图像增强、实时翻译、万亿参数MoE架构</td>
+      <td>小爱同学、AI相机、智能家居联动、Miclaw AI平台、AI笔记/写作</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img src="img/simpleicons.org/oppo/009e54.svg" alt="" style="height:22px;display:block;margin:0 auto 4px;"><b>OPPO</b></td>
+      <td>AndesGPT 安第斯大模型<br><span style="font-size:11px;color:#999;">+ DeepSeek-R1 满血版</span></td>
+      <td>端侧10亿~180亿 / 云侧千亿(1+N) + DeepSeek-R1 671B</td>
+      <td>2025.10 (ODC) / 2026.02接入DeepSeek / ColorOS 17整合</td>
+      <td>多模态理解、DeepSeek深度思考+联网搜索、文档摘要、实时翻译、图像消除/生成</td>
+      <td>小布助手(AndesGPT+DeepSeek双擎)、AI消除/AIGC修图、一加真我全面接入ColorOS 17</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img src="img/simpleicons.org/vivo/415fff.svg" alt="" style="height:22px;display:block;margin:0 auto 4px;"><b>vivo</b></td>
+      <td>蓝心大模型 BlueLM</td>
+      <td>端侧3B~130亿 / 云侧1750亿</td>
+      <td>2025.11 (开发者大会) / 2026.07端侧备战</td>
+      <td>意图理解、端侧推理、隐私计算、多模态生成、蓝河流畅引擎3.0</td>
+      <td>蓝心小V、原子笔记AI写作、小V圈搜2.0、AI剪辑、AI照片修复、同声传译</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img src="img/simpleicons.org/apple/555555.svg" alt="" style="height:22px;display:block;margin:0 auto 4px;"><b>苹果</b></td>
+      <td>Apple Intelligence<br>Siri AI (iOS 27)</td>
+      <td>端侧约10亿 / 私有云大模型(Foundation Models)</td>
+      <td>2025.06 (WWDC) / 2026.07 (iOS 26.6) / 2026秋季iOS 27</td>
+      <td>文本生成、图像编辑、跨App智能、隐私AI推理、语义索引</td>
+      <td>Siri增强、相册智能编辑、备忘录AI写作、邮件智能回复、Siri AI语义搜索</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><img src="img/simpleicons.org/honor/8b5cf6.svg" alt="" style="height:22px;display:block;margin:0 auto 4px;"><b>荣耀</b></td>
+      <td>魔法大模型 3.0<br>MagicAgent(开源)</td>
+      <td>端侧Nano 3B+MagicVL / 云侧Agent(32B)</td>
+      <td>2025.10 (MagicOS 10) / 2026.03 MagicAgent开源</td>
+      <td>多模态理解、AI语义理解、意图决策、图像生成、异构任务编排</td>
+      <td>YOYO智能体(3000+场景)、AI帮写/修图/剪辑、AI反诈、MagicAgent、AiMAGE影像</td>
+    </tr>
+  </table>
+  </div>
+  </details>
+  <div class="chart-note"><b>参数释义：</b>端侧＝模型运行于设备本地（省电、隐私、离线可用）；云侧＝部署于云端数据中心（算力大、支持万亿级参数）。例：华为盘古6.0 端侧30B／云侧505B（Pro）；小米MiMo 端侧13亿／云侧1T总参数。</div>
+  <p style="margin-top:14px;font-size:12px;color:#999;">&#128279; 来源：华为HDC 2026、小米HyperOS 3、OPPO ODC 2025/ColorOS 16七月更新、vivo OriginOS 6七月更新、Apple iOS 26.6、荣耀MagicOS 10.0.0.170 官方资料</p>
+</div>
+
+<!-- ============ AI趋势看法与策略 ============ -->
+<div class="section fade-up">
+  <h2 id="ai-trends">&#128064; 对未来AI趋势的看法与策略</h2>
+  <div class="ai-grid">
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-huawei);">
+    <summary><h4><img src="img/simpleicons.org/huawei/cc0000.svg" alt="" style="height:18px;vertical-align:middle;margin-right:4px;"> 华为 — AI+全场景智慧生态</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI将从单设备智能走向全场景协同智能，端云协同是必由之路。未来AI操作系统将重新定义交互范式。</p>
+    <p><b>核心策略：</b>以<strong>盘古大模型6.0+openPangu 2.0</strong>为AI底座，HarmonyOS 7实现100%全栈自研纯血鸿蒙，彻底移除GOSP。鸿蒙智能体框架2.0开放30+系统级AI能力及UI操控。超丝滑方舟引擎首次搭载性能大模型，响应速度提升40%。发布鸿蒙空间计算、星盾安全AI反诈六大能力、亲密圈等功能。</p>
+    <span class="src-ref">&#128279; 来源：余承东 HDC 2026演讲、华为2025年报"AI战略"章节</span>
+  </details>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-xiaomi);">
+    <summary><h4><img src="img/simpleicons.org/xiaomi/ff6900.svg" alt="" style="height:18px;vertical-align:middle;margin-right:4px;"> 小米 — AI+万物互联</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI是IoT设备的智能大脑，端侧轻量化大模型将让每一台设备都具备智能化能力。人车家全生态需要AI实现无感智能连接。</p>
+    <p><b>核心策略：</b>以<strong>HyperOS 3+MiMo V2.5 Pro(1T参数)</strong>为核心打造AIoT智能中枢，HyperOS 3基于Android 17推进。全新Miclaw AI平台上线测试，小米SU7汽车深化人车家全场景AI联动。端侧MiLM-1.3B覆盖全部IoT设备。HyperOS 3全球推送覆盖Xiaomi/REDMI/POCO多系列。</p>
+    <span class="src-ref">&#128279; 来源：小米官网HyperOS 3页面(mi.com)、小米集团2025年报"AI+IoT"战略</span>
+  </details>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-oppo);">
+    <summary><h4><img src="img/simpleicons.org/oppo/009e54.svg" alt="" style="height:18px;vertical-align:middle;margin-right:4px;"> OPPO — AI+品牌整合</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>存量竞争时代多品牌分散内耗严重，AI OS应聚焦资源、统一体验。ColorOS整合OxygenOS/Realme UI是必然选择。</p>
+    <p><b>核心策略：</b>2026年7月完成子品牌战略重组——<strong>realme全面出海、一加专注国内+印度</strong>，三系统统一为ColorOS 17。团队合署OPPO总部办公，共享研发/供应链/售后中台。一加保留独立产品规划，真我老用户售后由OPPO 3万+线下网点承接。ColorOS 17统一系统底层，用户可自主选择升级或回退。</p>
+    <span class="src-ref">&#128279; 来源：2026年7月16日OPPO官方公告、徐起微博告别信、IDC 2026Q2中国手机跟踪报告</span>
+  </details>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-vivo);">
+    <summary><h4><img src="img/simpleicons.org/vivo/415fff.svg" alt="" style="height:18px;vertical-align:middle;margin-right:4px;"> vivo — AI+设计美学</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI应是自然交互的自然延伸，不能以牺牲隐私和设计美感为代价。端侧隐私AI是未来的核心护城河，用户数据不出手机。</p>
+    <p><b>核心策略：</b><strong>蓝心大模型(BlueLM)</strong>坚持端侧推理优先，1750亿云侧大模型配合3B~130亿端侧模型分层部署。蓝心3B端侧大模型越级比肩8B~9B，极致性能提升300%、功耗优化76%。OriginOS 6七月推送6.0.28.26版本，蓝河流畅引擎3.0+虚拟显卡2.0。主推"AI不碰隐私"理念，端侧通过国家AI备案。</p>
+    <span class="src-ref">&#128279; 来源：vivo 2025开发者大会、胡柏山"蓝科技"战略、OriginOS 6 2026.07更新</span>
+  </details>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-apple);">
+    <summary><h4><img src="img/simpleicons.org/apple/555555.svg" alt="" style="height:18px;vertical-align:middle;margin-right:4px;"> 苹果 — AI+隐私安全</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI能力必须在用户隐私基础之上构建，端侧处理优先于云侧。宁可慢也要安全，AI不是军备竞赛而是体验升级。</p>
+    <p><b>核心策略：</b><strong>Apple Intelligence</strong>采用"端侧推理+私有云计算"双层架构。2026年秋季iPhone 18 Pro/Pro Max/Ultra折叠屏三款齐发，iPhone 18标准版延至2027春。iOS 27将于秋季发布，深度融合Apple Intelligence的Siri AI语义搜索。上游元器件涨价背景下，苹果凭借供应链议价能力稳价保量，Q2中国逆势增长24.4%。</p>
+    <span class="src-ref">&#128279; 来源：Tim Cook WWDC 2025/2026主题演讲、IDC 2026Q2中国手机跟踪报告、产业链量产信息</span>
+  </details>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-honor);">
+    <summary><h4><img src="img/simpleicons.org/honor/8b5cf6.svg" alt="" style="height:18px;vertical-align:middle;margin-right:4px;"> 荣耀 — AI+智能体生态</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI OS将从"工具"进化为"智能体伙伴"，端侧AI智能体将能自主学习用户习惯、自动执行复杂任务。未来AI智能体数量将超过人类人口。</p>
+    <p><b>核心策略：</b>以<strong>MagicOS 10.0.0.170 + 魔法大模型3.0</strong>为核心，打造首款自进化AI智能体。MagicAgent 32B正式全球开源，六大核心跑分全面领先GPT-5.2。YOYO智能体覆盖3000+场景，7月更新新增"一语微信"功能。端侧MagicVL视觉大模型+MagicLM-Nano 3B双引擎。AiMAGE影像系统搭载120亿参数人像模型。</p>
+    <span class="src-ref">&#128279; 来源：赵明 MagicOS 10发布会、荣耀2025年度技术战略、MagicAgent开源公告</span>
+  </details>
+  </div>
+</div>
+
+<!-- ============ 核心功能矩阵 ============ -->
+<div class="section fade-up">
+  <h2 id="feature-matrix">&#128736; 系统核心功能矩阵</h2>
+  <details class="fold" id="fold-feature-matrix">
+  <summary>展开：六厂商系统核心功能矩阵（多设备/语音/影像/办公/车机/隐私/生态）<span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+  <div class="tbl-wrap">
+  <table class="matrix-table">
+    <tr><th>功能领域</th><th style="text-align:center"><img src="img/simpleicons.org/huawei/cc0000.svg" alt="" style="height:20px;display:block;margin:0 auto 4px;">华为</th><th style="text-align:center"><img src="img/simpleicons.org/xiaomi/ff6900.svg" alt="" style="height:20px;display:block;margin:0 auto 4px;">小米</th><th style="text-align:center"><img src="img/simpleicons.org/oppo/009e54.svg" alt="" style="height:20px;display:block;margin:0 auto 4px;">OPPO</th><th style="text-align:center"><img src="img/simpleicons.org/vivo/415fff.svg" alt="" style="height:20px;display:block;margin:0 auto 4px;">vivo</th><th style="text-align:center"><img src="img/simpleicons.org/apple/555555.svg" alt="" style="height:20px;display:block;margin:0 auto 4px;">苹果</th><th style="text-align:center"><img src="img/simpleicons.org/honor/8b5cf6.svg" alt="" style="height:20px;display:block;margin:0 auto 4px;">荣耀</th></tr>
+    <tr><td>多设备协同</td><td>&#9989; 超级终端</td><td>&#9989; 小米互联</td><td>&#9989; 潘塔纳尔</td><td>&#9989; 原子互联</td><td>&#9989; AirDrop/Handoff</td><td>&#9989; 荣耀信任环</td></tr>
+    <tr><td>AI语音助手</td><td>&#9989; 小艺(盘古驱动)</td><td>&#9989; 小爱(MiLM)</td><td>&#9989; 小布(AndesGPT)</td><td>&#9989; Jovi(蓝心模型)</td><td>&#9989; Siri(Apple Intel.)</td><td>&#9989; YOYO(魔法大模型)</td></tr>
+    <tr><td>AI影像引擎</td><td>XD Fusion Pro + AI</td><td>小米AI影像大脑</td><td>超清画质AI引擎</td><td>蔡司+蓝心AI算法</td><td>Deep Fusion + AI</td><td>AI超清+胶片模拟</td></tr>
+    <tr><td>AI办公/笔记</td><td>&#9989; 文档+AI纪要</td><td>&#9989; AI笔记/录音转录</td><td>&#9989; AI摘要/文档扫描</td><td>&#9989; 原子笔记AI写作</td><td>&#9989; Apple Intelligence写作</td><td>&#9989; AI帮写/文档</td></tr>
+    <tr><td>车机互联</td><td>HiCar + 鸿蒙座舱</td><td>小米CarIoT + SU7</td><td>Car+车联协议</td><td>Jovi InCar</td><td>CarPlay (下一代)</td><td>荣耀车联</td></tr>
+    <tr><td>隐私安全方案</td><td>多层权限+隐私中台</td><td>隐私保险箱/MIUI Guard</td><td>隐私替身+无痕模式</td><td>原子隐私系统+端侧AI</td><td>App Tracking+私密云</td><td>AI换脸检测+隐私保护</td></tr>
+    <tr><td>IoT生态连接数</td><td>10亿设备</td><td>7.3亿月活</td><td>4亿设备</td><td>3.5亿设备</td><td>22亿活跃设备</td><td>3亿月活</td></tr>
+    <tr><td>开源/开放策略</td><td>开源鸿蒙(OpenHarmony)</td><td>Vela开源物联网OS</td><td>HeyTap开放平台</td><td>半开放(深度合作)</td><td>封闭生态</td><td>互传联盟(跨品牌)</td></tr>
+  </table>
+  </div>
+  </details>
+  <p style="margin-top:14px;font-size:12px;color:#999;">&#128279; 来源：各厂商官网产品规格页、2025-2026开发者大会公开资料</p>
+</div>
+
+<!-- ============ 双柱状图 ============ -->
+<div class="section fade-up">
+  <h2 id="ai-bench">&#128202; AI能力量化对比</h2>
+  <div class="chart-row">
+    <div class="chart-box">
+      <h3>端侧大模型参数量（亿）</h3>
+      <canvas id="paramChart"></canvas>
+      <p style="text-align:center;font-size:11.5px;color:#999;margin-top:6px;">来源：各厂商开发者大会/芯片规格 2025-2026（华为端侧30B/小米1.3B）</p>
+    </div>
+    <div class="chart-box">
+      <h3>端侧AI芯片NPU算力（TOPS）</h3>
+      <canvas id="npuChart"></canvas>
+      <p style="text-align:center;font-size:11.5px;color:#999;margin-top:6px;">来源：芯片产品规格(麒麟9020/骁龙8 Gen5/天玑9500/A19/Magic芯片)</p>
+    </div>
+  </div>
+  <div class="chart-note"><b>指标释义：</b>端侧大模型参数量＝设备端运行模型规模（亿参数，华为30B＝30亿、小米1.3B＝13亿）；NPU算力＝端侧AI芯片神经处理单元峰值算力（TOPS，每秒万亿次运算），数值越高端侧推理越快。</div>
+</div>
+
+<!-- ============ AI场景分布 ============ -->
+<div class="section fade-up">
+  <h2 id="ai-scenes">&#128421; AI+手机核心应用场景分布</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h4>&#128247; AI影像与修图</h4>
+      <p>AI消除、AIGC扩图、智能美颜、HDR融合、夜景增强 → 六家均已落地且持续进化</p>
+    </div>
+    <div class="feature-card">
+      <h4>&#128266; AI语音助手</h4>
+      <p>小艺/小爱/小布/Jovi/Siri/YOYO 全面接入大模型，从命令式走向自然对话式交互</p>
+    </div>
+    <div class="feature-card">
+      <h4>&#128221; AI办公与学习</h4>
+      <p>录音转写、AI摘要、文档翻译、AI写作 → 效率工具的AI重塑</p>
+    </div>
+    <div class="feature-card">
+      <h4>&#127916; AI视频处理</h4>
+      <p>AI剪辑、自动字幕、智能插帧、视频增强 → 专业功能消费化</p>
+    </div>
+    <div class="feature-card">
+      <h4>&#128179; AI支付与安全</h4>
+      <p>AI反诈、声纹识别、行为风险检测 → 安全场景的AI赋能</p>
+    </div>
+    <div class="feature-card">
+      <h4>&#127760; AI实时翻译</h4>
+      <p>通话实时翻译、屏幕翻译、面对面翻译 → 跨语言沟通AI桥梁</p>
+    </div>
+  </div>
+  <p style="margin-top:14px;font-size:12px;color:#999;">&#128279; 来源：各厂商2025-2026年度产品更新日志、发布会</p>
+</div>
+
+<!-- ============ 子品牌 ============ -->
+<div class="sub-brand-divider">子品牌专题：Redmi · iQOO · 一加 · 真我</div>
+
+<!-- ============ 子品牌总览 ============ -->
+<div class="section fade-up">
+  <h2 id="sub-brands">&#128202; 子品牌总览</h2>
+  <div class="brand-grid sub-grid">
+    <a href="https://www.iqoo.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-iqoo);--bc:var(--brand-iqoo);">
+      <div style="height:44px;margin:6px auto 10px;display:flex;align-items:center;justify-content:center;gap:8px;">
+        <span style="font-size:32px;font-weight:900;color:var(--brand-iqoo);">iQOO</span>
+      </div>
+      <div class="os-name">OriginOS 7 (iQOO定制)</div>
+      <div class="tag" style="background:var(--brand-iqoo);">电竞性能旗舰</div>
+      <p>vivo旗下电竞性能品牌<br>极致性能+专业游戏调校</p>
+    </div>
+    </a>
+    <a href="https://www.oneplus.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-oneplus);--bc:var(--brand-oneplus);">
+      <img src="img/simpleicons.org/oneplus/eb0028.svg" alt="一加" style="height:44px;margin:6px auto 10px;display:block;object-fit:contain;">
+      <div class="os-name">ColorOS 17</div>
+      <div class="tag" style="background:var(--brand-oneplus);">专注国内 性能赛道</div>
+      <p>OPPO旗下旗舰品牌<br>回归中国主力市场·增速行业第一</p>
+    </div>
+    </a>
+    <a href="https://www.realme.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-realme);--bc:var(--brand-realme);">
+      <div style="height:44px;margin:6px auto 10px;display:flex;align-items:center;justify-content:center;gap:8px;">
+        <span style="font-size:32px;font-weight:900;color:var(--brand-realme);letter-spacing:1px;">realme</span>
+      </div>
+      <div class="os-name">ColorOS 17</div>
+      <div class="tag" style="background:var(--brand-realme);color:#333;">全面出海 全球品牌</div>
+      <p>OPPO旗下全球品牌<br>专注海外市场·性能越级基因</p>
+    </div>
+    </a>
+    <a href="https://www.mi.com" target="_blank" rel="noopener">
+    <div class="brand-card" style="border-top-color:var(--brand-redmi);--bc:var(--brand-redmi);">
+      <div style="height:44px;margin:6px auto 10px;display:flex;align-items:center;justify-content:center;gap:8px;">
+        <span style="font-size:32px;font-weight:900;color:var(--brand-redmi);letter-spacing:1px;">Redmi</span>
+      </div>
+      <div class="os-name">HyperOS 3 (Redmi定制)</div>
+      <div class="tag" style="background:var(--brand-redmi);">极致性价比</div>
+      <p>小米旗下国民品牌<br>硬核配置·大众定价·品质信赖</p>
+    </div>
+    </a>
+  </div>
+  <p style="margin-top:16px;font-size:12px;color:#999;">&#128279; 数据来源：各子品牌2025-2026发布会、官网产品页</p>
+</div>
+
+<!-- ============ 子品牌关键数据 ============ -->
+<div class="section fade-up">
+  <h2 id="sub-data">&#128200; 子品牌关键数据</h2>
+  <details class="fold" id="fold-sub-data">
+  <summary>展开：四子品牌关键数据对比表（系统/版本/定位/特色/生态）<span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+  <div class="tbl-wrap">
+  <table>
+    <tr><th></th><th>操作系统</th><th>当前版本</th><th>核心定位</th><th>标志性特色功能</th><th>生态覆盖</th></tr>
+    <tr>
+      <td style="text-align:center"><b style="color:var(--brand-iqoo);">iQOO</b></td>
+      <td>OriginOS 6</td><td>6 (2026.07 七月更新)</td>
+      <td>电竞性能·专业游戏 <span style="font-size:11px;color:#999;">(性能调校)</span></td>
+      <td>Monster模式(性能全开)、体感操控、4D震感、游戏插帧、GPU调校面板、游戏灯效定制</td>
+      <td>手机·平板·耳机·穿戴</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b style="color:var(--brand-oneplus);">一加</b></td>
+      <td>ColorOS 17</td><td>17 (2026.07)</td>
+      <td>旗舰性能·专注国内 <span style="font-size:11px;color:#999;">(增速行业第一)</span></td>
+      <td>三段式静音键、O-Haptics震动、LTPO自适应刷新、100W SUPERVOOC、跨屏互联、AI会议纪要</td>
+      <td>手机·平板·手表·耳机</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b style="color:var(--brand-realme);">真我</b></td>
+      <td>ColorOS 17</td><td>17 (2026.07)</td>
+      <td>全面出海·性能越级 <span style="font-size:11px;color:#999;">(海外主战场)</span></td>
+      <td>320W SUPERVOOC闪充、GT模式、AI传送门2.0、AI超清、AI录音摘要、游戏预测引擎</td>
+      <td>手机·耳机 (海外)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b style="color:var(--brand-redmi);">Redmi</b></td>
+      <td>HyperOS 3</td><td>3 (2025.08)</td>
+      <td>极致性价比·国民品牌 <span style="font-size:11px;color:#999;">(大众普惠)</span></td>
+      <td>Redmi Turbo独立OS调度、AI游戏加速、120W秒充、K系列旗舰下放、小金刚品质、Note系列长续航</td>
+      <td>手机·平板·耳机·穿戴·IoT</td>
+    </tr>
+  </table>
+  </div>
+  </details>
+  <p style="margin-top:14px;font-size:12px;color:#999;">&#128279; 来源：iQOO 2026新品发布会、OPPO 2026.07子品牌全球策略调整公告、ColorOS 17统一推送计划</p>
+</div>
+
+<!-- ============ 子品牌AI大模型对比 ============ -->
+<div class="section fade-up">
+  <h2 id="sub-ai-models">&#129302; 子品牌AI大模型与融合策略</h2>
+  <details class="fold" id="fold-sub-ai-models">
+  <summary>展开：四子品牌AI大模型与融合策略对比表<span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+  <div class="tbl-wrap">
+  <table>
+    <tr><th>品牌</th><th>AI大模型</th><th>端侧/云侧参数量</th><th>发布时间</th><th>核心AI能力</th><th>关键落地场景</th></tr>
+    <tr>
+      <td style="text-align:center"><b style="color:var(--brand-iqoo);">iQOO</b></td>
+      <td>蓝心大模型 BlueLM<br><span style="font-size:11px;color:#999;">(与vivo共享)</span></td>
+      <td>端侧10亿~130亿 / 云侧1750亿</td>
+      <td>2025.11 (vivo开发者大会)</td>
+      <td>意图理解、端侧推理、隐私计算、游戏场景AI优化、AI帧率预测</td>
+      <td>Jovi语音助手、AI游戏助手(智能散热调度/帧率预测)、AI照片修复、原子笔记AI写作</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b style="color:var(--brand-oneplus);">一加</b></td>
+      <td>OnePlus AI<br><span style="font-size:11px;color:#999;">(AndesGPT + DeepSeek-R1 满血版)</span></td>
+      <td>端侧10亿~180亿 / 云侧千亿(1+N) + DeepSeek-R1 671B</td>
+      <td>2025.10 (ODC) / 2026.02 ColorOS接入DeepSeek / 2026.07 ColorOS 17统一</td>
+      <td>多模态理解、DeepSeek深度思考、联网搜索、文档摘要、实时翻译、AI消除</td>
+      <td>小布助手(DeepSeek驱动)、AI消除/AIGC修图、AI会议纪要、AI写作、ColorOS 17全场景生态</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b style="color:var(--brand-realme);">真我</b></td>
+      <td>realme AI<br><span style="font-size:11px;color:#999;">(DeepSeek R1 深度融合 / ColorOS 17)</span></td>
+      <td>端侧百亿级 / 云侧DeepSeek满血版</td>
+      <td>2026.07 ColorOS 17统一 / 全面出海</td>
+      <td>多模态深度思考、联网搜索、图片文档直搜、AI消除、AI闭眼修复、AI录音摘要</td>
+      <td>DeepSeek AI助手、AI超清/去拖影/消除2.0、AI文案生成、AI语音摘要、传送门2.0</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b style="color:var(--brand-redmi);">Redmi</b></td>
+      <td>MiLM 小米大模型<br><span style="font-size:11px;color:#999;">(与小米共享)</span></td>
+      <td>端侧13亿~64亿 / 云侧千亿</td>
+      <td>2025.10 (小米发布会)</td>
+      <td>语音交互、IoT智能决策、图像增强、实时翻译、游戏场景AI加速</td>
+      <td>小爱同学、AI相机/美颜、Turbo AI游戏加速、智能家居联动、AI笔记</td>
+    </tr>
+  </table>
+  </div>
+  </details>
+  <p style="margin-top:14px;font-size:12px;color:#999;">&#128279; 来源：vivo 2025开发者大会、OPPO 2026.07子品牌全球策略调整公告、DeepSeek官方合作公告</p>
+</div>
+
+<!-- ============ 子品牌AI趋势看法 ============ -->
+<div class="section fade-up">
+  <h2 id="sub-ai-trends">&#128064; 子品牌AI趋势看法与策略</h2>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-iqoo);">
+    <summary><h4><span style="color:var(--brand-iqoo);font-weight:900;">iQOO</span> — AI+电竞性能</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI将深度融合游戏场景，从画质增强走向智能性能调度和个性化游戏体验。端侧AI推理将让手机学会预判用户操作，实现真正"自适应"游戏性能。</p>
+    <p><b>核心策略：</b>共享<strong>vivo蓝心大模型</strong>能力，但针对游戏场景做深度AI调校——AI帧率预测引擎根据团战/跑图不同场景动态调度CPU/GPU频率。自研<strong>电竞芯片Q2</strong>内置AI单元，实现超分插帧零延迟。AI游戏助手覆盖训练营(出装推荐/局势分析)、对战中(智能散热/AI变声)、复盘(高光时刻自动剪辑)全链路。</p>
+    <span class="src-ref">&#128279; 来源：iQOO 2026新品发布会、iQOO电竞芯片Q2技术白皮书</span>
+  </details>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-oneplus);">
+    <summary><h4><span style="color:var(--brand-oneplus);font-weight:900;">一加</span> — AI+旗舰体验</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI能力是旗舰机的标配竞争力，但不应以牺牲系统轻快流畅为代价。存量竞争时代，品牌需聚焦核心市场做深做透。</p>
+    <p><b>核心策略：</b>一加全面回归中国主力市场，统一至<strong>ColorOS 17</strong>，小布助手共享OPPO双引擎<strong>AndesGPT + DeepSeek-R1 满血版</strong>（oppo.com官方确认），支持一键语音唤醒DeepSeek深度思考、联网搜索、结果导出。保留独立产品规划团队，暂停欧美发新品，专注中国+印度双核心市场，2026上半年增速27.4%领跑行业。</p>
+    <span class="src-ref">&#128279; 来源：OPPO官方产品页(oppo.com)、ColorOS DeepSeek-R1接入公告(2026.02)、一加中国区总裁李杰公开信</span>
+  </details>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-realme);">
+    <summary><h4><span style="color:var(--brand-realme);font-weight:900;">真我</span> — AI+越级普惠</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI功能不应只是旗舰机的专属，应当让更多全球年轻用户以合理价格享受到前沿AI体验。海外市场仍有增量空间。</p>
+    <p><b>核心策略：</b>2026年7月16日真我正式退出中国市场、全面聚焦海外。未来新品不再进入中国渠道，存量用户售后由OPPO 3万+网点承接。系统从realme UI全面切换至<strong>ColorOS 17</strong>，用户可自主选择升级或回退；小布助手共享OPPO AndesGPT + DeepSeek-R1能力，主攻印度/东南亚/拉美等海外增长市场。</p>
+    <span class="src-ref">&#128279; 来源：徐起2026年7月16日微博告别信、OPPO官方全球策略公告、Bloomberg 2026.07报道</span>
+  </details>
+    <details class="ai-item fold-card" style="border-left-color:var(--brand-redmi);">
+    <summary><h4><span style="color:var(--brand-redmi);font-weight:900;">Redmi</span> — AI+国民普惠</h4><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+    <p><b>趋势判断：</b>AI技术应当惠及更多用户，中端机同样需要旗舰级AI体验。端侧轻量化大模型让千元机也能拥有AI修图、AI语音等能力。</p>
+    <p><b>核心策略：</b>共享小米<strong>MiLM大模型</strong>及澎湃OS底层AI能力，通过<strong>Redmi Turbo系列</strong>独立芯片级AI调度实现中端机游戏AI加速。Redmi Note系列主推AI实用三件套：AI长焦超分(千元机也能拍清远景)、AI去噪(夜景纯净模式)、AI智能续航(根据使用习惯动态调度)。K系列旗舰普及AI旗舰体验——AI游戏引擎、AI影像大脑等高端功能下放。</p>
+    <span class="src-ref">&#128279; 来源：Redmi 2026新品发布会、王腾"Redmi AI战略"公开演讲、小米澎湃OS 3公开资料</span>
+  </details>
+</div>
+
+<!-- ============ 子品牌核心功能矩阵 ============ -->
+<div class="section fade-up">
+  <h2 id="sub-matrix">&#128736; 子品牌核心功能矩阵</h2>
+  <details class="fold" id="fold-sub-matrix">
+  <summary>展开：四子品牌核心功能矩阵（语音/影像/办公/游戏/闪充/协同/安全/生态）<span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+  <div class="tbl-wrap">
+  <table class="matrix-table">
+    <tr><th>功能领域</th><th style="text-align:center"><span style="color:var(--brand-iqoo);font-weight:900;">iQOO</span></th><th style="text-align:center"><span style="color:var(--brand-oneplus);font-weight:900;">一加</span></th><th style="text-align:center"><span style="color:var(--brand-realme);font-weight:900;">真我</span></th><th style="text-align:center"><span style="color:var(--brand-redmi);font-weight:900;">Redmi</span></th></tr>
+    <tr><td>AI语音助手</td><td>&#9989; Jovi (蓝心大模型)</td><td>&#9989; 小布 (AndesGPT+DeepSeek-R1)</td><td>&#9989; 小布 (DeepSeek驱动)</td><td>&#9989; 小爱 (MiLM)</td></tr>
+    <tr><td>AI影像引擎</td><td>蓝心AI算法 (与vivo共享)</td><td>超清画质AI + 哈苏人像</td><td>AI超清 + 去拖影 + 消除2.0</td><td>小米AI影像大脑 (Redmi调校)</td></tr>
+    <tr><td>AI办公/笔记</td><td>&#9989; 原子笔记AI写作</td><td>&#9989; AI会议纪要/写作</td><td>&#9989; AI文案生成/摘要</td><td>&#9989; AI笔记/录音转录</td></tr>
+    <tr><td>游戏AI优化</td><td>&#9989; AI帧率预测+电竞芯片Q2</td><td>&#9989; AI稳帧+HyperBoost</td><td>&#9989; GT模式+AI游戏预测</td><td>&#9989; Turbo AI游戏加速</td></tr>
+    <tr><td>闪充技术</td><td>120W FlashCharge</td><td>120W SUPERVOOC</td><td>320W SUPERVOOC</td><td>120W 秒充</td></tr>
+    <tr><td>跨设备协同</td><td>原子互联 (与vivo互通)</td><td>跨屏互联 + ColorOS生态</td><td>OPPO互传 (含iOS碰传)</td><td>小米互联 (与小米生态互通)</td></tr>
+    <tr><td>隐私安全</td><td>原子隐私系统 + 端侧AI</td><td>ColorOS隐私替身 + 无痕</td><td>AI防诈 + 验证码自动删除</td><td>MIUI Guard + 隐私保险箱</td></tr>
+    <tr><td>IoT生态</td><td>3.5亿 (含vivo生态)</td><td>4亿 (含OPPO生态)</td><td>2亿 (含OPPO生态)</td><td>7.3亿 (含小米生态)</td></tr>
+  </table>
+  </div>
+  </details>
+  <p style="margin-top:14px;font-size:12px;color:#999;">&#128279; 来源：各品牌2025-2026发布会、官网规格页</p>
+</div>
+
+<aside class="info-rail" aria-label="辅助信息">
+  <div class="rail-inner">
+    <h4>术语速览</h4>
+    <ul class="rail-terms"></ul>
+    <h4>数据来源</h4>
+    <ul class="rail-src">
+      <li>IDC 中国手机季度跟踪报告 2026Q2</li>
+      <li>Omdia / Counterpoint 2026H1 中国手机报告</li>
+      <li>各厂商2025-2026发布会与官网产品规格页</li>
+    </ul>
+    <p class="rail-update">本页面数据仅供研究参考<br>版本 V3.7 · 更新于 2026-08-02</p>
+  </div>
+</aside>
+
+</div>
+
+<!-- ============ 生态特点与优势 ============ -->
+<div class="section fade-up">
+  <h2 id="ecosystem">&#127760; 各家生态特点与优势</h2>
+  <div class="eco-grid">
+    <details class="eco-card fold-card" style="border-top-color:var(--brand-huawei);">
+      <summary><div class="eco-icon" style="background:var(--brand-huawei);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg></div><h3>华为 · 鸿蒙生态</h3><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+      <p><strong>全场景分布式：</strong>手机+平板+PC+智慧屏+车机+穿戴统一HarmonyOS内核，超级终端一键协同。</p>
+      <p><strong>核心优势：</strong>自研芯片+OS+大模型全栈打通，HarmonyOS 6终端设备数突破7300万，HarmonyOS 7消费者Beta版8月开测、秋季随Mate 90系列正式发布，开源鸿蒙生态设备超13亿。</p>
+      <p><strong>生态数据：</strong>注册开发者超1100万，应用市场可获取应用与服务超40万款，日均下载超2亿次，中国市场份额22.6%稳居第一（2026Q2 IDC）。</p>
+    </details>
+    <details class="eco-card fold-card" style="border-top-color:var(--brand-xiaomi);">
+      <summary><div class="eco-icon" style="background:var(--brand-xiaomi);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>小米 · 人车家全生态</h3><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+      <p><strong>万物互联中枢：</strong>HyperOS 3底层重构，统一MIUI+澎湃OS+车机OS+IoT设备，SU7汽车生态完成人车家闭环。</p>
+      <p><strong>核心优势：</strong>全球最大消费级IoT平台，IoT平台激活设备数突破9.89亿（2025.06），小爱同学月活1.69亿创历史新高。</p>
+      <p><strong>生态数据：</strong>全球月活用户7.31亿（2025.06），5件及以上连接设备用户2360万，硬件合作伙伴超15000家，2026年研发投入预计400亿元。</p>
+    </details>
+    <details class="eco-card fold-card" style="border-top-color:var(--brand-oppo);">
+      <summary><div class="eco-icon" style="background:var(--brand-oppo);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3>OPPO · 品牌整合新格局</h3><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+      <p><strong>一加真我战略重组：</strong>2026年7月，OPPO宣布子品牌全球策略调整：realme全面退出中国、专注海外（印度/东南亚/拉美）；一加退出欧美、专注中国+印度；三系统统一为ColorOS 17。</p>
+      <p><strong>核心优势：</strong>团队迁入东莞OPPO总部合署办公，共享研发/供应链/售后中台。一加保持国内性能赛道增速行业第一（+27.4% YoY），realme借OPPO全球3万+网点承接售后。</p>
+      <p><strong>生态数据：</strong>ColorOS全球月活突破6亿，一加2025年国内销量同比+44%，2026上半年再涨27.4%领跑行业，OPPO+一加+realme全球协同出货稳居前三。</p>
+    </details>
+    <details class="eco-card fold-card" style="border-top-color:var(--brand-vivo);">
+      <summary><div class="eco-icon" style="background:var(--brand-vivo);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h3>vivo · 原子设计生态</h3><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+      <p><strong>个人化智能：</strong>OriginOS 7全面升级，端侧3B大模型越级比肩行业7B-9B，极致性能提升300%，蓝河引擎3.0底层优化拉长老机型生命周期。</p>
+      <p><strong>核心优势：</strong>OriginOS 7分四梯队推送（2026.10-2027.2），X300系列首批搭载，端侧AI隐私计算行业标杆，首家完成苹果全家桶生态互联。</p>
+      <p><strong>生态数据：</strong>服务超5亿手机用户，蓝心大模型覆盖60+国家和地区，400美元以下市场稳居首位，600美元以上高端领跑安卓阵营。</p>
+    </details>
+    <details class="eco-card fold-card" style="border-top-color:var(--brand-apple);">
+      <summary><div class="eco-icon" style="background:var(--brand-apple);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><h3>苹果 · 闭环生态</h3><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+      <p><strong>无缝生态协同：</strong>iPhone+Mac+iPad+Watch+Vision Pro，Airdrop/Handoff/Universal Clipboard无缝接力，硬件+软件+服务三位一体。</p>
+      <p><strong>核心优势：</strong>全球活跃设备超25亿台，服务业务季度收入310亿美元（毛利率76.7%），中国Q2出货同比+24.4%逆势增长。</p>
+      <p><strong>生态数据：</strong>iPhone 18系列已量产（9月首发Pro+折叠屏Ultra），2026上半年旗舰销量是荣耀19.3倍居首，服务收入同比增长16%。</p>
+    </details>
+    <details class="eco-card fold-card" style="border-top-color:var(--brand-honor);">
+      <summary><div class="eco-icon" style="background:var(--brand-honor);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>荣耀 · AI全场景</h3><span class="fold-btn" role="button" tabindex="0" aria-label="展开收起">&#9660;</span></summary>
+      <p><strong>自进化AI智能体：</strong>MagicOS 10全球首个自进化AI OS，YOYO智能体支持3000+场景，3个月增长15倍。</p>
+      <p><strong>核心优势：</strong>全品牌无界智联（iOS/鸿蒙/安卓/Windows），与140+车企10000+车型互联，Magic V6折叠屏稳居国内折痕屏第二席位。</p>
+      <p><strong>生态数据：</strong>MagicOS 10升级设备数突破1000万，7月28日影像发布会官宣Robot Phone概念，"1x3xN"生态战略覆盖教育/家居/音频/玩具/宠物等产业集群。</p>
+    </details>
+  </div>
+  <p style="margin-top:16px;font-size:12px;color:#999;">&#128279; 来源：各厂商2025-2026年度发布会、2025年报、IDC 2026Q2中国手机跟踪报告、Omdia 2026H1</p>
+</div>
+
+<div class="footer">
+  <p style="margin-bottom:6px;"><b>数据来源与参考</b></p>
+  <p></p>
+  <p style="margin-top:10px;color:#bbb;"></p>
+</div>
+
+<script>
+// ====== 品牌数据层 ======
+// 品牌色统一从CSS变量(:root --brand-*)读取，改一处全局生效
+// 通用CSS变量读取（从:root计算值），品牌色与主题色统一从变量取，改一处全局生效
+window.__cssVar=function(name,fb){
+  try{ var v=(getComputedStyle(document.documentElement).getPropertyValue(name)||'').trim(); return v||fb; }catch(e){ return fb; }
+};
+window.__brandColor=function(id){
+  var v=(getComputedStyle(document.documentElement).getPropertyValue('--brand-'+id)||'').trim();
+  return v||window.__cssVar('--primary','#4361ee');
+};
+var D = {
+  brands: [
+    { id:'huawei',  name:'华为', color:__brandColor('huawei'), os:'HarmonyOS 7',          tag:'鸿蒙生态',     url:'https://www.huawei.com', ai:'盘古大模型6.0+openPangu 2.0，端侧30B/云侧505B，小艺日活1.8亿' },
+    { id:'xiaomi',  name:'小米', color:__brandColor('xiaomi'), os:'HyperOS 3',           tag:'人车家全生态', url:'https://www.mi.com',      ai:'MiMo V2.5 Pro（云侧1T总参数/端侧1.3B），小爱同学+AIoT全场景' },
+    { id:'oppo',    name:'OPPO', color:__brandColor('oppo'), os:'ColorOS 17',           tag:'智慧无边',     url:'https://www.oppo.com',     ai:'AndesGPT + DeepSeek-R1满血版双擎，小布助手' },
+    { id:'vivo',    name:'vivo', color:__brandColor('vivo'), os:'OriginOS 7',           tag:'原子设计',     url:'https://www.vivo.com',     ai:'蓝心大模型BlueLM（云侧1750亿/端侧3B~130亿），端侧隐私优先' },
+    { id:'apple',   name:'苹果', color:__brandColor('apple'), os:'iOS 26.6',             tag:'闭环生态',     url:'https://www.apple.com',    ai:'Apple Intelligence，端侧推理+私有云计算双层架构，Siri AI' },
+    { id:'honor',   name:'荣耀', color:__brandColor('honor'), os:'MagicOS 10.0.0.170',   tag:'AI智能',      url:'https://www.honor.com',    ai:'魔法大模型3.0+MagicAgent开源，YOYO智能体3000+场景' }
+  ],
+  subBrands: [
+    { id:'iqoo',    name:'iQOO',   color:__brandColor('iqoo'), os:'OriginOS 7 (iQOO定制)',  tag:'电竞性能旗舰', url:'https://www.iqoo.com' },
+    { id:'oneplus', name:'一加', color:__brandColor('oneplus'), os:'ColorOS 17',              tag:'旗舰性能 专注国内', url:'https://www.oneplus.com' },
+    { id:'realme',  name:'realme', color:__brandColor('realme'), os:'ColorOS 17',            tag:'全面出海 全球品牌', url:'https://www.realme.com' },
+    { id:'redmi',   name:'Redmi',  color:__brandColor('redmi'), os:'HyperOS 3 (Redmi定制)',   tag:'极致性价比',   url:'https://www.mi.com' }
+  ],
+  radarLabels: ['AI拍照修图','语音助手','实时翻译','文档AI摘要','AI视频剪辑','AI隐私保护'],
+  // 年度数据（2025 为约值估算，页面已标注）
+  YEARS: {
+    '2026': { pieLabels:['华为 23%','苹果 18%','vivo 16%','OPPO 16%','小米 12%','荣耀 11%'], pieData:[22.6,18.1,16,16,12.4,11.3], pieColors:[__brandColor('huawei'),__brandColor('apple'),__brandColor('vivo'),__brandColor('oppo'),__brandColor('xiaomi'),__brandColor('honor')], rdData:[23,20,17,16,22,15], paramData:[30,1,18,13,30,3], npuData:[85,55,56,52,45,55] },
+    '2025': { pieLabels:['华为 17%','苹果 14%','vivo 17%','OPPO 14%','小米 15%','荣耀 15%'], pieData:[17.2,13.8,17.0,14.0,15.4,14.9], pieColors:[__brandColor('huawei'),__brandColor('apple'),__brandColor('vivo'),__brandColor('oppo'),__brandColor('xiaomi'),__brandColor('honor')], rdData:[20,18,14,13,21,13], paramData:[22,0.5,12,8,18,2], npuData:[70,35,45,38,40,40] }
+  },
+  year: (function(){return lsGet('year',null)==='2025'?'2025':'2026'})(),
+  cur: function(){ return D.YEARS[D.year]; },
+  // 站点元信息集中化：版本/更新/来源/术语，更新数据只需改这一处
+  meta: {
+    version: 'V3.7',
+    updated: '2026-08-02',
+    note: '本页面数据仅供研究参考 · ',
+    footerSources: ['IDC中国手机季度跟踪报告 2026Q2 · Omdia/Counterpoint 2026H1中国手机报告','华为HDC 2026/HarmonyOS 7发布 · 小米HyperOS 3','OPPO 2026.07子品牌全球策略调整/ColorOS 17统一 · vivo OriginOS 7十月推送','Apple WWDC 2026/iOS 27秋季发布 · 荣耀MagicOS 10 / 7.28影像发布会','Omdia中国智能手机市场报告 2026Q2 · 各厂商官网产品规格页'],
+    railSources: ['IDC 中国手机季度跟踪报告 2026Q2','Omdia / Counterpoint 2026H1 中国手机报告','各厂商2025-2026发布会与官网产品规格页'],
+    terms: {
+      '端侧':'模型运行于设备本地：省电、隐私、离线可用',
+      '云侧':'部署于云端数据中心：算力大，支持万亿级参数',
+      'TOPS':'每秒万亿次运算（Trillion Ops/Sec），衡量NPU算力',
+      'MoE':'混合专家架构：万亿参数仅激活部分专家，节省算力',
+      'GenAI':'生成式AI（Generative AI）：可生成文本/图像/视频'
+    }
+  },
+  // 图表配置映射：图表id → D.YEARS 年度数据字段（单一数据源，改字段名只需改这一处）
+  chartMeta: {
+    pie:   { labels:'pieLabels', data:'pieData', colors:'pieColors' },
+    bar:   { data:'rdData' },
+    param: { data:'paramData' },
+    npu:   { data:'npuData' }
+  }
+};var _c = D.brands.map(function(b){return b.color});
+var _n = D.brands.map(function(b){return b.name});
+
+// ====== 站点元信息渲染（从 D.meta 填充 footer/侧栏，数据层集中化） ======
+(function(){
+  var m=D.meta||{};
+  function setText(sel,txt){ var el=document.querySelector(sel); if(el) el.textContent=txt; }
+  function setHtml(sel,html){ var el=document.querySelector(sel); if(el) el.innerHTML=html; }
+  if(m.footerSources && m.footerSources.length){
+    var fs=document.querySelector('.footer p');
+    if(fs) setHtml('.footer p:nth-of-type(2)', m.footerSources.join('<br>'));
+  }
+  if(m.railSources && m.railSources.length){
+    var rs=document.querySelector('.rail-src');
+    if(rs) rs.innerHTML=m.railSources.map(function(s){return '<li>'+s+'</li>'}).join('');
+  }
+  if(m.version){
+    var ru=document.querySelector('.rail-update');
+    if(ru) setHtml('.rail-update', m.note+'<br>版本 '+m.version+' · 更新于 '+m.updated);
+    setHtml('.footer p:last-child', m.note+'版本 '+m.version+' · 最后更新 '+m.updated+' · 图表由Chart.js渲染');
+  }
+  if(window.__TERMS_DEFINED) return;
+  window.__TERMS = (m.terms && Object.keys(m.terms).length) ? m.terms : {
+    '端侧':'模型运行于设备本地：省电、隐私、离线可用','云侧':'部署于云端数据中心：算力大，支持万亿级参数','TOPS':'每秒万亿次运算（Trillion Ops/Sec），衡量NPU算力','MoE':'混合专家架构：万亿参数仅激活部分专家，节省算力','GenAI':'生成式AI（Generative AI）：可生成文本/图像/视频'
+  };
+})();
+
+function getRadarDatasets(){
+  var dark = document.documentElement.getAttribute('data-theme')==='dark';
+  var tiny = window.innerWidth<=480;
+  return [
+    { label:'用户关注度', data:[90,78,70,68,82,94], borderColor:dark?window.__cssVar('--primary-hi','#60a5fa'):window.__cssVar('--primary','#4361ee'), backgroundColor:tiny?'transparent':(dark?'rgba(96,165,250,.15)':'rgba(67,97,238,.1)'), pointBackgroundColor:dark?window.__cssVar('--primary-hi','#60a5fa'):window.__cssVar('--primary','#4361ee'), pointRadius:4, pointHoverRadius:6, borderWidth:2.5 },
+    { label:'厂商投入度', data:[95,86,62,72,78,82], borderColor:dark?'#f87171':'#e63946', backgroundColor:tiny?'transparent':(dark?'rgba(248,113,113,.12)':'rgba(230,57,70,.08)'), pointBackgroundColor:dark?'#f87171':'#e63946', pointRadius:4, pointHoverRadius:6, borderWidth:2.5 }
+  ];
+}
+
+// ====== 图表初始化 ======
+(function initCharts(){
+  if(typeof Chart==='undefined'){
+    var tries=(window.__chartTries=((window.__chartTries||0)+1));
+    if(window.__chartCdnFailed && tries===3 && window.__chartFallback){ window.__chartFallback(); }
+    if(tries>60){ if(window.__chartFailed) window.__chartFailed(); return; }
+    if(tries===1 && window.__chartLoading){ window.__chartLoading(true); }
+    setTimeout(initCharts,200); return
+  }
+  var done=false;
+  function addDlButtons(){
+    document.querySelectorAll('.chart-box').forEach(function(box){
+      if(box.querySelector('.chart-dl')) return;
+      var btn=document.createElement('button');
+      btn.className='chart-dl'; btn.type='button'; btn.title='下载PNG'; btn.innerHTML='&#11015;';
+      btn.addEventListener('click',function(){
+        var cv=box.querySelector('canvas'); if(!cv) return;
+        var c=Chart.getChart(cv);
+        if(!c){ toast('图表尚未加载'); return; }
+        var label=(box.querySelector('h3')||{}).textContent||'chart';
+        var fname=label.replace(/[^\u4e00-\u9fa5A-Za-z0-9]+/g,'_').slice(0,40)+'_'+D.year+'.png';
+        var a=document.createElement('a');
+        a.href=c.toBase64Image('image/png',1); a.download=fname; a.click();
+      });
+      box.appendChild(btn);
+    });
+  }
+  function doInit(){
+  if(done) return; done=true;
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var mob=window.innerWidth<768, tiny=window.innerWidth<=480;
+  var isDark=document.documentElement.getAttribute('data-theme')==='dark';
+  var FF="'Inter','Microsoft YaHei','PingFang SC',sans-serif";
+  Chart.defaults.font.family=FF;
+  var cur=D.cur();
+  var cm=D.chartMeta||{};
+  window.__charts={};
+  window.__charts.pie=new Chart(document.getElementById('pieChart'),{
+    type:'doughnut', data:{ labels:cur[cm.pie.labels], datasets:[{ data:cur[cm.pie.data], backgroundColor:cur[cm.pie.colors], borderWidth:2, borderColor:'#fff' }] },
+    options:{ responsive:true, resizeDelay:100, devicePixelRatio:dpr, maintainAspectRatio:false, cutout:'55%', plugins:{ legend:{ position:'bottom', labels:{ font:{ size:12, weight:'bold' }, padding:14, usePointStyle:true, pointStyle:'circle' } }, tooltip:{ enabled:true, displayColors:false, titleFont:{size:mob?11:12}, bodyFont:{size:mob?11:12}, padding:mob?6:10, callbacks:{ label:function(ctx){var t=ctx.parsed||0;return' '+ctx.label.replace(/\s?\d+%/,'')+' : '+t+'%'} } } }, hover:{ mode:'index', intersect:true } },
+    plugins:[{
+      id:'centerText',
+      beforeDraw:function(chart){
+        var ctx=chart.ctx, w=chart.width, meta=chart.getDatasetMeta(0).data[0];
+        if(!meta)return;
+        var cx=meta.x, cy=meta.y, isDark=document.documentElement.getAttribute('data-theme')==='dark';
+        ctx.save();
+        ctx.textAlign='center';
+        ctx.textBaseline='middle';
+        var total=chart.data.datasets[0].data.reduce(function(a,b){return a+b},0);
+        if(total<=0){
+          ctx.font='bold '+Math.max(Math.round(w/20)+4,18)+'px Inter,sans-serif';
+          ctx.fillStyle=isDark?'#777':'#aaa';
+          ctx.fillText('暂无匹配数据',cx,cy);
+          ctx.restore();
+          return;
+        }
+        ctx.font='bold '+(Math.max(Math.round(w/22)+4,16))+'px Inter,sans-serif';
+        ctx.fillStyle=isDark?'#ccc':'#333';
+        ctx.fillText(Math.round(total)+'%',cx,cy-10);
+        ctx.font=(Math.round(w/30)+2)+'px Inter,sans-serif';
+        ctx.fillStyle=isDark?'#999':'#888';
+        ctx.fillText('总份额',cx,cy+14);
+        ctx.restore();
+      }
+    }]
+  });
+  window.__charts.bar=new Chart(document.getElementById('barChart'),{
+    type:'bar', data:{ labels:_n,     datasets:[{ label:'AI研发投入占营收比(%)', data:cur[cm.bar.data], backgroundColor:_c }] },
+    options:{ responsive:true, resizeDelay:100, devicePixelRatio:dpr, maintainAspectRatio:false, layout:{ padding:{ top:25 } }, scales:{ y:{ beginAtZero:true, max:40, title:{ display:true, text:'%' } } }, plugins:{ legend:{ display:false }, tooltip:{ enabled:true, displayColors:false, titleFont:{size:mob?11:12}, bodyFont:{size:mob?11:12}, padding:mob?6:10, callbacks:{ label:function(ctx){ return 'AI研发投入占营收比(%)：'+ctx.label+' '+ctx.parsed.y+'%'; } } } } }
+  });
+  var radarOpt={responsive:true,resizeDelay:100,devicePixelRatio:dpr,maintainAspectRatio:false,layout:{padding:{top:mob?14:20,bottom:mob?6:10,left:mob?8:20,right:mob?8:20}},scales:{r:{min:0,max:100,ticks:{stepSize:20,display:true,backdropColor:'transparent',font:{size:mob?9:10,weight:'bold'},color:isDark?'#7a7a8e':'#666'},pointLabels:{color:isDark?'#b8b8cc':'#444',font:{size:mob?12:15,weight:'bold'},padding:mob?10:12},grid:{color:isDark?'rgba(255,255,255,.07)':'rgba(0,0,0,.08)',circular:true,lineWidth:1},angleLines:{color:isDark?'rgba(255,255,255,.07)':'rgba(0,0,0,.08)'}}},plugins:{legend:{position:'bottom',labels:{color:isDark?'#999':'#555',boxWidth:16,padding:14,font:{size:mob?12:13},usePointStyle:true}}}};
+  window.__radarChart = new Chart(document.getElementById('radarChart'),{
+    type:'radar', data:{ labels:D.radarLabels, datasets:getRadarDatasets() }, options:radarOpt
+  });
+  window.__charts.radar=window.__radarChart;
+  function barC(id,label,data,text){
+    var opt={responsive:true,resizeDelay:100,devicePixelRatio:dpr,maintainAspectRatio:false,scales:{y:{beginAtZero:true,title:{display:true,text:text}}},plugins:{legend:{display:false},tooltip:{enabled:true,displayColors:false,titleFont:{size:mob?11:12},bodyFont:{size:mob?11:12},padding:mob?6:10,callbacks:{label:function(ctx){return label+'：'+ctx.label+' '+ctx.parsed.y}}}}};
+    return new Chart(document.getElementById(id),{type:'bar',data:{labels:_n,datasets:[{label:label,data:data,backgroundColor:_c}]},options:opt});
+  }
+  window.__charts.param=barC('paramChart','端侧大模型参数量(亿)',cur[cm.param.data],'亿参数');
+  window.__charts.npu=barC('npuChart','NPU算力(TOPS)',cur[cm.npu.data],'TOPS');
+  var pt=document.getElementById('pieChart');
+  if(pt){
+    var pb=pt.closest('.chart-box');
+    if(pb){ var h3=pb.querySelector('h3'); if(h3) h3.innerHTML='&#128202; 中国智能手机市场份额 ('+(D.year==='2026'?'2026Q2':'2025 约值')+')'; }
+  }
+  window.__initChartsNow=doInit;
+  addDlButtons();
+  if(window.__chartLoading)window.__chartLoading(false);
+  if(window.__applyFilter)window.__applyFilter(false);
+  }
+  window.__initChartsNow=doInit;
+  var canvases=['pieChart','barChart','radarChart','paramChart','npuChart'].map(function(id){return document.getElementById(id)}).filter(Boolean);
+  if(!canvases.length){doInit();return}
+  var cio=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ cio.disconnect(); doInit(); } });
+  }, { rootMargin:'80px 0px', threshold:0 });
+  canvases.forEach(function(c){ cio.observe(c); });
+})();
+
+// ====== 图表管理器（统一调度图表初始化/更新/缩放/主题，简化分散的 update()/resize() 调用） ======
+window.ChartMgr = (function(){
+  function charts(){ return window.__charts||null; }
+  function all(){ var c=charts(); if(!c) return []; return Object.keys(c).map(function(k){return c[k]}).filter(Boolean); }
+  // resize() 防抖：窗口/布局连续变化时合并为最后一次（150ms），避免重复重绘
+  var __resizeT=null;
+  function _resizeNow(){ all().forEach(function(c){ if(c&&c.resize) c.resize(); }); }
+  function resize(){ clearTimeout(__resizeT); __resizeT=setTimeout(_resizeNow,150); }
+  // resizeNow() 立即执行（供折叠动画等需逐帧跟随的场景绕过防抖）
+  function resizeNow(){ clearTimeout(__resizeT); _resizeNow(); }
+  function init(){ if(window.__initChartsNow) window.__initChartsNow(); }
+  function updateYear(){
+    var ch=charts(); if(!ch) return;
+    var cur=D.cur();
+    var cm=D.chartMeta||{};
+    if(ch.pie && cm.pie){
+      ch.pie.data.labels=cur[cm.pie.labels];
+      ch.pie.data.datasets[0].data=cur[cm.pie.data];
+      ch.pie.data.datasets[0].backgroundColor=cur[cm.pie.colors];
+    }
+    Object.keys(cm).forEach(function(id){
+      if(id==='pie') return;
+      var m=cm[id], c=ch[id]; if(!c||!m) return;
+      c.data.datasets[0].data=cur[m.data];
+    });
+    all().forEach(function(c){ if(c&&c.update) c.update(); });
+  }
+  function updateTheme(){
+    var chart=window.__radarChart; if(!chart) return;
+    var dark=document.documentElement.getAttribute('data-theme')==='dark';
+    chart.data.datasets=getRadarDatasets();
+    chart.options.scales.r.pointLabels.color=dark?'#b8b8cc':'#444';
+    chart.options.scales.r.grid.color=dark?'rgba(255,255,255,.07)':'rgba(0,0,0,.08)';
+    chart.options.scales.r.angleLines.color=dark?'rgba(255,255,255,.07)':'rgba(0,0,0,.08)';
+    chart.options.scales.r.ticks.color=dark?'#7a7a8e':'#666';
+    if(chart.options.plugins.legend&&chart.options.plugins.legend.labels){ chart.options.plugins.legend.labels.color=dark?'#999':'#555'; }
+    chart.update();
+  }
+  return { init:init, resize:resize, resizeNow:resizeNow, updateYear:updateYear, updateTheme:updateTheme, all:all };
+})();
+
+// ====== 暗色模式切换 ======
+(function(){
+  var html = document.documentElement;
+  var btn = document.getElementById('themeBtn');
+  if(!btn) return;
+  function updateRadar(){
+    var chart = window.__radarChart;
+    if(!chart) return;
+    if(window.ChartMgr){ window.ChartMgr.updateTheme(); return; }
+    var dark = html.getAttribute('data-theme')==='dark';
+    chart.data.datasets = getRadarDatasets();
+    chart.options.scales.r.pointLabels.color = dark ? '#b8b8cc' : '#444';
+    chart.options.scales.r.grid.color = dark ? 'rgba(255,255,255,.07)' : 'rgba(0,0,0,.08)';
+    chart.options.scales.r.angleLines.color = dark ? 'rgba(255,255,255,.07)' : 'rgba(0,0,0,.08)';
+    chart.options.scales.r.ticks.color = dark ? '#7a7a8e' : '#666';
+    if(chart.options.plugins.legend && chart.options.plugins.legend.labels){ chart.options.plugins.legend.labels.color = dark ? '#999' : '#555'; }
+    chart.update();
+  }
+  function setTheme(isDark, smooth){
+    function apply(){
+      html.classList.add('theme-switching');
+      html.setAttribute('data-theme', isDark ? 'dark' : 'light');
+      html.style.colorScheme = isDark ? 'dark' : 'light';
+      btn.innerHTML = isDark
+        ? '<svg class="t-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+        : '<svg class="t-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';
+      lsSet('theme', isDark ? 'dark' : 'light');
+      updateRadar();
+      requestAnimationFrame(function(){
+        requestAnimationFrame(function(){html.classList.remove('theme-switching')});
+      });
+    }
+    if(!smooth){apply();return}
+    if(document.startViewTransition && window.matchMedia('(min-width:768px)').matches){
+      document.startViewTransition(apply);
+    } else {
+      var fast = window.matchMedia('(max-width:768px)').matches;
+      var o=document.createElement('div');
+      o.style.cssText='position:fixed;inset:0;z-index:9999;pointer-events:none;background:'+(isDark?'#fff':'#000')+';opacity:0;transition:opacity '+(fast?'.28s':'1s')+' ease';
+      document.body.appendChild(o);
+      requestAnimationFrame(function(){o.style.opacity=fast?'.35':'.45'});
+      setTimeout(function(){
+        apply();
+        o.style.transition='opacity '+(fast?'.35s':'1s')+' ease';
+        o.style.opacity='0';
+        setTimeout(function(){o.remove()},fast?450:1050);
+      },fast?320:700);
+    }
+  }
+  setTheme(lsGet('theme') === 'dark', false);
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+    setTheme(html.getAttribute('data-theme') !== 'dark', true);
+  });
+})();
+
+// ====== 打印前展开全部折叠内容（打印后还原，不残留 open 态） ======
+window.addEventListener('beforeprint', function(){
+  window.__printOpened = [];
+  document.querySelectorAll('details.fold,details.fold-card').forEach(function(d){
+    if(!d.open){ window.__printOpened.push(d); d.open = true; }
+  });
+});
+window.addEventListener('afterprint', function(){
+  (window.__printOpened||[]).forEach(function(d){ d.open = false; });
+  window.__printOpened = [];
+});
+
+// ====== 滚动飘浮动画 ======
+try{(function(){
+// ====== 粒子生成 ======
+(function(){
+  var p = document.getElementById('particles');
+  if(!p) return;
+  var isMobile = window.innerWidth < 768 || 'ontouchstart' in window;
+  if(isMobile) return;
+  var cores = navigator.hardwareConcurrency || 4;
+  var mem = navigator.deviceMemory || 4;
+  var count = (cores>=8 && mem>=4) ? 20 : (cores>=4 ? 10 : 0);
+  if(count<1) return;
+  var isDark = document.documentElement.getAttribute('data-theme')==='dark';
+  var colors = isDark ? ['rgba(100,120,255,','rgba(80,200,255,','rgba(130,100,255,','rgba(160,140,255,'] : ['rgba(67,97,238,','rgba(26,26,78,','rgba(100,80,200,','rgba(130,100,255,'];
+  var frag = document.createDocumentFragment();
+  for(var i=0;i<count;i++){
+    var d = document.createElement('div');
+    d.className='particle-dot';
+    var size = Math.random()*3+1.5;
+    var x = Math.random()*100;
+    var dur = Math.random()*25+18;
+    var delay = Math.random()*30;
+    var col = colors[Math.floor(Math.random()*colors.length)]+(Math.random()*.05+.03)+')';
+    var blur = isDark && size>3 ? 'filter:blur(1px);' : '';
+    d.style.cssText = 'left:'+x+'%;width:'+size+'px;height:'+size+'px;background:'+col+';animation-duration:'+dur+'s;animation-delay:'+delay+'s;'+blur;
+    frag.appendChild(d);
+  }
+  p.appendChild(frag);
+  document.addEventListener('visibilitychange',function(){
+    p.classList.toggle('particles-paused', document.hidden);
+  });
+})();
+
+// ====== 霓虹光晕统一设置 ======
+(function(){
+  try {
+    var isDark = document.documentElement.getAttribute('data-theme')==='dark';
+    document.querySelectorAll('.brand-card,.ai-item,.eco-card,.feature-card').forEach(function(c){
+      if(c.classList.contains('feature-card')){
+        c.style.setProperty('--glow-color','rgba(67,97,238,.2)');
+        c.style.setProperty('--scan-color', isDark ? 'rgba(255,255,255,.05)' : 'rgba(67,97,238,.05)');
+        return;
+      }
+      var alpha = c.classList.contains('ai-item') ? '.25' : '.35';
+      var bc = getComputedStyle(c)[c.classList.contains('ai-item') ? 'borderLeftColor' : 'borderTopColor'];
+      if(!bc) return;
+      var p = bc.replace(/[^\d,]/g,'').split(',');
+      if(p.length<3) return;
+      var pre='rgba('+p[0]+','+p[1]+','+p[2]+',';
+      var scanA = isDark ? Math.min(parseFloat(alpha)*.5, 0.08) : Math.min(parseFloat(alpha), 0.12);
+      c.style.setProperty('--glow-color', pre+alpha+')');
+      c.style.setProperty('--scan-color', pre+scanA+')');
+    });
+  }catch(e){}
+})();
+  var els = document.querySelectorAll('.fade-up');
+  if(!els.length) return;
+  var isMobile = window.innerWidth < 768 || 'ontouchstart' in window;
+  var idxMap = new Map();
+  els.forEach(function(el,i){ idxMap.set(el,i); });
+  if(isMobile){
+    var glowEls = document.querySelectorAll('.brand-card,.stat-card,.eco-card,.feature-card,.ai-item,.chart-box');
+    var go = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        e.target.classList.toggle('glow-paused', !e.isIntersecting);
+      });
+    }, { rootMargin:'150px 0px 150px 0px' });
+    glowEls.forEach(function(el){ go.observe(el); });
+  }
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        var idx = idxMap.get(entry.target) || 0;
+        var delay = isMobile ? 0 : Math.min(Math.max(idx * 25, 0), 300);
+        entry.target.style.setProperty('--fd', delay + 'ms');
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold:0.04, rootMargin:(isMobile?'0px 0px 140px 0px':'0px 0px 120px 0px') });
+  els.forEach(function(el){ observer.observe(el); });
+})();}catch(e){}
+
+// ====== 表格 data-label 注入（移动端卡片化） ======
+(function(){
+  document.querySelectorAll('.tbl-wrap table').forEach(function(tb){
+    var trs=tb.querySelectorAll('tr');
+    if(trs.length<2) return;
+    var labels=[];
+    trs[0].querySelectorAll('th,td').forEach(function(c){
+      labels.push((c.textContent||'').replace(/\s+/g,' ').trim());
+    });
+    for(var i=1;i<trs.length;i++){
+      var tds=trs[i].querySelectorAll('td');
+      for(var j=0;j<tds.length;j++){
+        if(labels[j]!==undefined) tds[j].setAttribute('data-label',labels[j]);
+      }
+    }
+  });
+})();
+
+// ====== 折叠收起/展开平滑动画（支持任意时刻连续打断反向，收起起点取当前实际高度而非满高，避免跳变/吞点击） ======
+(function(){
+  var CLOSE_MS = 360;
+  window.__noFoldAnim = !(window.CSS && CSS.supports && CSS.supports('interpolate-size','allow-keywords'));
+  function sumH(d){ var s=d.querySelector('summary'); return s?s.offsetHeight:0; }
+  function curContentH(d){
+    var h = d.getBoundingClientRect().height - sumH(d);
+    return h > 0 ? h : 0;
+  }
+  function clearT(d){ if(d.__foldT){ clearTimeout(d.__foldT); d.__foldT=null; } }
+  function jsOpen(d, start){
+    var full = d.scrollHeight;
+    d.classList.add('opening');
+    d.open = true;
+    d.style.transition='none';
+    d.style.height = (start>0?start:sumH(d))+'px';
+    void d.offsetWidth;
+    d.style.transition='height .35s cubic-bezier(.22,.61,.36,1)';
+    d.style.height = full+'px';
+    var done=function(){ d.classList.remove('opening'); d.style.removeProperty('height'); d.style.removeProperty('transition'); };
+    d.addEventListener('transitionend', function h(ev){ if(ev.propertyName==='height'){ done(); d.removeEventListener('transitionend',h); } });
+    clearT(d);
+    d.__foldT=setTimeout(done, 450);
+  }
+  function jsClose(d, start){
+    d.classList.add('closing');
+    d.style.transition='none';
+    d.style.height = (start>0?start:d.scrollHeight)+'px';
+    void d.offsetWidth;
+    d.style.transition='height .35s cubic-bezier(.22,.61,.36,1)';
+    d.style.height = sumH(d)+'px';
+    var done=function(){
+      d.open = false;
+      d.classList.remove('closing');
+      d.style.removeProperty('height');
+      d.style.removeProperty('transition');
+    };
+    d.addEventListener('transitionend', function h(ev){ if(ev.propertyName==='height'){ done(); d.removeEventListener('transitionend',h); } });
+    clearT(d);
+    d.__foldT=setTimeout(done, CLOSE_MS);
+  }
+  window.__foldOpen = function(d){
+    if(!d) return;
+    if(d.classList.contains('closing')){ window.__foldReopen(d); return; }
+    if(!window.__noFoldAnim) return;
+    if(d.classList.contains('opening')) return;
+    var cur = d.style.height ? parseFloat(d.style.height) : 0;
+    if(isNaN(cur)) cur = 0;
+    jsOpen(d, cur);
+  };
+  window.__foldReopen = function(d){
+    if(!d || !d.classList.contains('closing')) return;
+    if(window.__noFoldAnim){
+      var s = parseFloat(d.style.height);
+      if(isNaN(s)) s = sumH(d);
+      clearT(d);
+      d.classList.remove('closing');
+      jsOpen(d, s);
+      return;
+    }
+    var cur = curContentH(d);
+    clearT(d);
+    d.style.setProperty('--fold-h', cur+'px');
+    void d.offsetWidth;
+    d.classList.remove('closing');
+    d.style.removeProperty('--fold-h');
+    d.__foldT=setTimeout(function(){ d.classList.remove('closing'); d.style.removeProperty('--fold-h'); }, 500);
+  };
+  window.__foldClose = function(d){
+    if(!d || d.classList.contains('closing')) return;
+    if(window.__noFoldAnim){
+      var s2 = d.style.height ? parseFloat(d.style.height) : 0;
+      if(isNaN(s2)) s2 = 0;
+      jsClose(d, s2);
+      return;
+    }
+    d.classList.add('closing');
+    var cur = curContentH(d), full = d.scrollHeight - sumH(d);
+    if(cur < 1 || cur > full) cur = full;
+    d.style.setProperty('--fold-h', cur+'px');
+    void d.offsetWidth;
+    d.style.setProperty('--fold-h', '0px');
+    clearT(d);
+    d.__foldT=setTimeout(function(){
+      d.open = false;
+      d.classList.remove('closing');
+      d.style.removeProperty('--fold-h');
+      d.__foldT=null;
+    }, CLOSE_MS);
+  };
+  document.addEventListener('click', function(e){
+    var el = e.target && e.target.nodeType===3 ? e.target.parentElement : e.target;
+    var s = el && el.closest ? el.closest('summary') : null;
+    if(!s) return;
+    var d = s.parentElement;
+    if(!d || !d.matches) return;
+    if(!(d.matches('details.fold') || d.matches('details.fold-card'))) return;
+    var t = el && el.closest ? el.closest('.fold-btn') : null;
+    if(!t){ e.preventDefault(); return; }
+    if(d.classList.contains('closing')){ e.preventDefault(); window.__foldReopen(d); return; }
+    if(d.open){ e.preventDefault(); window.__foldClose(d); return; }
+    if(window.__noFoldAnim && d.classList.contains('opening')){ e.preventDefault(); return; }
+    if(window.__noFoldAnim){ e.preventDefault(); window.__foldOpen(d); return; }
+    if(d.style.height || d.classList.contains('opening')){ clearT(d); d.classList.remove('opening'); d.style.removeProperty('height'); d.style.removeProperty('transition'); }
+  }, true);
+  document.addEventListener('keydown', function(e){
+    var t = e.target && e.target.closest ? e.target.closest('.fold-btn') : null;
+    if(!t) return;
+    if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){
+      e.preventDefault();
+      t.click();
+    }
+  }, true);
+})();
+
+// ====== 折叠表格互斥展开（同板块仅1个）+ 折叠后图表resize ======
+(function(){
+  function chartsResize(dur){
+    if(typeof Chart==='undefined') return;
+    var charts=[];
+    if(window.ChartMgr){ charts=window.ChartMgr.all(); }
+    else {
+      ['pieChart','barChart','radarChart','paramChart','npuChart'].forEach(function(id){
+        var cv=document.getElementById(id);
+        if(!cv) return;
+        var c=Chart.getChart(cv);
+        if(c && c.resize) charts.push(c);
+      });
+    }
+    if(!charts.length) return;
+    dur = dur || 450;
+    var t0 = performance.now();
+    function tick(){
+      var el = performance.now()-t0;
+      charts.forEach(function(c){ c.resize(); });
+      if(el < dur) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  document.addEventListener('toggle', function(e){
+    var d=e.target;
+    if(!d || !d.matches) return;
+    if(d.matches('details.fold')){
+      chartsResize(window.innerWidth<=768 ? 320 : 450);
+    }
+  }, true);
+  document.addEventListener('click', function(e){
+    var el=e.target && e.target.nodeType===3 ? e.target.parentElement : e.target;
+    var s=el && el.closest ? el.closest('summary') : null;
+    if(!s) return;
+    var d=s.parentElement;
+    if(!d || !d.matches) return;
+    if(!(d.matches('details.fold') || d.matches('details.fold-card'))) return;
+    var t=el && el.closest ? el.closest('.fold-btn') : null;
+    if(!t) return;
+    if(d.open) return;
+    var sec=d.closest('.section');
+    var other=sec?sec.querySelectorAll('details.fold[open],details.fold-card[open]'):null;
+    if(other){
+      other.forEach(function(o){
+        if(o!==d){ if(window.__foldClose) window.__foldClose(o); else o.open=false; }
+      });
+    }
+  }, true);
+})();
+
+// ====== 悬浮目录 TOC（一级h2章节 + 二级折叠表格） ======
+(function(){
+  var heads=Array.prototype.slice.call(document.querySelectorAll('.section h2'));
+  if(!heads.length) return;
+  var side=document.getElementById('tocSide'), fab=document.getElementById('tocFab'),
+      mask=document.getElementById('tocMask'), drawer=document.getElementById('tocDrawer'),
+      list=document.getElementById('tocList'), closeBtn=document.getElementById('tocClose');
+  function title(t){ return (t||'').replace(/^[^\u4e00-\u9fa5A-Za-z0-9]+/,'').replace(/\s+/g,' ').trim(); }
+  function subFor(h){
+    var sec=h.closest('.section'), out='';
+    if(!sec) return out;
+    sec.querySelectorAll('details.fold').forEach(function(f){
+      var t=title(f.querySelector('summary')&&f.querySelector('summary').textContent).replace(/^展开[：:]?/,'');
+      if(!t) return;
+      out+='<a class="toc-sub" href="#'+f.id+'">'+t+'</a>';
+    });
+    return out;
+  }
+  function buildHtml(){
+    var html='';
+    heads.forEach(function(h){ html+='<a href="#'+h.id+'">'+title(h.textContent)+'</a>'+subFor(h); });
+    if(list) list.innerHTML=html;
+    if(side) side.innerHTML=html;
+    if(side){
+      var wrap=document.createElement('div');
+      wrap.className='toc-side-tools';
+      var b1=document.createElement('button'); b1.type='button'; b1.id='tocLockBtn'; b1.title='锁定/解锁拖拽位置';
+      var b2=document.createElement('button'); b2.type='button'; b2.id='tocFoldBtn'; b2.title='收起侧栏';
+      wrap.appendChild(b1); wrap.appendChild(b2);
+      var rp=document.createElement('button'); rp.type='button'; rp.className='toc-reopen'; rp.id='tocReopenBtn'; rp.title='展开侧栏'; rp.textContent='▶';
+      side.appendChild(wrap); side.appendChild(rp);
+      syncTocTools();
+    }
+    if(fab) fab.innerHTML='&#9776;<span>'+heads.length+'</span>';
+  }
+  function syncTocTools(){
+    if(!side) return;
+    var lock=side.getAttribute('data-toc-lock')==='1';
+    var b1=document.getElementById('tocLockBtn');
+    if(b1){ b1.textContent=lock?'锁':'拖'; b1.classList.toggle('toc-locked',lock); }
+    var b2=document.getElementById('tocFoldBtn');
+    if(b2) b2.textContent='收';
+  }
+  function setTocCollapsed(c){
+    if(!side) return;
+    side.classList.toggle('toc-collapsed',c);
+    lsSet('tocCollapsed',c?'1':'0');
+    var rp=document.getElementById('tocReopenBtn');
+    if(rp){ rp.style.display = c ? 'flex' : ''; }
+  }
+  function closeDrawer(){
+    if(drawer) drawer.classList.remove('toc-show');
+    if(mask) mask.classList.remove('toc-show');
+    if(drawer) drawer.setAttribute('aria-hidden','true');
+  }
+  function openDrawer(){
+    if(drawer) drawer.classList.add('toc-show');
+    if(mask) mask.classList.add('toc-show');
+    if(drawer) drawer.setAttribute('aria-hidden','false');
+  }
+  function jumpTo(a){
+    var href=a.getAttribute('href'); if(!href||href[0]!=='#') return;
+    var f=document.getElementById(href.slice(1));
+    if(!f) return;
+    if(f.tagName==='DETAILS'){
+      if(!f.open){ f.open=true; }
+      setTimeout(function(){ f.scrollIntoView({behavior:'smooth',block:'start'}); },480);
+    } else {
+      f.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+    closeDrawer();
+  }
+  buildHtml();
+  if(fab) fab.addEventListener('click',function(){
+    if(drawer && drawer.classList.contains('toc-show')) closeDrawer();
+    else openDrawer();
+  });
+  if(mask) mask.addEventListener('click',closeDrawer);
+  if(closeBtn) closeBtn.addEventListener('click',closeDrawer);
+  if(side){
+    document.addEventListener('click',function(e){
+      var t=e.target&&e.target.closest?e.target.closest('#tocLockBtn,#tocFoldBtn,#tocReopenBtn'):null;
+      if(!t) return;
+      if(t.id==='tocLockBtn'){
+        side.setAttribute('data-toc-lock',side.getAttribute('data-toc-lock')==='1'?'0':'1');
+        lsSet('tocLock',side.getAttribute('data-toc-lock')==='1'?'1':'0');
+        syncTocTools();
+      } else if(t.id==='tocFoldBtn'||t.id==='tocReopenBtn'){
+        setTocCollapsed(!side.classList.contains('toc-collapsed'));
+      }
+    });
+    try{
+      var c0=lsGet('tocCollapsed','0');
+      if(c0==='1') setTocCollapsed(true);
+      var l0=lsGet('tocLock','0');
+      if(l0==='1'){ side.setAttribute('data-toc-lock','1'); syncTocTools(); }
+    }catch(err){}
+  }
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeDrawer(); });
+  [list,side].forEach(function(c){
+    if(c) c.addEventListener('click',function(e){
+      var a=e.target.closest?e.target.closest('a'):null;
+      if(!a) return;
+      e.preventDefault();
+      jumpTo(a);
+    });
+  });
+  var secs=[]; heads.forEach(function(h){ var s=h.closest('.section'); if(s) secs.push(s); });
+  var activeId='';
+  function applyActive(){
+    var top=window.scrollY+window.innerHeight*0.35;
+    var active=null;
+    secs.forEach(function(s){
+      if(s.style.display==='none') return;
+      var r=s.getBoundingClientRect();
+      if(r.top<=top && (!active || r.top>active.getBoundingClientRect().top)) active=s;
+    });
+    if(!active && secs.length) active=secs[secs.length-1];
+    if(!active) return;
+    var h2=active.querySelector('h2');
+    if(!h2) return;
+    var id=h2.id;
+    if(id===activeId) return;
+    activeId=id;
+    document.querySelectorAll('.toc-side a,.toc-list a').forEach(function(a){
+      if(a.classList.contains('toc-sub')) return;
+      a.classList.toggle('toc-active', a.getAttribute('href')==='#'+id);
+    });
+  }
+  var tocTicking=false;
+  function tocOnScroll(){
+    if(tocTicking) return;
+    tocTicking=true;
+    requestAnimationFrame(function(){ tocTicking=false; applyActive(); });
+  }
+  document.addEventListener('scroll',tocOnScroll,{passive:true});
+  applyActive();
+})();
+
+// ====== 品牌筛选（隐藏卡片/表格行/列，图表数据联动） + 表格复制/导出/年度切换/宽度 ======
+(function(){
+  var FILTER_KEY='filterBrands', YEAR_KEY='year', CW_KEY='cw';
+  window.toast=function(msg){
+    var t=document.getElementById('toast');
+    if(!t){ t=document.createElement('div'); t.className='toast'; t.id='toast'; document.body.appendChild(t); }
+    t.textContent=msg; t.classList.add('show');
+    clearTimeout(window.toast._t);
+    window.toast._t=setTimeout(function(){ t.classList.remove('show'); },2200);
+  };
+  function currentSel(){
+    var sel=[];
+    document.querySelectorAll('#filterBar input[data-brand]').forEach(function(c){ if(c.checked) sel.push(c.getAttribute('data-brand')); });
+    return sel;
+  }
+  function saveSel(){ lsSet(FILTER_KEY, JSON.stringify(currentSel())); }
+  var savedSel=null;
+  try{ savedSel=JSON.parse(lsGet(FILTER_KEY,'null')); }catch(e){}
+  if(Array.isArray(savedSel) && savedSel.length){
+    document.querySelectorAll('#filterBar input[data-brand]').forEach(function(c){ c.checked=savedSel.indexOf(c.getAttribute('data-brand'))>-1; });
+  }
+  function brandOf(el){
+    var img = el.tagName==='IMG' ? el : el.querySelector('img');
+    if(img){
+      var m=(img.getAttribute('src')||'').match(/simpleicons\.org\/([a-z0-9_-]+)\//i);
+      if(m){
+        var b=D.brands.find(function(x){return x.id===m[1].toLowerCase()});
+        if(b) return b.id;
+      }
+    }
+    var t=(el.textContent||'').trim();
+    var b2=D.brands.find(function(x){return t.indexOf(x.name)>-1});
+    return b2?b2.id:null;
+  }
+  function isSubBrandSec(el){
+    var sec=el.closest('.section');
+    return !!(sec && sec.querySelector('h2#sub-brands'));
+  }
+  document.querySelectorAll('.brand-card').forEach(function(c){ if(isSubBrandSec(c)) return; var id=brandOf(c); if(id) c.setAttribute('data-brand',id); });
+  document.querySelectorAll('.brand-grid > a').forEach(function(a){
+    var c=a.querySelector('.brand-card');
+    if(c && c.getAttribute('data-brand')) a.setAttribute('data-brand',c.getAttribute('data-brand'));
+  });
+  document.querySelectorAll('.stat-row-brands .stat-card').forEach(function(c){ var id=brandOf(c); if(id) c.setAttribute('data-brand',id); });
+  document.querySelectorAll('#fold-ai-models tr').forEach(function(tr,i){ if(i===0) return; var id=brandOf(tr); if(id) tr.setAttribute('data-brand',id); });
+  document.querySelectorAll('.ai-item').forEach(function(c){
+    var img=c.querySelector('img');
+    if(!img) return;
+    var m=(img.getAttribute('src')||'').match(/simpleicons\.org\/([a-z0-9_-]+)\//i);
+    if(!m) return;
+    var b=D.brands.find(function(x){return x.id===m[1].toLowerCase()});
+    if(b) c.setAttribute('data-brand',b.id);
+  });
+  document.querySelectorAll('.eco-card').forEach(function(c){ var id=brandOf(c); if(id) c.setAttribute('data-brand',id); });
+  document.querySelectorAll('.matrix-table').forEach(function(tb){
+    var ths=tb.querySelectorAll('tr:first-child th');
+    var cols=[];
+    ths.forEach(function(th,i){ cols.push(i===0?null:brandOf(th)); });
+    tb.querySelectorAll('tr').forEach(function(tr){
+      var cells=tr.querySelectorAll('th,td');
+      cells.forEach(function(c,i){ if(i>0&&cols[i]) c.setAttribute('data-brand',cols[i]); });
+    });
+  });
+  function applyFilter(animate){
+    var sel=currentSel();
+    var on=function(k){return sel.indexOf(k)>-1};
+    var ch0=window.__charts;
+    function cleanT(el){
+      [].slice.call(el.tagName==='TR'?el.querySelectorAll('td,th'):[el]).forEach(function(t){
+        t.style.transition=''; t.style.transform='';
+        if(t.getAnimations) t.getAnimations().forEach(function(a){ a.cancel(); });
+      });
+    }
+    if(animate===false){
+      clearTimeout(window.__flipT);
+      var prev0=window.__flipState;
+      if(prev0){
+        prev0.hide.forEach(function(el){ el.classList.remove('f-out'); cleanT(el); });
+        prev0.show.forEach(function(el){ el.classList.remove('f-in'); cleanT(el); });
+        prev0.sec.forEach(function(s){ s.classList.remove('f-out'); });
+        prev0.secIn.forEach(function(s){ s.classList.remove('f-in'); });
+        window.__flipState=null;
+      }
+      document.querySelectorAll('[data-brand]:not(input)').forEach(function(el){ el.style.display=on(el.getAttribute('data-brand'))?'':'none'; cleanT(el); });
+      var e0=sel.length===0;
+      ['brands','system-compare','ai-models','feature-matrix','ai-trends','ai-bench','ecosystem'].forEach(function(id){
+        var h=document.getElementById(id); var s=h?h.closest('.section'):null;
+        if(s) s.style.display=e0?'none':'';
+      });
+    } else {
+      document.querySelectorAll('.tbl-wrap td,.tbl-wrap th,.tbl-wrap tr,[data-brand]:not(input)').forEach(function(el){
+        if(el.style.transform||el.style.transition||el.__flipT){ el.style.transition=''; el.style.transform=''; clearTimeout(el.__flipT); el.__flipT=null; if(el.getAnimations) el.getAnimations().forEach(function(a){ a.cancel(); }); }
+      });
+      var prev=window.__flipState;
+      function unpin(el){
+        el.classList.remove('f-out');
+        if(el.style.position){ el.style.position=''; el.style.left=''; el.style.top=''; el.style.width=''; el.style.height=''; el.style.margin=''; }
+      }
+      if(prev){
+        prev.hide.forEach(function(el){ el.style.display='none'; unpin(el); cleanT(el); });
+        prev.show.forEach(function(el){ el.style.display=''; el.classList.remove('f-in'); el.style.opacity=''; el.style.translate=''; cleanT(el); });
+        prev.sec.forEach(function(s){ s.style.display='none'; unpin(s); s.style.transform=''; });
+        prev.secIn.forEach(function(s){ s.classList.remove('f-in'); s.style.opacity=''; s.style.translate=''; });
+      }
+      var els=[].slice.call(document.querySelectorAll('[data-brand]:not(input)')).filter(function(el){
+        var pa=el.parentElement;
+        return !(pa && pa.tagName==='A' && pa.getAttribute('data-brand'));
+      });
+      var first=new Map();
+      els.forEach(function(el){ if(el.style.display!=='none'&&el.offsetParent!==null){ var r=el.getBoundingClientRect(); first.set(el,{l:r.left,t:r.top,w:r.width,h:r.height}); } });
+      var secIds=['brands','system-compare','ai-models','feature-matrix','ai-trends','ai-bench','ecosystem'];
+      function absPin(el,f){
+        if(!f){ el.classList.add('f-out'); return; }
+        var op=el.offsetParent;
+        var pr=op?op.getBoundingClientRect():{left:0,top:0};
+        el.style.position='absolute';
+        el.style.left=(f.l-pr.left)+'px';
+        el.style.top=(f.t-pr.top)+'px';
+        el.style.width=f.w+'px';
+        el.style.height=f.h+'px';
+        el.style.margin='0';
+        el.classList.add('f-out');
+      }
+      var hideEls=[], showEls=[];
+      els.forEach(function(el){
+        var show=on(el.getAttribute('data-brand'));
+        var nowHidden=el.style.display==='none';
+        if(!show&&!nowHidden) hideEls.push(el);
+        if(show&&nowHidden) showEls.push(el);
+      });
+      var empty=sel.length===0;
+      var secEls=[], secInEls=[];
+      var secFirst=new Map();
+      secIds.forEach(function(id){
+        var h=document.getElementById(id);
+        var s=h?h.closest('.section'):null;
+        if(!s) return;
+        if(s.style.display!=='none'){ var r=s.getBoundingClientRect(); secFirst.set(s,{l:r.left,t:r.top,w:r.width,h:r.height}); }
+        if(empty&&s.style.display!=='none'){ secEls.push(s); absPin(s,secFirst.get(s)); }
+        if(!empty&&s.style.display==='none'){ s.style.display=''; secInEls.push(s); }
+      });
+      window.__flipState={hide:hideEls,show:showEls,sec:secEls,secIn:secInEls};
+      clearTimeout(window.__flipT);
+      hideEls.forEach(function(el){
+        if(el.tagName==='TR'){ el.style.display='none'; return; }
+        absPin(el,first.get(el));
+      });
+      showEls.forEach(function(el){ el.style.display=''; });
+      requestAnimationFrame(function(){
+        showEls.forEach(function(el){ el.classList.add('f-in'); el.addEventListener('animationend',function h(){ el.classList.remove('f-in'); el.style.opacity=''; el.style.translate=''; el.removeEventListener('animationend',h); }); setTimeout(function(){ el.classList.remove('f-in'); el.style.opacity=''; el.style.translate=''; },600); });
+        secInEls.forEach(function(s){ s.classList.add('f-in'); s.addEventListener('animationend',function h(){ s.classList.remove('f-in'); s.style.opacity=''; s.style.translate=''; s.removeEventListener('animationend',h); }); setTimeout(function(){ s.classList.remove('f-in'); s.style.opacity=''; s.style.translate=''; },600); });
+      });
+      requestAnimationFrame(function(){
+        requestAnimationFrame(function(){
+          els.forEach(function(el){
+            if(el.style.display==='none'||el.offsetParent===null) return;
+            var f=first.get(el); if(!f) return;
+            var r=el.getBoundingClientRect();
+            var dx=f.l-r.left, dy=f.t-r.top;
+            if(Math.abs(dx)<1&&Math.abs(dy)<1) return;
+            var targets=el.tagName==='TR'?[].slice.call(el.querySelectorAll('td,th')):[el];
+            targets.forEach(function(t){
+              t.style.transition='none';
+              t.style.transform='translate('+dx+'px,'+dy+'px)';
+            });
+            void el.offsetWidth;
+            targets.forEach(function(t){
+              t.style.transition='transform .45s cubic-bezier(.16,1,.3,1)';
+              t.style.transform='';
+              clearTimeout(t.__flipT);
+              t.__flipT=setTimeout(function(){ t.style.transition=''; t.style.transform=''; if(t.getAnimations) t.getAnimations().forEach(function(a){ a.cancel(); }); },550);
+              t.addEventListener('transitionend',function h(){ t.style.transition=''; t.style.transform=''; if(t.getAnimations) t.getAnimations().forEach(function(a){ a.cancel(); }); t.removeEventListener('transitionend',h); });
+            });
+          });
+          secEls.forEach(function(s){
+            if(s.style.display==='none'||s.offsetParent===null) return;
+            var f=secFirst.get(s); if(!f) return;
+            var r=s.getBoundingClientRect();
+            var dx=f.l-r.left, dy=f.t-r.top;
+            if(Math.abs(dx)<1&&Math.abs(dy)<1) return;
+            s.style.transition='none';
+            s.style.transform='translate('+dx+'px,'+dy+'px)';
+            void s.offsetWidth;
+            s.style.transition='transform .45s cubic-bezier(.16,1,.3,1)';
+            s.style.transform='';
+            s.addEventListener('transitionend',function h(){ s.style.transition=''; s.style.transform=''; s.removeEventListener('transitionend',h); });
+          });
+        });
+      });
+      window.__flipT=setTimeout(function(){
+        hideEls.forEach(function(el){ el.style.display='none'; unpin(el); });
+        secEls.forEach(function(s){ s.style.display='none'; unpin(s); s.style.transform=''; });
+        window.__flipState=null;
+      },420);
+    }
+    var ch=ch0; if(!ch) return;
+    var cur=D.cur();
+    var cm=D.chartMeta||{};
+    var selNames=sel.map(function(k){var b=D.brands.find(function(x){return x.id===k});return b?b.name:''});
+    if(ch.pie && cm.pie){
+      var pi=[];
+      cur[cm.pie.labels].forEach(function(l,i){ var n=l.replace(/\s?\d+%/,'').trim(); if(selNames.indexOf(n)>-1) pi.push(i); });
+      var f=function(a){return a.filter(function(_,i){return pi.indexOf(i)>-1})};
+      ch.pie.data.labels=f(cur[cm.pie.labels]);
+      ch.pie.data.datasets[0].data=f(cur[cm.pie.data]);
+      ch.pie.data.datasets[0].backgroundColor=f(cur[cm.pie.colors]);
+      ch.pie.update();
+    }
+    var idx=sel.map(function(k){return D.brands.findIndex(function(b){return b.id===k})}).filter(function(i){return i>-1});
+    var fi=function(a){return a.filter(function(_,i){return idx.indexOf(i)>-1})};
+    Object.keys(cm).forEach(function(id){
+      if(id==='pie') return;
+      var chk=ch[id], m=cm[id]; if(!chk||!m) return;
+      chk.data.labels=fi(_n);
+      chk.data.datasets[0].data=fi(cur[m.data]);
+      chk.data.datasets[0].backgroundColor=fi(_c);
+      chk.update();
+    });
+    ['barChart','paramChart','npuChart'].forEach(function(id){
+      var cv=document.getElementById(id); if(!cv) return;
+      var box=cv.closest('.chart-box'); if(!box) return;
+      var empty=box.querySelector('.chart-empty');
+      if(!empty){
+        empty=document.createElement('div');
+        empty.className='chart-empty';
+        empty.textContent='暂无匹配数据，请调整筛选';
+        box.appendChild(empty);
+      }
+      empty.style.display=(sel.length===0)?'flex':'none';
+    });
+  }
+  document.querySelectorAll('#filterBar input[data-brand]').forEach(function(c){ c.addEventListener('change',function(){ saveSel(); applyFilter(); }); });
+  window.__applyFilter=applyFilter;
+  if(savedSel && savedSel.length && savedSel.length<D.brands.length) applyFilter(false);
+  var allBtn=document.getElementById('filterAllBtn'), noneBtn=document.getElementById('filterNoneBtn');
+  if(allBtn) allBtn.addEventListener('click',function(){
+    document.querySelectorAll('#filterBar input[data-brand]').forEach(function(c){ c.checked=true; });
+    saveSel(); applyFilter();
+  });
+  if(noneBtn) noneBtn.addEventListener('click',function(){
+    document.querySelectorAll('#filterBar input[data-brand]').forEach(function(c){ c.checked=false; });
+    saveSel(); applyFilter();
+  });
+  function copyData(onlySel){
+    var sel=currentSel();
+    var parts=[], rowsTotal=0;
+    document.querySelectorAll('.tbl-wrap table').forEach(function(tb){
+      var rows=[];
+      tb.querySelectorAll('tr').forEach(function(tr){
+        if(tr.style.display==='none') return;
+        if(onlySel){
+          var b=tr.getAttribute('data-brand');
+          if(!b || sel.indexOf(b)<0) return;
+        }
+        var cells=[];
+        tr.querySelectorAll('th,td').forEach(function(c){
+          if(c.style.display==='none') return;
+          cells.push((c.textContent||'').replace(/\s+/g,' ').trim());
+        });
+        if(cells.length){ rows.push(cells.join('\t')); rowsTotal++; }
+      });
+      if(rows.length) parts.push(rows.join('\n'));
+    });
+    var txt=parts.join('\n\n');
+    function done(){ window.toast('已复制 ' + rowsTotal + ' 行数据'); }
+    function fb(t){
+      var ta=document.createElement('textarea');
+      ta.value=t; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try{document.execCommand('copy')}catch(e){}
+      document.body.removeChild(ta);
+    }
+    if(txt){
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done).catch(function(){fb(txt);done();});
+      }else{ fb(txt); done(); }
+    } else { window.toast('没有可复制的数据'); }
+  }
+  var copyBtn=document.getElementById('copyBtn');
+  if(copyBtn) copyBtn.addEventListener('click',function(){ copyData(false); });
+  var copySelBtn=document.getElementById('copySelBtn');
+  if(copySelBtn) copySelBtn.addEventListener('click',function(){ copyData(true); });
+  function downloadAllCharts(){
+    if(!window.__charts || !window.__charts.pie){ if(window.__initChartsNow) window.__initChartsNow(); }
+    var ids=['pieChart','barChart','radarChart','paramChart','npuChart'];
+    var n=0;
+    ids.forEach(function(id){
+      var cv=document.getElementById(id); if(!cv) return;
+      var c=Chart.getChart(cv); if(!c) return;
+      var box=cv.closest('.chart-box');
+      var label=(box&&box.querySelector('h3'))?box.querySelector('h3').textContent:id;
+      var fname=label.replace(/[^\u4e00-\u9fa5A-Za-z0-9]+/g,'_').slice(0,40)+'_'+D.year+'.png';
+      var a=document.createElement('a'); a.href=c.toBase64Image('image/png',1); a.download=fname; a.click();
+      n++;
+    });
+    window.toast('已导出 '+n+' 张图表 PNG');
+  }
+  var dlAll=document.getElementById('chartDlAllBtn');
+  if(dlAll) dlAll.addEventListener('click',downloadAllCharts);
+  var colAll=document.getElementById('collapseAllBtn');
+  if(colAll) colAll.addEventListener('click',function(){
+    var arr=document.querySelectorAll('details.fold[open],details.fold-card[open]');
+    var n=0;
+    arr.forEach(function(d){ if(window.__foldClose) window.__foldClose(d); else d.open=false; n++; });
+    window.toast(n?('已收起 '+n+' 个面板'):'已全部收起');
+    // 面板可能不在视口内，收起后平滑滚动到第一个被收起的板块，让用户看到实际变化
+    if(n && arr.length){
+      var first=arr[0].closest('.section');
+      if(first && typeof first.scrollIntoView==='function'){
+        setTimeout(function(){ first.scrollIntoView({behavior:'smooth',block:'start'}); }, 80);
+      }
+    }
+  });
+  function applyYearTitle(){
+    var pt=document.getElementById('pieChart');
+    if(pt){
+      var pb=pt.closest('.chart-box');
+      if(pb){ var h3=pb.querySelector('h3'); if(h3) h3.innerHTML='&#128202; 中国智能手机市场份额 ('+(D.year==='2026'?'2026Q2':'2025 约值')+')'; }
+    }
+  }
+  function refreshYearCharts(){
+    var ch=window.__charts; if(!ch) return;
+    var cur=D.cur();
+    requestAnimationFrame(function(){
+      if(window.ChartMgr){ window.ChartMgr.updateYear(); }
+      else {
+        var cm=D.chartMeta||{};
+        if(ch.pie && cm.pie){
+          ch.pie.data.labels=cur[cm.pie.labels];
+          ch.pie.data.datasets[0].data=cur[cm.pie.data];
+          ch.pie.data.datasets[0].backgroundColor=cur[cm.pie.colors];
+        }
+        Object.keys(cm).forEach(function(id){
+          if(id==='pie') return;
+          var chk=ch[id], m=cm[id]; if(!chk||!m) return;
+          chk.data.datasets[0].data=cur[m.data];
+        });
+      }
+      applyFilter();
+    });
+  }
+  var yearSel=document.getElementById('yearSel');
+  if(yearSel){
+    yearSel.value=D.year;
+    yearSel.addEventListener('change',function(){
+      if(D.YEARS[yearSel.value]){
+        D.year=yearSel.value;
+        lsSet(YEAR_KEY,D.year);
+        applyYearTitle();
+        refreshYearCharts();
+      }
+    });
+  }
+  var cw=null;
+  cw=lsGet(CW_KEY,null);
+  var initW=(cw && ['1120','1300','1500'].indexOf(cw)>-1) ? cw : '1120';
+  document.body.setAttribute('data-cw', initW);
+  document.querySelectorAll('#widthSwitch button').forEach(function(b){
+    var w=b.getAttribute('data-w');
+    if(w===initW) b.classList.add('w-active'); else b.classList.remove('w-active');
+    b.addEventListener('click',function(){
+      document.body.setAttribute('data-cw',w);
+      lsSet(CW_KEY,w);
+      document.querySelectorAll('#widthSwitch button').forEach(function(x){ x.classList.toggle('w-active', x===b); });
+      var _cmp=document.getElementById('brandCmp');
+      if(_cmp){
+        var _stored=null; try{ _stored=lsGet('brandCmpOpen',null); }catch(e){ _stored=null; }
+        if(_stored==null){
+          var _wide=(w==='1300'||w==='1500')&&window.innerWidth>=1440;
+          _cmp.classList.toggle('open',_wide);
+          _cmp.setAttribute('aria-hidden',_wide?'false':'true');
+        }
+      }
+      clearTimeout(window.__cwT);
+      window.__cwT=setTimeout(function(){
+        if(window.ChartMgr){ window.ChartMgr.resize(); }
+        else if(window.__charts){ Object.keys(window.__charts).forEach(function(k){ var ch=window.__charts[k]; if(ch&&ch.resize) ch.resize(); }); }
+      },200);
+    });
+  });
+})();
+
+// ====== 移动端筛选底部抽屉（≤768px：FAB 触发 + 遮罩 + 关闭） ======
+(function(){
+  var fbar=document.getElementById('filterBar');
+  var fab=document.getElementById('filterFab');
+  var mask=document.getElementById('filterMask');
+  var fclose=document.getElementById('filterCloseBtn');
+  if(!fbar||!fab||!mask) return;
+  function setOpen(on){
+    fbar.classList.toggle('open',!!on);
+    mask.classList.toggle('show',!!on);
+    fbar.setAttribute('aria-hidden',on?'false':'true');
+    if(on && window.__renderBrandCmp) window.__renderBrandCmp();
+  }
+  fab.addEventListener('click',function(){ setOpen(!fbar.classList.contains('open')); });
+  mask.addEventListener('click',function(){ setOpen(false); });
+  if(fclose) fclose.addEventListener('click',function(){ setOpen(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&fbar.classList.contains('open')) setOpen(false); });
+  var __frt;
+  window.addEventListener('resize',function(){
+    clearTimeout(__frt); __frt=setTimeout(function(){
+      if(window.innerWidth>768&&fbar.classList.contains('open')) setOpen(false);
+    },160);
+  });
+  window.__openFilter=setOpen;
+  setOpen(false);
+})();
+
+// ====== TOC 侧栏拖拽固定（localStorage记忆） ======
+(function(){
+  var side=document.getElementById('tocSide');
+  if(!side) return;
+  var KEY='tocPos', pos=null;
+  try{ pos=JSON.parse(lsGet(KEY,'null')); }catch(e){}
+  if(pos && typeof pos.x==='number' && typeof pos.y==='number'){
+    side.style.left=pos.x+'px'; side.style.top=pos.y+'px'; side.style.transform='none';
+  }
+  var dragging=false;
+  side.addEventListener('pointerdown',function(e){
+    if(side.getAttribute('data-toc-lock')==='1') return;
+    if(side.classList.contains('toc-collapsed')) return;
+    if(e.pointerType==='mouse' && e.button!==0) return;
+    dragging=false;
+    var sx=e.clientX, sy=e.clientY;
+    var r=side.getBoundingClientRect(), ox=r.left, oy=r.top;
+    try{ side.setPointerCapture(e.pointerId); }catch(err){}
+    function move(ev){
+      var dx=ev.clientX-sx, dy=ev.clientY-sy;
+      if(Math.abs(dx)+Math.abs(dy)>5) dragging=true;
+      if(dragging){
+        var x=Math.min(Math.max(ox+dx,0),Math.max(window.innerWidth-side.offsetWidth,0));
+        var y=Math.min(Math.max(oy+dy,0),Math.max(window.innerHeight-side.offsetHeight,0));
+        side.style.left=x+'px'; side.style.top=y+'px'; side.style.transform='none';
+      }
+    }
+    function up(){
+      if(dragging){
+        lsSet(KEY,JSON.stringify({x:parseInt(side.style.left,10),y:parseInt(side.style.top,10)}));
+      }
+      side.removeEventListener('pointermove',move);
+      side.removeEventListener('pointerup',up);
+      side.removeEventListener('pointercancel',up);
+    }
+    side.addEventListener('pointermove',move);
+    side.addEventListener('pointerup',up);
+    side.addEventListener('pointercancel',up);
+  });
+  side.addEventListener('click',function(e){ if(dragging){ e.preventDefault(); e.stopPropagation(); } },true);
+})();
+
+// ====== 专业名词悬浮释义 + 品牌悬浮卡（桌面 hover） ======
+(function(){
+  if(window.matchMedia && window.matchMedia('(hover:none)').matches) return;
+  try{
+  var TERMS=window.__TERMS=(window.D&&window.D.meta&&window.D.meta.terms)||{
+    '端侧':'模型运行于设备本地：省电、隐私、离线可用',
+    '云侧':'部署于云端数据中心：算力大，支持万亿级参数',
+    'TOPS':'每秒万亿次运算（Trillion Ops/Sec），衡量NPU算力',
+    'MoE':'混合专家架构：万亿参数仅激活部分专家，节省算力',
+    'GenAI':'生成式AI（Generative AI）：可生成文本/图像/视频'
+  };
+  function processTextNode(node){
+    var txt=node.nodeValue;
+    if(!txt || !txt.trim()) return;
+    var keys=Object.keys(TERMS).sort(function(a,b){return b.length-a.length});
+    var first=-1, match=null;
+    for(var k=0;k<keys.length;k++){
+      var idx=txt.indexOf(keys[k]);
+      if(idx>-1 && (first<0 || idx<first)){ first=idx; match=keys[k]; }
+    }
+    if(first<0) return;
+    var frag=document.createDocumentFragment();
+    if(first>0) frag.appendChild(document.createTextNode(txt.slice(0,first)));
+    var sp=document.createElement('span');
+    sp.className='term'; sp.setAttribute('data-tip',TERMS[match]);
+    sp.textContent=match;
+    frag.appendChild(sp);
+    if(first+match.length<txt.length){
+      var rest=document.createTextNode(txt.slice(first+match.length));
+      frag.appendChild(rest);
+      processTextNode(rest);
+    }
+    node.parentNode.replaceChild(frag,node);
+  }
+  document.querySelectorAll('.tbl-wrap table td, .chart-note, .ai-item p, .feature-card p').forEach(function(el){
+    var walker=document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+    var nodes=[], n;
+    while(n=walker.nextNode()){ if(n.nodeValue && n.nodeValue.trim()) nodes.push(n); }
+    nodes.forEach(processTextNode);
+  });
+  document.querySelectorAll('.tbl-wrap table td:first-child b').forEach(function(b){
+    var t=(b.textContent||'').trim();
+    var br=D.brands.find(function(x){ return x.name===t; });
+    if(!br || b.classList.contains('brand-term')) return;
+    b.classList.add('brand-term');
+    b.setAttribute('data-tip', br.name+' ｜ '+br.os+' ｜ '+br.tag+'。AI：'+(br.ai||'见AI大模型对比表'));
+  });
+  window.__termScanDone=document.querySelectorAll('.term').length+':'+document.querySelectorAll('.brand-term').length;
+  }catch(e){ window.__termScanDone='ERR:'+e.message; }
+})();
+// ====== 1500侧边信息栏：术语速览填充（与悬浮释义共用 __TERMS 词典） ======
+(function(){
+  var ul=document.querySelector('.info-rail .rail-terms');
+  if(!ul) return;
+  var t=window.__TERMS||{
+    '端侧':'模型运行于设备本地：省电、隐私、离线可用',
+    '云侧':'部署于云端数据中心：算力大，支持万亿级参数',
+    'TOPS':'每秒万亿次运算，衡量NPU算力',
+    'MoE':'混合专家架构：仅激活部分专家，节省算力',
+    'GenAI':'生成式AI（Generative AI）'
+  };
+  Object.keys(t).forEach(function(k){
+    var li=document.createElement('li');
+    var b=document.createElement('b'); b.textContent=k+'：';
+    li.appendChild(b); li.appendChild(document.createTextNode(t[k]));
+    ul.appendChild(li);
+  });
+})();
+</script>
+<button class="back-top" id="backTop" type="button" aria-label="回到顶部">&#8593;</button>
+<script>
+(function(){
+  var b=document.getElementById('backTop');
+  if(b){
+    var onScroll=function(){ b.classList.toggle('show', window.scrollY>320); };
+    window.addEventListener('scroll',onScroll,{passive:true});
+    b.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+    onScroll();
+  }
+})();
+
+// ====== 滚动性能：滚动期间暂停流光/粒子动画，停止150ms后恢复 ======
+(function(){
+  var html=document.documentElement;
+  var timer=null;
+  var onScroll=function(){
+    if(!html.classList.contains('scrolling')) html.classList.add('scrolling');
+    clearTimeout(timer);
+    timer=setTimeout(function(){ html.classList.remove('scrolling'); },150);
+  };
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('touchmove',onScroll,{passive:true});
+})();
+</script>
+<script>
+// ====== 品牌悬浮对比栏（默认折叠，数据联动年度/筛选） ======
+(function(){
+  var cmp=document.getElementById('brandCmp');
+  if(!cmp) return;
+  var tab=document.getElementById('cmpTab'), close=document.getElementById('cmpClose'), body=document.getElementById('cmpBody');
+  if(!tab||!body) return;
+  var openKey='brandCmpOpen';
+  var stored=null;
+  try{ stored=lsGet(openKey,null); }catch(e){ stored=null; }
+  var wide=(document.body.getAttribute('data-cw')==='1300'||document.body.getAttribute('data-cw')==='1500')&&window.innerWidth>=1440;
+  if(stored==='1'||(stored==null&&wide)) cmp.classList.add('open');
+  cmp.setAttribute('aria-hidden',cmp.classList.contains('open')?'false':'true');
+  function render(){
+    var cur=(window.D&&D.cur)?D.cur():null;
+    if(!cur) return;
+    var sel=[];
+    document.querySelectorAll('#filterBar input[data-brand]').forEach(function(c){ if(c.checked) sel.push(c.getAttribute('data-brand')); });
+    var on=function(k){ return sel.indexOf(k)>-1; };
+    var rows='';
+    var cm=(window.D&&D.chartMeta)||{};
+    var pKey=(cm.pie&&cm.pie.data)||'pieData', rdKey=(cm.bar&&cm.bar.data)||'rdData', paKey=(cm.param&&cm.param.data)||'paramData', npKey=(cm.npu&&cm.npu.data)||'npuData';
+    (window.D.brands||[]).forEach(function(b,i){
+      var p=cur[pKey][i], rd=cur[rdKey][i], pa=cur[paKey][i], np=cur[npKey][i];
+      if(typeof p==='undefined') return;
+      var dim=on(b.id)?'':' style="opacity:.3"';
+      rows+='<tr'+dim+'><td><span class="cmp-brand-dot" style="background:'+b.color+'"></span>'+b.name+'</td><td>'+(p==null?'—':p)+'%</td><td>'+(rd==null?'—':rd)+'%</td><td>'+(pa==null?'—':pa)+'</td><td>'+(np==null?'—':np)+'</td></tr>';
+    });
+    body.innerHTML='<table><tr><th>厂商</th><th>市场份额</th><th>AI研发占比</th><th>端侧参数量(亿)</th><th>NPU算力(TOPS)</th></tr>'+rows+'</table>';
+  }
+  render();
+  tab.addEventListener('click',function(){
+    var open=cmp.classList.toggle('open');
+    cmp.setAttribute('aria-hidden',open?'false':'true');
+    try{ lsSet(openKey,open?'1':'0'); }catch(e){}
+  });
+  if(close) close.addEventListener('click',function(){
+    cmp.classList.remove('open'); cmp.setAttribute('aria-hidden','true');
+    try{ lsSet(openKey,'0'); }catch(e){}
+  });
+  window.__renderBrandCmp=render;
+  document.addEventListener('change',function(e){
+    if(e.target && (e.target.id==='yearSel' || (e.target.matches && e.target.matches('#filterBar input[data-brand]')))) setTimeout(render,0);
+  });
+})();
+</script>
+<script>
+// ====== 桌面端表格列排序 + 右键菜单（排序/复制/导出PNG） ======
+(function(){
+  var isMouse=window.matchMedia && !window.matchMedia('(hover:none)').matches;
+  if(!isMouse) return;
+  var menu=document.createElement('div'); menu.className='ctx-menu'; document.body.appendChild(menu);
+  var boxSel=document.createElement('div'); boxSel.className='ctx-box-select'; document.body.appendChild(boxSel);
+  function closeMenu(){ menu.classList.remove('show'); menu.innerHTML=''; }
+  document.addEventListener('click',closeMenu);
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeMenu(); });
+  document.addEventListener('scroll',closeMenu,true);
+
+  function cellText(c){ return (c.textContent||'').replace(/\s+/g,' ').trim(); }
+  function numOf(v){
+    var s=(v||'').replace(/,/g,'');
+    var m=s.match(/[\d.]+(?:亿|万)?/);
+    if(!m) return null;
+    var n=parseFloat(m[0]); var u=s.match(/(亿|万)/);
+    if(u&&u[1]==='亿') n*=10000; else if(u&&u[1]==='万') n*=10000;
+    return n;
+  }
+  function sortTable(table, col, dir){
+    var tb=table.querySelector('tbody') || table;
+    var rows=Array.prototype.slice.call(tb.querySelectorAll('tr'));
+    if(rows.length<2) return;
+    var head=rows[0]; var body=rows.slice(1);
+    body.sort(function(a,b){
+      var ca=a.cells[col], cb=b.cells[col];
+      var va=ca?cellText(ca):'', vb=cb?cellText(cb):'';
+      var na=numOf(va), nb=numOf(vb);
+      var cmp;
+      if(na!==null && nb!==null) cmp=na-nb;
+      else cmp=va.localeCompare(vb,'zh-Hans-CN');
+      return dir==='asc'?cmp:-cmp;
+    });
+    body.forEach(function(r){ tb.appendChild(r); });
+    var ths=head.cells;
+    for(var i=0;i<ths.length;i++){ ths[i].classList.remove('sort-asc','sort-desc'); }
+    if(ths[col]) ths[col].classList.add(dir==='asc'?'sort-asc':'sort-desc');
+  }
+
+  function cellHtml(c){
+    var clone=c.cloneNode(true);
+    var s=clone.getAttribute('style')||'';
+    clone.setAttribute('style',s);
+    return clone.outerHTML;
+  }
+  function exportRowsToPng(rows, cols, title){
+    // 提取所选行列文本，构造离屏表格渲染到canvas
+    var pad=6, h=Math.max(rows.length+1,1);
+    var fonts=[];
+    for(var r=0;r<rows.length;r++){
+      for(var c=0;c<cols.length;c++){
+        var cell=rows[r]&&rows[r].cells[cols[c]];
+        var t=cell?cellText(cell):'';
+        fonts.push(t);
+      }
+    }
+    var canvas=document.createElement('canvas');
+    var ctx=canvas.getContext('2d');
+    var cellW=180, cellH=30, headH=34, titleH=title?30:0;
+    var maxLen=0; fonts.forEach(function(f){ if(f.length>maxLen) maxLen=f.length; });
+    if(maxLen>18) cellW=Math.min(340, Math.max(180, maxLen*9));
+    canvas.width=cols.length*cellW+2*pad;
+    canvas.height=titleH+headH+rows.length*cellH+2*pad;
+    ctx.fillStyle='#fff'; ctx.fillRect(0,0,canvas.width,canvas.height);
+    if(title){ ctx.fillStyle=window.__cssVar('--primary-deep','#1a1a4e'); ctx.font='bold 15px Inter,"Microsoft YaHei",sans-serif'; ctx.fillText(title,pad,titleH-8); }
+    var isDark=document.documentElement.getAttribute('data-theme')==='dark';
+    ctx.font='12.5px Inter,"Microsoft YaHei",sans-serif';
+    ctx.textBaseline='middle';
+    ctx.strokeStyle='#dfe4ee';
+    function drawCell(x,y,w,h,t,fill,color,bold){
+      ctx.fillStyle=fill; ctx.fillRect(x,y,w,h);
+      ctx.strokeRect(x+.5,y+.5,w-1,h-1);
+      ctx.fillStyle=color; ctx.font=(bold?'bold ':'')+'12.5px Inter,"Microsoft YaHei",sans-serif';
+      ctx.fillText(t, x+8, y+h/2+1, w-16);
+    }
+    // header row (cols belong to rows[0] context, use table header if available)
+    var headRow=rows[0];
+    var first=rows.length?rows[0].closest('table'):null;
+    var thr=first?first.querySelector('tr'):null;
+    var hd=null; if(thr){ hd=thr.cells; }
+    for(var ci=0;ci<cols.length;ci++){
+      var htxt=hd&&hd[cols[ci]]?cellText(hd[cols[ci]]):('');
+      drawCell(pad+ci*cellW,pad+titleH,cellW,headH,htxt,isDark?'#1e1e3a':'#f0f3fa',isDark?'#d8dce8':window.__cssVar('--primary-deep','#1a1a4e'),true);
+    }
+    for(var ri=0;ri<rows.length;ri++){
+      var ry=pad+titleH+headH+ri*cellH;
+      var zebra=(ri%2===1);
+      for(var cj=0;cj<cols.length;cj++){
+        var cell2=rows[ri].cells[cols[cj]];
+        var t2=cell2?cellText(cell2):'';
+        drawCell(pad+cj*cellW,ry,cellW,cellH,t2,isDark?(zebra?'#242448':'#1a1a34'):(zebra?'#f7f9fc':'#fff'),isDark?'#c8c8dc':'#2c3e50',false);
+      }
+    }
+    var a=document.createElement('a');
+    a.href=canvas.toDataURL('image/png'); a.download=(title||'table').replace(/[^\u4e00-\u9fa5A-Za-z0-9]+/g,'_')+'.png';
+    a.click();
+  }
+
+  // 框选（按住shift拖选单元格）——在表格区域内用mousedown+move
+  var tblEls=document.querySelectorAll('.tbl-wrap table');
+  var selRange=null;
+  function clearSel(){
+    document.querySelectorAll('.ctx-cell-sel').forEach(function(c){ c.classList.remove('ctx-cell-sel'); });
+    boxSel.style.display='none'; selRange=null;
+  }
+  function cellIndex(cell){
+    var tr=cell.closest('tr'); if(!tr) return null;
+    var r=Array.prototype.indexOf.call(tr.parentElement.children,tr);
+    var c=Array.prototype.indexOf.call(tr.cells,cell);
+    return {r:r,c:c};
+  }
+  function cellsInRange(table,r0,c0,r1,c1){
+    var out=[];
+    var rows=table.querySelectorAll('tr');
+    for(var r=Math.min(r0,r1);r<=Math.max(r0,r1)&&r<rows.length;r++){
+      var cells=rows[r].cells;
+      for(var c=Math.min(c0,c1);c<=Math.max(c0,c1)&&c<cells.length;c++){
+        out.push(cells[c]);
+      }
+    }
+    return out;
+  }
+  tblEls.forEach(function(table){
+    // 列排序：单击表头（桌面），长按不做；跳过 matrix-table 品牌列排序以避免破坏品牌映射
+    table.querySelectorAll('tr:first-child th').forEach(function(th,idx){
+      if(idx===0 && !table.classList.contains('matrix-table')) return; // 首列通常为行名，也可排
+      th.classList.add('sortable');
+      th.addEventListener('click',function(e){
+        e.preventDefault(); e.stopPropagation();
+        var dir = th.classList.contains('sort-asc') ? 'desc' : 'asc';
+        sortTable(table,idx,dir);
+        closeMenu();
+      });
+    });
+    // 框选：桌面拖选
+    table.addEventListener('mousedown',function(e){
+      if(e.button!==0 || e.shiftKey) return;
+      var target=e.target.closest('td,th');
+      if(!target) return;
+      var idx=cellIndex(target); if(!idx) return;
+      var start={r:idx.r,c:idx.c};
+      var tb=table.closest('.tbl-wrap');
+      var rect=tb.getBoundingClientRect();
+      boxSel.style.display='block';
+      function move(ev){
+        if(ev.buttons!==1){ cleanup(); return; }
+        var r2=cellIndex(document.elementFromPoint(ev.clientX,ev.clientY));
+        if(!r2) return;
+        var r0=Math.min(start.r,r2.r), r1=Math.max(start.r,r2.r);
+        var c0=Math.min(start.c,r2.c), c1=Math.max(start.c,r2.c);
+        document.querySelectorAll('.ctx-cell-sel').forEach(function(x){ x.classList.remove('ctx-cell-sel'); });
+        cellsInRange(table,r0,c0,r1,c1).forEach(function(x){ x.classList.add('ctx-cell-sel'); });
+        selRange={r0:r0,r1:r1,c0:c0,c1:c1};
+        var tr=table.querySelectorAll('tr')[r0];
+        var rrr=tr?tr.getBoundingClientRect():null;
+        if(rrr){
+          var x0=tr.cells[c0].getBoundingClientRect().left, x1=tr.cells[c1].getBoundingClientRect().right;
+          var y0=rrr.top, y1=table.querySelectorAll('tr')[r1].getBoundingClientRect().bottom;
+          boxSel.style.left=(x0-rect.left)+'px'; boxSel.style.top=(y0-rect.top)+'px';
+          boxSel.style.width=(x1-x0)+'px'; boxSel.style.height=(y1-y0)+'px';
+        }
+      }
+      function cleanup(){ document.removeEventListener('mousemove',move); document.removeEventListener('mouseup',up2); boxSel.style.display='none'; }
+      function up2(){ cleanup(); }
+      document.addEventListener('mousemove',move);
+      document.addEventListener('mouseup',up2);
+    });
+  });
+
+  // 右键菜单
+  document.addEventListener('contextmenu',function(e){
+    var td=e.target.closest ? e.target.closest('td,th') : null;
+    var canvas=e.target.closest ? e.target.closest('canvas') : null;
+    var box=canvas?canvas.closest('.chart-box'):null;
+    if(!td && !canvas) return; // 只有表格/图表上才弹自定义菜单
+    e.preventDefault();
+    closeMenu();
+    var html='';
+    if(canvas){
+      html+='<div class="ctx-item" data-act="dl">&#11015; 导出此图为PNG</div>';
+      html+='<div class="ctx-item" data-act="copyc">复制图表数据</div>';
+    } else {
+      var table=td.closest('table');
+      if(table){
+        html+='<div class="ctx-item" data-act="sorta">升序排序 <span class="ctx-k">A-Z</span></div>';
+        html+='<div class="ctx-item" data-act="sortd">降序排序 <span class="ctx-k">Z-A</span></div>';
+        html+='<div class="ctx-sep"></div>';
+        html+='<div class="ctx-item" data-act="copy">复制表格数据</div>';
+        html+='<div class="ctx-item" data-act="png">导出表格为PNG</div>';
+      }
+    }
+    menu.innerHTML=html;
+    menu.style.left=Math.min(e.clientX,window.innerWidth-menu.offsetWidth-8)+'px';
+    menu.style.top=Math.min(e.clientY,window.innerHeight-menu.offsetHeight-8)+'px';
+    menu.classList.add('show');
+    menu._ctx={table:td?td.closest('table'):null,td:td,canvas:canvas,box:box,sel:selRange};
+  });
+  menu.addEventListener('click',function(e){
+    var it=e.target.closest('.ctx-item');
+    if(!it||it.classList.contains('ctx-dis')) return;
+    var act=it.getAttribute('data-act');
+    var ctx=menu._ctx||{};
+    if(act==='sorta'||act==='sortd'){
+      var table=ctx.table; if(!table) return;
+      var ths=table.querySelectorAll('tr:first-child th');
+      var th0=ctx.td&&ctx.td.tagName==='TH'?ctx.td:(ctx.td?ctx.td.closest('tr').cells[0]:null);
+      var col=th0?Array.prototype.indexOf.call(ths,th0):0;
+      if(col<0) col=0;
+      sortTable(table,col,act==='sorta'?'asc':'desc');
+    } else if(act==='copy'){
+      var table2=ctx.table; if(!table2) return;
+      var lines=[];
+      table2.querySelectorAll('tr').forEach(function(tr){
+        var cs=Array.prototype.map.call(tr.cells,cellText);
+        lines.push(cs.join('\t'));
+      });
+      var txt=lines.join('\n');
+      navigator.clipboard?navigator.clipboard.writeText(txt).then(function(){window.toast('已复制表格数据')}):(function(){
+        var ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); window.toast('已复制表格数据');
+      })();
+    } else if(act==='png'){
+      var table3=ctx.table; if(!table3) return;
+      var rows=Array.prototype.slice.call(table3.querySelectorAll('tr'));
+      var cols=[]; rows[0].cells.forEach(function(_,i){ cols.push(i); });
+      var h3=table3.closest('.tbl-wrap').previousElementSibling;
+      var title=(h3&&h3.textContent?h3.textContent:'表格');
+      exportRowsToPng(rows,cols,title);
+      window.toast('已导出表格PNG');
+    } else if(act==='dl'){
+      var cv=ctx.canvas; if(!cv) return;
+      var c=window.Chart&&Chart.getChart(cv);
+      if(c){ var label=(ctx.box&&ctx.box.querySelector('h3')?ctx.box.querySelector('h3').textContent:'chart'); var f=label.replace(/[^\u4e00-\u9fa5A-Za-z0-9]+/g,'_').slice(0,40)+'.png'; var a=document.createElement('a'); a.href=c.toBase64Image('image/png',1); a.download=f; a.click(); window.toast('已导出图表PNG'); }
+      else window.toast('图表尚未加载');
+    } else if(act==='copyc'){
+      var cv2=ctx.canvas; if(!cv2) return;
+      var c2=window.Chart&&Chart.getChart(cv2);
+      if(!c2){ window.toast('图表尚未加载'); return; }
+      var ch=c2.data;
+      var lines2=['标签,数值'];
+      ch.labels.forEach(function(l,i){ lines2.push((l||'')+'\t'+(ch.datasets[0].data[i]!==undefined?ch.datasets[0].data[i]:'')); });
+      var txt2=lines2.join('\n');
+      navigator.clipboard?navigator.clipboard.writeText(txt2).then(function(){window.toast('已复制图表数据')}):(function(){
+        var ta=document.createElement('textarea'); ta.value=txt2; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); window.toast('已复制图表数据');
+      })();
+    }
+    closeMenu();
+  });
+})();
+</script>
+</body>
+</html>
